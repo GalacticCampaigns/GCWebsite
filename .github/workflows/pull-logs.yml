@@ -36,7 +36,7 @@ jobs:
         
     - name: Handle SSH Aliases (Public Repos)
       run: |
-        git config --global url."https://github.com/".insteadOf "git@github.com-alicia86e:"   
+        git config --global url."https://github.com/".insteadOf "git@github.com-alicia86:" 
         
     - name: Run Pull Logs
       run: |
