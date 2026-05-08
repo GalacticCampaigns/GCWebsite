@@ -42,4 +42,4 @@ jobs:
         python -m scripts.pull_logs $ARGS
       env:
         DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}        
-        REGISTRY_URL: ${{ vars.WEBSITE_REPO }} # Or replace with your raw URL string if not using secrets
+        WEBSITE_REPO: ${{ vars.WEBSITE_REPO }} # Or replace with your raw URL string if not using secrets
