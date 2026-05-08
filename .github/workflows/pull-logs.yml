@@ -1,0 +1,48 @@
+name: Automated Log Update
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Runs every hour. Change to '0 0 * * *' for daily.
+  workflow_dispatch: # Allows you to run it manually from the Actions tab
+    inputs:
+      dry_run:
+        description: 'Dry Run Mode (Skip pushing changes)'
+        required: false
+        default: 'false'
+      force_audit:
+        description: 'Force pull audit of all history'
+        required: false
+        default: 'false'
+
+jobs:
+  update-logs:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0 # Fetch all history for git operations
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Run Pull Logs
+      run: |
+        ARGS=""
+        if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS -d"; fi
+        if [ "${{ github.event.inputs.force_audit }}" = "true" ]; then ARGS="$ARGS -f"; fi
+        python scripts/pull_logs.py $ARGS
+      env:
+        DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+        
+    - name: Run Git Sync
+      if: ${{ github.event.inputs.dry_run != 'true' }}
+      run: python scripts/git_sync.py
