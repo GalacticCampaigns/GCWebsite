@@ -48,21 +48,32 @@ jobs:
         DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}        
         WEBSITE_REPO: ${{ vars.WEBSITE_REPO }} # Or replace with your raw URL string if not using secrets
         
-    - name: Upload Forge Report
-      uses: actions/upload-artifact@v4
-      with:
-        name: forge-report
-        path: forge_report_latest.log
+    #- name: Upload Forge Report
+    #  uses: actions/upload-artifact@v4
+    #  with:
+    #    name: forge-report
+    #    path: forge_report_latest.log
         
-    - name: Send Email Report
+    # 1. Read the log file into a step output
+    - name: Read Forge Report
+      id: read_report
+      run: |
+        echo "REPORT_CONTENT<<EOF" >> $GITHUB_OUTPUT
+        cat /home/runner/work/GCWebsite/GCWebsite/forge_report_latest.log >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
+
+    # 2. Use that output in the body of your email action
+    - name: Send mail
       uses: dawidd6/action-send-mail@v3
       with:
-        server_address: smtp.gmail.com # Replace with your SMTP server
+        server_address: smtp.gmail.com
         server_port: 465
-        username: ${{ secrets.SMTP_USERNAME }}
-        password: ${{ secrets.SMTP_PASSWORD }}
-        subject: "Chronicle Forge Report"
-        to: ${{ vars.SMTP_TO }} # Replace with your email
-        from: "Forge Bot <noreply@example.com>"
-        body: "Attached is the latest report from the Chronicle Forge."
-        attachments: forge_report_latest.log
+        username: ${{ secrets.MAIL_USERNAME }}
+        password: ${{ secrets.MAIL_PASSWORD }}
+        subject: Forge Cycle Report
+        body: |
+          The Forge Cycle has completed. Here is the report:
+          
+          ${{ steps.read_report.outputs.REPORT_CONTENT }}
+        to: alicia86@gmail.com
+        from: Chronicle Forge Bot
