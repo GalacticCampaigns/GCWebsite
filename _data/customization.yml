@@ -1,0 +1,35 @@
+# User Customization Overrides
+# Edit this file to customize your site!
+# Any values defined here will override the defaults in `_data/defaults.yml`.
+# For a full list of available options, see `_data/defaults.yml`.
+
+# Site Title
+# title: "My Custom Campaign Hub"
+
+# Site Description
+# description: "Welcome to my custom universe."
+
+# Paths to custom assets
+# favicon_path: "/assets/my_favicon.png"
+# banner_path: "/assets/my_banner.png"
+
+# Font Customization
+# google_fonts_url: "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+# body_font: "'Roboto', sans-serif"
+# header_font: "'Roboto', sans-serif"
+
+# Image Sizing
+# logo_max_height: "120px"
+
+# Hero Section Customization
+# hero_flavor_text: "Welcome to the adventure."
+
+# Footer Customization
+# discord_invite: "https://discord.gg/yourserver"
+# show_discord_badge: false
+# copyright_text: "© 2026 My Name"
+
+# Color Customization (Uncomment to override)
+# colors:
+#   primary_bg: "#0b0f19"
+#   accent_blue: "#ff0055"

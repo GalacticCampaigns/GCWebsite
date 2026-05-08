@@ -1,0 +1,787 @@
+{
+  "activeCampaign": "forgotten_ones",
+  "campaigns": {
+    "forgotten_ones": {
+      "name": "Star Wars: Forgotten Ones",
+      "category_id": "1380214185962639402",
+      "guild_id": "661388927734775859",
+      "description": "A crew of outcasts awakens from cryo-stasis aboard a derelict vessel. In a galaxy that has moved on, they must find their place among the stars or be consumed by the shadows of their past. They face the challenges of a new era while uncovering the mystery of their abandonment.",
+      "repository": "alicia86/SW_ForgottenOnes",
+      "branch": "main",
+      "dataPath": "./",
+      "paths": {
+        "json": "Chapter_Logs/JSON/",
+        "emoji": "Chapter_Logs/emojis/",
+        "media": "Chapter_Logs/media/",
+        "avatars": "Chapter_Logs/avatars/",
+        "logo": "Image_Resources/fo_logo.png",
+        "wiki": "https://github.com/alicia86/SW_ForgottenOnes/wiki/",
+        "mediaRegistry": null
+      },
+      "forum_ids": [
+        "1389791168778211370",
+        "1380700164175696062"
+      ],
+      "auto_scan_pattern": "ch|chapter|prelude",
+      "logs": [
+        {
+          "title": "Chapter 1: Awakening",
+          "channelID": "1387901967317209218",
+          "fileName": "FO_Ch1_Awakening.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 1,
+          "messageCount": 305,
+          "lastMessageTimestamp": "2025-08-01T12:39:15.840000+00:00",
+          "last_synced_id": "1400820175585939557",
+          "threads": [
+            {
+              "threadID": "1387904540778561576",
+              "displayName": "Intro: The Cold Shell (Wes)",
+              "isActive": true,
+              "isNSFW": false,
+              "last_synced_id": "1390408975073411085",
+              "messageCount": 6,
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1387912482172964989",
+              "displayName": "Intro: Rude Awakening (Dryzan)",
+              "isActive": true,
+              "isNSFW": false,
+              "last_synced_id": "1390409165322584245",
+              "messageCount": 5,
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1387912831697158184",
+              "displayName": "Intro: A Cage of Glass (Iyola)",
+              "isActive": true,
+              "isNSFW": false,
+              "last_synced_id": "1390409052009267353",
+              "messageCount": 5,
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1387913268730794056",
+              "displayName": "Intro: The Static Within (Vaeros)",
+              "isActive": true,
+              "isNSFW": false,
+              "last_synced_id": "1390410858848587880",
+              "messageCount": 5,
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1387916926667460722",
+              "displayName": "Intro: A Cracked Lens (Varda)",
+              "isActive": true,
+              "isNSFW": false,
+              "last_synced_id": "1390408892172992563",
+              "messageCount": 6,
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1397604779227615402",
+              "displayName": "Galley ☆ Post Escape",
+              "isActive": true,
+              "isNSFW": false,
+              "last_synced_id": "1398465748833402922",
+              "messageCount": 20,
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1397620423914684427",
+              "displayName": "In Medbay ☆ Post Escape",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 5,
+              "last_synced_id": "1397736708555935805",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1397997211576438784",
+              "displayName": "Bridge ☆ Post Escape",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 15,
+              "last_synced_id": "1398998483402227742",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1392631728043982878",
+              "displayName": "AIRLOCK BREACH",
+              "isActive": false,
+              "isNSFW": false,
+              "messageCount": 0,
+              "last_synced_id": "1393618696852738170",
+              "syncStatus": "stable"
+            }
+          ],
+          "syncStatus": "active",
+          "parentID": "1380214185962639402"
+        },
+        {
+          "title": "Chapter 2: Silent Drift",
+          "channelID": "1400816665276711024",
+          "fileName": "FO_Ch2_Silent-Drift.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 2,
+          "messageCount": 673,
+          "lastMessageTimestamp": "2025-11-06T13:58:18.492000+00:00",
+          "last_synced_id": "1435991690673651793",
+          "threads": [
+            {
+              "threadID": "1402706232732811425",
+              "displayName": "Workshop / Recreation",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 77,
+              "last_synced_id": "1412162294938341467",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1403550882012074084",
+              "displayName": "Medbay",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 89,
+              "last_synced_id": "1406951930097307688",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1410311118030901268",
+              "displayName": "Exploring the Ghost Ship",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 30,
+              "last_synced_id": "1412131005107671174",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1410313405197451405",
+              "displayName": "The Echo and the Oracle",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 8,
+              "last_synced_id": "1412211754280419369",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1412211178981032037",
+              "displayName": "Mess Hall",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 30,
+              "last_synced_id": "1414283788489326725",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1418930804574392412",
+              "displayName": "Varda's Vision",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 4,
+              "last_synced_id": "1419026875925401846",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1423451795291639831",
+              "displayName": "Back to the *Venture*",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 38,
+              "last_synced_id": "1424933020988604437",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1424361258995417250",
+              "displayName": "Atin Oya'ka",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 72,
+              "last_synced_id": "1429607396594024509",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1430238393102630953",
+              "displayName": "Iyola's Cabin",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 9,
+              "last_synced_id": "1430379271955808477",
+              "syncStatus": "stable"
+            }
+          ],
+          "syncStatus": "active",
+          "parentID": "1380214185962639402"
+        },
+        {
+          "title": "Chapter 3: Beneath the Glare",
+          "channelID": "1435992787584679936",
+          "fileName": "FO_Ch3_beneath-the-glare.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 3,
+          "messageCount": 235,
+          "lastMessageTimestamp": "2026-01-20T23:45:34.598000+00:00",
+          "last_synced_id": "1463265448534741311",
+          "threads": [
+            {
+              "threadID": "1457878207498817734",
+              "displayName": "Echoes of the Past",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 45,
+              "last_synced_id": "1459909451594207464",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1458169536749633690",
+              "displayName": "Nanite Mysteries",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 23,
+              "last_synced_id": "1459595663284375781",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1462985529439031461",
+              "displayName": "Epilogue: Iyola",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 15,
+              "last_synced_id": "1463318571533992144",
+              "syncStatus": "stable"
+            }
+          ],
+          "syncStatus": "active",
+          "parentID": "1380214185962639402"
+        },
+        {
+          "title": "Chapter 4: Resonance Frequency",
+          "channelID": "1463269257151254540",
+          "fileName": "FO_Ch4-Resonance-Frequency.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 4,
+          "messageCount": 566,
+          "lastMessageTimestamp": "2026-03-21T13:39:34.682000+00:00",
+          "last_synced_id": "1484909338928873594",
+          "threads": [
+            {
+              "threadID": "1463304534892871844",
+              "displayName": "Awakening: The Wayward Vigil",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 44,
+              "last_synced_id": "1469390946549629092",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1463321256370634967",
+              "displayName": "Intro: The Static Heart (Lis)",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 5,
+              "last_synced_id": "1463831632745205772",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1463328960468357184",
+              "displayName": "Intro: The Muted Echo (Ciara)",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 6,
+              "last_synced_id": "1463811672581083199",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1463337940141867232",
+              "displayName": "Intro: The Hollow Vigil (Cajar)",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 6,
+              "last_synced_id": "1463726051329839209",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1466947514015023268",
+              "displayName": "Venture - Medbay",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 29,
+              "last_synced_id": "1468385722062082111",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1467270244383854787",
+              "displayName": "Search for the Wrangler",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 12,
+              "last_synced_id": "1468375925262651424",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1472757955500970066",
+              "displayName": "Venture - Bridge",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 62,
+              "last_synced_id": "1479984225016090746",
+              "syncStatus": "stable"
+            },
+            {
+              "threadID": "1483596566068596756",
+              "displayName": "Venture - Droid Bay",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 15,
+              "last_synced_id": "1484522558043848755",
+              "syncStatus": "stable"
+            }
+          ],
+          "syncStatus": "active",
+          "parentID": "1380214185962639402"
+        },
+        {
+          "title": "Chapter 5: The Threaded Path",
+          "channelID": "1482882973266083984",
+          "fileName": "fo_ch5-the-threaded-path.json",
+          "isActive": true,
+          "isNSFW": false,
+          "last_synced_id": "1501721029888835676",
+          "messageCount": 134,
+          "order": 5,
+          "lastMessageTimestamp": "2026-05-06T23:03:14.153000+00:00",
+          "threads": [
+            {
+              "threadID": "1484919932688011507",
+              "displayName": "Kando'S Coursers ● Briefing Room Beta",
+              "isActive": true,
+              "syncStatus": "stable",
+              "last_synced_id": "1488451197026304011",
+              "messageCount": 36,
+              "isNSFW": false
+            },
+            {
+              "threadID": "1484919279555186802",
+              "displayName": "Kando'S Coursers ● Briefing Room Gamma",
+              "isActive": true,
+              "syncStatus": "active",
+              "last_synced_id": "1501721029888835676",
+              "messageCount": 88,
+              "isNSFW": false
+            }
+          ],
+          "syncStatus": "active",
+          "parentID": "1380214185962639402"
+        },
+        {
+          "title": "☆READ FIRST☆",
+          "channelID": "1400469850408747059",
+          "fileName": "read-first.json",
+          "isActive": false,
+          "isNSFW": false,
+          "last_synced_id": "1400473778500407408",
+          "messageCount": 0,
+          "lastMessageTimestamp": "",
+          "threads": [],
+          "syncStatus": "active",
+          "order": 0
+        },
+        {
+          "title": "Prelude: The Static on the Line (Dryzan)",
+          "channelID": "1381783775301734441",
+          "fileName": "FO_BB_Prelude-Dryzan.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 0,
+          "messageCount": 176,
+          "lastMessageTimestamp": "2025-07-25T01:02:40.602000+00:00",
+          "last_synced_id": "1398108158593073233",
+          "threads": [],
+          "syncStatus": "active"
+        },
+        {
+          "title": "Prelude: The Sunken Star of Xylos (Iyola)",
+          "channelID": "1386794250947264743",
+          "fileName": "FO_BB_Prelude-Iyola.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 0,
+          "messageCount": 107,
+          "lastMessageTimestamp": "2025-07-25T00:03:06.396000+00:00",
+          "last_synced_id": "1398093167286554755",
+          "threads": [],
+          "syncStatus": "active"
+        },
+        {
+          "title": "Prelude: The Stray Fortune (Krynn)",
+          "channelID": "1382803271185469562",
+          "fileName": "FO_BB_Prelude-Krynn.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 0,
+          "messageCount": 1,
+          "lastMessageTimestamp": "2025-06-12T19:27:19.913000+00:00",
+          "last_synced_id": "1382803475951517809",
+          "threads": [],
+          "syncStatus": "active"
+        },
+        {
+          "title": "Prelude: Ghost of the <i>Devastation<i> (Vearos)",
+          "channelID": "1385685912834277456",
+          "fileName": "FO_BB_Prelude-Vaeros.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 0,
+          "messageCount": 130,
+          "lastMessageTimestamp": "2025-07-01T02:47:54.153000+00:00",
+          "last_synced_id": "1389437330770886847",
+          "threads": [],
+          "syncStatus": "active"
+        },
+        {
+          "title": "Prelude: The Price of a Vision (Varda)",
+          "channelID": "1381784157688037396",
+          "fileName": "FO_BB_Prelude-Varda.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 0,
+          "messageCount": 135,
+          "lastMessageTimestamp": "2025-06-18T23:49:12.754000+00:00",
+          "last_synced_id": "1385043707576717443",
+          "threads": [],
+          "syncStatus": "active"
+        },
+        {
+          "title": "Prelude: The Echo in the Stone (VENA)",
+          "channelID": "1381783926871298098",
+          "fileName": "FO_BB_Prelude-Vena.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 0,
+          "messageCount": 1,
+          "lastMessageTimestamp": "2025-06-12T01:37:02.532000+00:00",
+          "last_synced_id": "1382534128733261948",
+          "threads": [],
+          "syncStatus": "active"
+        },
+        {
+          "title": "Prelude: Fracture Point (Cajar)",
+          "channelID": "1461061352477950124",
+          "fileName": "prelude_fracture-point-cajar.json",
+          "isActive": true,
+          "isNSFW": false,
+          "order": 0,
+          "last_synced_id": "1463909352946536634",
+          "messageCount": 30,
+          "lastMessageTimestamp": "2026-01-22T14:53:07.863000+00:00",
+          "threads": [],
+          "syncStatus": "active"
+        },
+        {
+          "title": "Prelude: Ghost in the Relay (Lis)",
+          "channelID": "1458157142421798912",
+          "fileName": "prelude_ghost-in-the-relay-lis-garah.json",
+          "isActive": true,
+          "isNSFW": false,
+          "order": 0,
+          "last_synced_id": "1463661560198201517",
+          "messageCount": 122,
+          "lastMessageTimestamp": "2026-01-21T22:28:29.468000+00:00",
+          "threads": [],
+          "syncStatus": "active"
+        },
+        {
+          "title": "Prelude: Silent Ward (Ciara)",
+          "channelID": "1448882053574557797",
+          "fileName": "prelude_silent-ward-ciara.json",
+          "isActive": true,
+          "isNSFW": false,
+          "order": 0,
+          "last_synced_id": "1456801530689622088",
+          "messageCount": 113,
+          "lastMessageTimestamp": "2026-01-03T00:09:10.980000+00:00",
+          "threads": [],
+          "syncStatus": "active"
+        },
+        {
+          "title": "A Visit To Keldabe (Iyola)",
+          "channelID": "1408223502917570732",
+          "fileName": "a-visit-to-keldabe-iyola.json",
+          "isActive": true,
+          "isNSFW": false,
+          "order": 0.5,
+          "last_synced_id": "1419038738864013314",
+          "messageCount": 14,
+          "lastMessageTimestamp": "2025-09-20T19:13:19.810000+00:00",
+          "threads": [],
+          "syncStatus": "active"
+        },
+        {
+          "title": "Sundered Coven (Varda)",
+          "channelID": "1401239528605351967",
+          "fileName": "sundered-coven-varda.json",
+          "isActive": true,
+          "isNSFW": false,
+          "order": 0.5,
+          "last_synced_id": "1445875108940873821",
+          "messageCount": 65,
+          "lastMessageTimestamp": "2025-12-03T20:31:29.032000+00:00",
+          "threads": [],
+          "syncStatus": "active"
+        }
+      ]
+    },
+    "swWhispers-Void": {
+      "name": "Star Wars: Whispers in the Void",
+      "category_id": "1347381577721581650",
+      "guild_id": "661388927734775859",
+      "description": "",
+      "repository": "alicia86/campaigns",
+      "branch": "main",
+      "dataPath": "swWhispers-Void/",
+      "paths": {
+        "json": "json/",
+        "emoji": "emojis/",
+        "media": "media/",
+        "avatars": "avatars/",
+        "logo": "",
+        "wiki": "",
+        "mediaRegistry": "media-registry.json"
+      },
+      "forum_ids": [],
+      "auto_scan_pattern": "ch|chapter|prelude",
+      "logs": [
+        {
+          "title": "PRELUDE: ADVENTURES ON FAKIR",
+          "channelID": "1200635186119979019",
+          "fileName": "bluebook-wes_1.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 0,
+          "messageCount": 643,
+          "lastMessageTimestamp": "2024-06-23T19:02:38.258000+00:00",
+          "threads": [],
+          "last_synced_id": "1254511957017497600",
+          "syncStatus": "active",
+          "parentID": "1183856729432260699"
+        },
+        {
+          "title": "Chapter 1: Descending Into Darkness",
+          "channelID": "1347407802980634726",
+          "fileName": "ch1_descending-into-darkness.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 1,
+          "messageCount": 372,
+          "lastMessageTimestamp": "2025-04-02T21:24:58.885000+00:00",
+          "threads": [],
+          "last_synced_id": "1357103544968151131",
+          "syncStatus": "stable",
+          "parentID": "1347381577721581650"
+        },
+        {
+          "title": "Chapter 2: Amidst the Ashes",
+          "channelID": "1357106240332759070",
+          "fileName": "ch2_amidst-the-ashes.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 2,
+          "messageCount": 466,
+          "lastMessageTimestamp": "2025-05-23T02:18:07.061000+00:00",
+          "threads": [],
+          "last_synced_id": "1375296708405231649",
+          "syncStatus": "stable",
+          "parentID": "1347381577721581650"
+        },
+        {
+          "title": "Chapter 3: The Karthon Gamble",
+          "channelID": "1375296954300366910",
+          "fileName": "wv_ch3_the-karthon-gamble.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 3,
+          "messageCount": 983,
+          "lastMessageTimestamp": "2026-01-23T01:36:13.812000+00:00",
+          "threads": [
+            {
+              "threadID": "1377978443060482080",
+              "displayName": "Gamma Data Packet",
+              "isActive": true,
+              "isNSFW": false,
+              "messageCount": 6,
+              "last_synced_id": "1377983880694464512",
+              "syncStatus": "stable"
+            }
+          ],
+          "last_synced_id": "1464071194146766890",
+          "syncStatus": "active",
+          "parentID": "1347381577721581650"
+        },
+        {
+          "title": "Chapter 4: Stillness Between Storms",
+          "channelID": "1464072269071651051",
+          "fileName": "wv_ch4_stillness-between-storms.json",
+          "isActive": true,
+          "isNSFW": false,
+          "preview": "",
+          "order": 4,
+          "messageCount": 203,
+          "lastMessageTimestamp": "2026-05-06T23:27:57.349000+00:00",
+          "last_synced_id": "1501727250863624232",
+          "threads": [
+            {
+              "threadID": "1464634504286175232",
+              "displayName": "Cabin 🔞",
+              "isActive": true,
+              "isNSFW": true,
+              "messageCount": 23,
+              "last_synced_id": "1466792716502306857",
+              "syncStatus": "active"
+            }
+          ],
+          "syncStatus": "active",
+          "parentID": "1347381577721581650"
+        }
+      ]
+    },
+    "swWoP": {
+      "name": "Star Wars: War of Prophecy",
+      "description": "",
+      "guild_id": "661388927734775859",
+      "category_id": "1280868071833337856",
+      "repository": "alicia86/campaigns",
+      "branch": "main",
+      "dataPath": "swWoP/",
+      "paths": {
+        "json": "json/",
+        "emoji": "emojis/",
+        "media": "media/",
+        "avatars": "avatars/",
+        "logo": "",
+        "wiki": "",
+        "mediaRegistry": ""
+      },
+      "forum_ids": [],
+      "auto_scan_pattern": "ch|chapter|prelude",
+      "logs": [
+        {
+          "title": "Chapter 1: Child Of Prophecy",
+          "channelID": "1280870668325359666",
+          "parentID": "1280868071833337856",
+          "fileName": "wop-ch1-child-of-prophecy.json",
+          "isActive": true,
+          "syncStatus": "active",
+          "last_synced_id": "1293239427073708132",
+          "messageCount": 458,
+          "lastMessageTimestamp": "2024-10-08T15:51:46.641000+00:00",
+          "threads": [],
+          "isNSFW": false,
+          "order": 1
+        },
+        {
+          "title": "Chapter 2: Flight Of The Chimaera",
+          "channelID": "1292597894150357053",
+          "parentID": "1280868071833337856",
+          "fileName": "wop-ch2-flight-of-the-chimaera.json",
+          "isActive": true,
+          "syncStatus": "stable",
+          "last_synced_id": "1304805475778429010",
+          "messageCount": 574,
+          "lastMessageTimestamp": "2024-11-09T13:51:07.539000+00:00",
+          "threads": [],
+          "isNSFW": false,
+          "order": 2
+        },
+        {
+          "title": "Chapter 3: A Galaxy Cursed",
+          "channelID": "1299320984293081089",
+          "parentID": "1280868071833337856",
+          "fileName": "wop-ch3-a-galaxy-cursed.json",
+          "isActive": true,
+          "syncStatus": "stable",
+          "last_synced_id": "1306442805123616808",
+          "messageCount": 1049,
+          "lastMessageTimestamp": "2024-11-14T02:17:17.275000+00:00",
+          "threads": [],
+          "isNSFW": false,
+          "order": 3
+        },
+        {
+          "title": "Chapter 4: Dantooine Legacy",
+          "channelID": "1304423587632906331",
+          "parentID": "1280868071833337856",
+          "fileName": "wop-ch4-dantooine-legacy.json",
+          "isActive": true,
+          "syncStatus": "stable",
+          "last_synced_id": "1318288571228098712",
+          "messageCount": 1322,
+          "lastMessageTimestamp": "2024-12-16T18:48:07.998000+00:00",
+          "threads": [],
+          "isNSFW": false,
+          "order": 4
+        },
+        {
+          "title": "Chapter 5: Mount Tantiss",
+          "channelID": "1315812646523637760",
+          "parentID": "1280868071833337856",
+          "fileName": "wop-ch5-mount-tantiss.json",
+          "isActive": true,
+          "syncStatus": "stable",
+          "last_synced_id": "1336797317092868217",
+          "messageCount": 1771,
+          "lastMessageTimestamp": "2025-02-05T20:35:16.888000+00:00",
+          "threads": [],
+          "isNSFW": false,
+          "order": 5
+        },
+        {
+          "title": "Chapter 6: Securing Tantiss",
+          "channelID": "1336794291011588116",
+          "parentID": "1280868071833337856",
+          "fileName": "wop-ch6-securing-tantiss.json",
+          "isActive": true,
+          "syncStatus": "active",
+          "last_synced_id": "1347942973702144103",
+          "messageCount": 1224,
+          "lastMessageTimestamp": "2025-03-08T14:44:08.500000+00:00",
+          "threads": [],
+          "isNSFW": false,
+          "order": 6
+        },
+        {
+          "title": "Chapter 7: Unexpected Inquest",
+          "channelID": "1345146827560718336",
+          "parentID": "1280868071833337856",
+          "fileName": "wop-ch7-unexpected-inquest.json",
+          "isActive": true,
+          "syncStatus": "stable",
+          "last_synced_id": "1351978612169113641",
+          "messageCount": 316,
+          "lastMessageTimestamp": "2025-03-19T18:00:19.689000+00:00",
+          "threads": [],
+          "isNSFW": false,
+          "order": 7
+        }
+      ]
+    }
+  }
+}
