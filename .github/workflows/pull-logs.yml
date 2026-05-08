@@ -34,6 +34,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         
+    - name: Handle SSH Aliases (Public Repos)
+      run: |
+        git config --global url."https://github.com/".insteadOf "git@github.com-alicia86e:"   
+        
     - name: Run Pull Logs
       run: |
         ARGS=""
