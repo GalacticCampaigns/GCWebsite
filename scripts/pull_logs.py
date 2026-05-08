@@ -160,7 +160,20 @@ def run_orchestrator(nav, token, dry_run=False, force_all=False):
 
 if __name__ == "__main__":
     # Fetch the Single Source of Truth
-    registry_data = download_master_registry(REGISTRY_URL)
+    if not REGISTRY_URL:
+        print(f"      [System] REGISTRY_URL not set. Falling back to local registry...")
+        if os.path.exists(LOCAL_REGISTRY):
+            try:
+                with open(LOCAL_REGISTRY, 'r', encoding='utf-8') as f:
+                    registry_data = json.load(f)
+            except Exception as e:
+                print(f"❌ CRITICAL FAILURE: Failed to read local registry. {e}")
+                registry_data = str(e)
+        else:
+            print(f"❌ CRITICAL FAILURE: Local registry not found at {LOCAL_REGISTRY}")
+            registry_data = "Local registry not found"
+    else:
+        registry_data = download_master_registry(REGISTRY_URL)
     
     if isinstance(registry_data, str):
         print(f"❌ CRITICAL FAILURE: Registry Load Error. {registry_data}")
