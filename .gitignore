@@ -10,7 +10,9 @@ _site
 # Chronicle Forge
 #/refinery-config.json
 #/data/customization.yml
-#/assets/campaign-registry.json
+#_data/customization.yml
+#assets/campaign-registry.json
+#/_config.yml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

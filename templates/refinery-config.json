@@ -13,6 +13,9 @@
     "nsfw_keywords": ["nsfw", "🔞", "underage", "18+"],
     "narrative_types": [0, 19, 21]
   },
+  "discord": {
+    "api_version": "v10"
+  },
   "git_aliases": {
     "YourGitHubUser": "github.com-alias"
   }

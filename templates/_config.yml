@@ -1,0 +1,26 @@
+title: "Your Chronicle Hub"
+description: "A centralized repository for our roleplay campaigns."
+url: "" # Enter your GitHub Pages URL here once deployed
+baseurl: "" # Keep empty for your custom domain
+
+# --- BUILD SETTINGS ---
+# We only need to include folders that actually exist in THIS repository.
+# Remote assets are fetched via JS, so Jekyll doesn't need to 'include' them.
+include:
+  - assets
+
+# This prevents Jekyll from wiping these files during a build
+keep_files:
+  - assets
+  - CNAME
+
+# --- MARKDOWN SETTINGS ---
+# Crucial for your 'log-entry.html' (Markdown) files
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  auto_ids: true      # Required for the Table of Contents (TOC) anchors
+  toc_levels: 1..3    # Limits the TOC to H1, H2, and H3
