@@ -39,6 +39,6 @@ jobs:
         ARGS=""
         if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS -d"; fi
         if [ "${{ github.event.inputs.force_audit }}" = "true" ]; then ARGS="$ARGS -f"; fi
-        python -m scripts.pull_logs.py $ARGS
+        python -m scripts.pull_logs $ARGS
       env:
         DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
