@@ -76,4 +76,4 @@ jobs:
           
           ${{ steps.read_report.outputs.REPORT_CONTENT }}
         to: ${{ vars.SMTP_TO }}
-        from: Chronicle Forge Bot
+        from: Chronicle Forge Bot (noreply@noreply.com)
