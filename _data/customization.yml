@@ -4,10 +4,10 @@
 # For a full list of available options, see `_data/defaults.yml`.
 
 # Site Title
-# title: "My Custom Campaign Hub"
+#title: "Galactic Campaigns"
 
 # Site Description
-# description: "Welcome to my custom universe."
+#description: "Welcome to my custom universe."
 
 # Paths to custom assets
 # favicon_path: "/assets/my_favicon.png"
@@ -22,7 +22,7 @@
 # logo_max_height: "120px"
 
 # Hero Section Customization
-# hero_flavor_text: "Welcome to the adventure."
+hero_flavor_text: "Select a frequency to begin decryption."
 
 # Footer Customization
 # discord_invite: "https://discord.gg/yourserver"
