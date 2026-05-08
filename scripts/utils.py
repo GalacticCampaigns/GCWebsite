@@ -29,8 +29,8 @@ TEMP_EXPORT_DIR = os.path.join(PROJECT_ROOT, "temp_worker")
 # --- 2. ENVIRONMENT & PERMISSIONS (Pillar 4) ---
 
 def get_env_type():
-    """Detects if the Forge is running in a Cloud (Codespace) or Local Node (Pi)."""
-    if os.getenv("CODESPACES") == "true":
+    """Detects if the Forge is running in a Cloud (Codespace/Actions) or Local Node (Pi)."""
+    if os.getenv("CODESPACES") == "true" or os.getenv("GITHUB_ACTIONS") == "true":
         return "CLOUD"
     return "LOCAL"
 
