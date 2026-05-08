@@ -13,8 +13,7 @@ from .utils import (
     resolve_vault_path
 )
 
-# Narrative Types for Roleplay identification
-NARRATIVE_TYPES = [0, 19, 21] 
+from .config import FORGE_CONFIG
 
 class Miner:
     def __init__(self, token, dry_run=False):
@@ -25,7 +24,8 @@ class Miner:
             "Authorization": f"Bot {clean_token}",
             "Content-Type": "application/json"
         }
-        self.base_url = "https://discord.com/api/v10"
+        api_version = FORGE_CONFIG.get("discord", "api_version", "v10")
+        self.base_url = f"https://discord.com/api/{api_version}"
         
     def _api_get(self, endpoint, params=None):
         """Hardened GET with Smart-Sleep Rate Limiting and Timeout protection."""
@@ -81,6 +81,29 @@ class Miner:
     def _get_base_path(self, repo_folder, camp_config):
         data_path = camp_config.get("dataPath", "./").strip()
         return resolve_vault_path(repo_folder, data_path)
+
+    def generate_channel_meta(self, repo_folder, channel_id, camp_config):
+        base = self._get_base_path(repo_folder, camp_config)
+        rel_json = camp_config.get("paths", {}).get("json", "json/")
+        meta_dir = os.path.join(base, rel_json, "meta")
+        meta_file = os.path.join(meta_dir, f"{channel_id}.json")
+
+        live_channel = self._api_get(f"channels/{channel_id}")
+        if isinstance(live_channel, dict) and "error" not in live_channel:
+            meta_data = {
+                "id": to_snowflake(live_channel.get("id")),
+                "name": live_channel.get("name"),
+                "type": live_channel.get("type", 0),
+                "is_age_restricted": live_channel.get("nsfw", False),
+                "parent_id": to_snowflake(live_channel.get("parent_id")),
+                "thread_metadata": live_channel.get("thread_metadata"),
+                "last_mined_at": pad_timestamp(None)
+            }
+            os.makedirs(meta_dir, exist_ok=True)
+            with open(meta_file, 'w', encoding='utf-8') as f:
+                json.dump(meta_data, f, indent=2, ensure_ascii=False)
+            return True
+        return False
 
     def map_to_gold(self, msg, repo_folder, log_entry, camp_config):
         """The 'Gold' Standard Pass: CDN Mirroring and Key Restoration."""
@@ -197,6 +220,7 @@ class Miner:
         all_messages = []
         
         # 1. Fetch Parent (Incremental or Audit)
+        self.generate_channel_meta(repo_folder, p_id, camp_config)
         parent_batch = self.fetch_history(p_id, last_id=None if full_audit else log_entry.get("last_synced_id"))
         if isinstance(parent_batch, list):
             for m in parent_batch:
