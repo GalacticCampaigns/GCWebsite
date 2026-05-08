@@ -7,9 +7,9 @@
 
     <header class="hero-section">
         <div class="container-hero">
-            <img src="{{ site.data.customization.banner_path | default: '/assets/gc_banner.png.template' | relative_url }}" alt="Logo" id="site-logo" class="site-logo">
+            <img src="{{ site.data.customization.banner_path | default: site.data.defaults.banner_path | relative_url }}" alt="Logo" id="site-logo" class="site-logo">
             <p id="flavor-text" class="flavor-text">
-                {{ site.data.customization.hero_flavor_text | default: 'Select a frequency to begin decryption.' }}
+                {{ site.data.customization.hero_flavor_text | default: site.data.defaults.hero_flavor_text }}
             </p>
         </div>
     </header>

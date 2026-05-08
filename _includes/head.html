@@ -1,27 +1,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | {{ site.data.customization.title | default: 'Galactic Campaigns' }}</title>
-    <link rel="icon" type="image/png" href="{{ site.data.customization.favicon_path | default: '/assets/gc_logo.png.template' | relative_url }}">
-    <link href="{{ site.data.customization.google_fonts_url | default: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap' }}" rel="stylesheet">
+    <title>{{ page.title }} | {{ site.data.customization.title | default: site.data.defaults.title }}</title>
+    <link rel="icon" type="image/png" href="{{ site.data.customization.favicon_path | default: site.data.defaults.favicon_path | relative_url }}">
+    <link href="{{ site.data.customization.google_fonts_url | default: site.data.defaults.google_fonts_url }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
 
     <!-- Custom Color Overrides -->
     <style>
     :root {
-        {% if site.data.customization.colors.primary_bg %}--primary-bg: {{ site.data.customization.colors.primary_bg }};{% endif %}
-        {% if site.data.customization.colors.secondary_bg %}--secondary-bg: {{ site.data.customization.colors.secondary_bg }};{% endif %}
-        {% if site.data.customization.colors.gh_border %}--gh-border: {{ site.data.customization.colors.gh_border }};{% endif %}
-        {% if site.data.customization.colors.gh_text %}--gh-text: {{ site.data.customization.colors.gh_text }};{% endif %}
-        {% if site.data.customization.colors.text_muted %}--text-muted: {{ site.data.customization.colors.text_muted }};{% endif %}
-        {% if site.data.customization.colors.accent_blue %}--accent-blue: {{ site.data.customization.colors.accent_blue }};{% endif %}
-        {% if site.data.customization.colors.accent_blue_hover %}--accent-blue-hover: {{ site.data.customization.colors.accent_blue_hover }};{% endif %}
-        {% if site.data.customization.colors.sw_yellow %}--sw-yellow: {{ site.data.customization.colors.sw_yellow }};{% endif %}
+        --primary-bg: {{ site.data.customization.colors.primary_bg | default: site.data.defaults.colors.primary_bg }};
+        --secondary-bg: {{ site.data.customization.colors.secondary_bg | default: site.data.defaults.colors.secondary_bg }};
+        --gh-border: {{ site.data.customization.colors.gh_border | default: site.data.defaults.colors.gh_border }};
+        --gh-text: {{ site.data.customization.colors.gh_text | default: site.data.defaults.colors.gh_text }};
+        --text-muted: {{ site.data.customization.colors.text_muted | default: site.data.defaults.colors.text_muted }};
+        --accent-blue: {{ site.data.customization.colors.accent_blue | default: site.data.defaults.colors.accent_blue }};
+        --accent-blue-hover: {{ site.data.customization.colors.accent_blue_hover | default: site.data.defaults.colors.accent_blue_hover }};
+        --sw-yellow: {{ site.data.customization.colors.sw_yellow | default: site.data.defaults.colors.sw_yellow }};
         
-        --body-font: {{ site.data.customization.body_font | default: "'Open Sans', Arial, sans-serif" }};
-        --header-font: {{ site.data.customization.header_font | default: "'Montserrat', sans-serif" }};
-        --logo-max-height: {{ site.data.customization.logo_max_height | default: '150px' }};
-        --logo-max-height-mobile: {{ site.data.customization.logo_max_height_mobile | default: '100px' }};
+        --body-font: {{ site.data.customization.body_font | default: site.data.defaults.body_font }};
+        --header-font: {{ site.data.customization.header_font | default: site.data.defaults.header_font }};
+        --logo-max-height: {{ site.data.customization.logo_max_height | default: site.data.defaults.logo_max_height }};
+        --logo-max-height-mobile: {{ site.data.customization.logo_max_height_mobile | default: site.data.defaults.logo_max_height_mobile }};
     }
     </style> 
 
