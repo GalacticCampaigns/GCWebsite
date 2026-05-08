@@ -4,10 +4,13 @@ temp_git_sync/
 tests/
 wiki
 
+_site
+.jekyll-cache
+
 # Chronicle Forge
-/refinery-config.json
-_data/customization.yml
-assets/campaign-registry.json
+#/refinery-config.json
+#/data/customization.yml
+#/assets/campaign-registry.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
