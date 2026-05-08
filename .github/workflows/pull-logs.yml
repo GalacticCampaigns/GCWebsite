@@ -43,3 +43,22 @@ jobs:
       env:
         DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}        
         WEBSITE_REPO: ${{ vars.WEBSITE_REPO }} # Or replace with your raw URL string if not using secrets
+        
+    - name: Upload Forge Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: forge-report
+        path: forge_report_latest.log
+        
+    - name: Send Email Report
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.gmail.com # Replace with your SMTP server
+        server_port: 465
+        username: ${{ secrets.SMTP_USERNAME }}
+        password: ${{ secrets.SMTP_PASSWORD }}
+        subject: "Chronicle Forge Report"
+        to: ${{ vars.SMTP_TO }} # Replace with your email
+        from: "Forge Bot <noreply@example.com>"
+        body: "Attached is the latest report from the Chronicle Forge."
+        attachments: forge_report_latest.log
