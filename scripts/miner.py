@@ -97,7 +97,7 @@ class Miner:
                 "is_age_restricted": live_channel.get("nsfw", False),
                 "parent_id": to_snowflake(live_channel.get("parent_id")),
                 "thread_metadata": live_channel.get("thread_metadata"),
-                "last_mined_at": pad_timestamp(None)
+                "last_mined_at": pad_timestamp(time.strftime("%Y-%m-%dT%H:%M:%S+00:00", time.gmtime()))
             }
             os.makedirs(meta_dir, exist_ok=True)
             with open(meta_file, 'w', encoding='utf-8') as f:
