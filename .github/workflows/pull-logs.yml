@@ -41,4 +41,5 @@ jobs:
         if [ "${{ github.event.inputs.force_audit }}" = "true" ]; then ARGS="$ARGS -f"; fi
         python -m scripts.pull_logs $ARGS
       env:
-        DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+        DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}        
+        REGISTRY_URL: ${{ vars.REGISTRY_URL }} # Or replace with your raw URL string if not using secrets
