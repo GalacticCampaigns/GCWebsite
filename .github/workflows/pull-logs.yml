@@ -9,12 +9,10 @@ on:
         description: 'Dry Run Mode (Skip pushing changes)'
         type: boolean
         required: false
-        default: 'false'
       force_audit:
         description: 'Force pull audit of all history'
         type: boolean
         required: false
-        default: 'false'
 
 jobs:
   update-logs:
@@ -41,10 +39,6 @@ jobs:
         ARGS=""
         if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS -d"; fi
         if [ "${{ github.event.inputs.force_audit }}" = "true" ]; then ARGS="$ARGS -f"; fi
-        python scripts/pull_logs.py $ARGS
+        python -m scripts.pull_logs.py $ARGS
       env:
         DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-        
-    - name: Run Git Sync
-      if: ${{ github.event.inputs.dry_run != 'true' }}
-      run: python scripts/git_sync.py
