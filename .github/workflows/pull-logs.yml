@@ -68,12 +68,12 @@ jobs:
       with:
         server_address: smtp.gmail.com
         server_port: 465
-        username: ${{ secrets.MAIL_USERNAME }}
-        password: ${{ secrets.MAIL_PASSWORD }}
+        username: ${{ secrets.SMTP_USERNAME }}
+        password: ${{ secrets.SMTP_PASSWORD }}
         subject: Forge Cycle Report
         body: |
           The Forge Cycle has completed. Here is the report:
           
           ${{ steps.read_report.outputs.REPORT_CONTENT }}
-        to: alicia86@gmail.com
+        to: ${{ vars.SMTP_TO }}
         from: Chronicle Forge Bot
