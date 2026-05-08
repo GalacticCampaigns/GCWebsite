@@ -7,10 +7,12 @@ on:
     inputs:
       dry_run:
         description: 'Dry Run Mode (Skip pushing changes)'
+        type: boolean
         required: false
         default: 'false'
       force_audit:
         description: 'Force pull audit of all history'
+        type: boolean
         required: false
         default: 'false'
 
