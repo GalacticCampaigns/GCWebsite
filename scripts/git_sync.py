@@ -8,11 +8,15 @@ from datetime import datetime
 from .utils import VAULT_DIR, PROJECT_ROOT, TEMP_GIT_DIR, get_env_type
 from .config import FORGE_CONFIG
 
+DEBUG_MODE = False
+
 def run_git(args, cwd):
     """
     Hardened Git wrapper with timeout protection and detailed error capture.
     Returns subprocess.CompletedProcess on success, or a descriptive string on error.
     """
+    if DEBUG_MODE:
+        print(f"[Git Debug] Running: git {' '.join(args)} in {cwd}")
     try:
         res = subprocess.run(
             ["git"] + args,
@@ -44,7 +48,11 @@ def get_repo_url(repo_path_str):
     Pillar 4: Multi-Identity Abstraction. 
     Constructs the SSH URL using aliases for specific owners.
     """
-    if get_env_type() == "CLOUD":
+    env = get_env_type()
+    if DEBUG_MODE:
+        print(f"      [Git Debug] Environment detected: {env}")
+        
+    if env == "CLOUD":
         return f"git@github.com:{repo_path_str}.git"
     
     owner = repo_path_str.split("/")[0] if "/" in repo_path_str else ""
@@ -57,6 +65,9 @@ def pull_latest(repo_folder, repo_path_str, branch="main"):
     """
     repo_local_path = os.path.join(VAULT_DIR, repo_folder)
     
+    if DEBUG_MODE:
+        print(f"      [Git Debug] Resolving vault path for {repo_folder}: {repo_local_path}")
+    
     # If the campaign data is stored inside this same mono-repo, skip external pull
     if is_self_repo(repo_path_str):
         print(f"      [Git] campaign '{repo_folder}' is part of Mono-Repo. Using local state.")
@@ -66,6 +77,8 @@ def pull_latest(repo_folder, repo_path_str, branch="main"):
 
     if not os.path.exists(repo_local_path):
         print(f"      [Git] Initializing Vault mirror for {repo_folder}...")
+        if DEBUG_MODE:
+            print(f"      [Git Debug] Directory does not exist. Cloning from {repo_url}")
         os.makedirs(repo_local_path, exist_ok=True)
         res = run_git(["clone", "-b", branch, repo_url, "."], cwd=repo_local_path)
         return True if not isinstance(res, str) else res
@@ -96,10 +109,23 @@ def push_updates(repo_folder, branch="main"):
     # Porcelain Check
     status = run_git(["status", "--porcelain"], cwd=repo_local_path)
     if isinstance(status, str) or not status.stdout.strip():
+        if DEBUG_MODE:
+            if isinstance(status, str):
+                print(f"      [Git Debug] Status failed: {status}")
+            else:
+                print(f"      [Git Debug] No changes detected by git status. Skipping push.")
         return True
+
+    if DEBUG_MODE:
+        print(f"      [Git Debug] Changes detected:\n{status.stdout}")
 
     run_git(["commit", "-m", f"chore(forge): deep freeze sync {ts}"], cwd=repo_local_path)
     push = run_git(["push", "origin", branch], cwd=repo_local_path)
+    if DEBUG_MODE:
+        if isinstance(push, str):
+            print(f"      [Git Debug] Push failed: {push}")
+        else:
+            print(f"      [Git Debug] Push successful.")
     return True if not isinstance(push, str) else push
 
 def sync_website_registry(repo_path_str, updated_registry_dict, branch="main"):

@@ -25,11 +25,14 @@ load_dotenv()
 REGISTRY_URL = os.getenv("REGISTRY_URL")
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 
-def run_orchestrator(nav, token, dry_run=False, force_all=False):
+def run_orchestrator(nav, token, dry_run=False, force_all=False, debug=False):
     """
     System-Agnostic Forge Orchestrator.
     Manages the lifecycle of the narrative from Discord discovery to Git vaulting.
     """
+    if debug:
+        git_sync.DEBUG_MODE = True
+        print("      [System] Debug mode enabled.")
     print("\n" + "="*60)
     mode_text = "DRY RUN" if dry_run else "LIVE"
     env_text = "CLOUD" if os.getenv("CODESPACES") == "true" else "LOCAL NODE"
@@ -139,6 +142,8 @@ def run_orchestrator(nav, token, dry_run=False, force_all=False):
                                         nav.update_report(camp_name, "💥 FILE ERROR", f"Corrupt JSON at {log['fileName']}")
 
             # --- STAGE E: DEEP FREEZE (GIT PUSH) ---
+            if git_sync.DEBUG_MODE:
+                print(f"      [Debug] Entering Stage E: Deep Freeze for {repo_folder}")
             if not dry_run:
                 push_res = git_sync.push_updates(repo_folder)
                 if isinstance(push_res, str):
@@ -183,6 +188,7 @@ if __name__ == "__main__":
         parser = argparse.ArgumentParser(description="GalCam Chronicle Forge Orchestrator")
         parser.add_argument("-d", "--dry-run", action="store_true", help="Refine data locally without pushing to GitHub")
         parser.add_argument("-f", "--force", dest="force_all", action="store_true", help="Force full audit of all history") 
+        parser.add_argument("-v", "--verbose", "--debug", dest="debug", action="store_true", help="Enable verbose debug logging")
         args = parser.parse_args()
         
         run_orchestrator(nav_instance, DISCORD_TOKEN, **vars(args))
