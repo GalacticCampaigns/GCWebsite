@@ -2,7 +2,7 @@ name: Automated Log Update
 
 on:
   schedule:
-    - cron: '0 * * * *' # Runs every hour. Change to '0 0 * * *' for daily.
+    - cron: '0 4 * * *' # Runs every hour. Change to '0 0 * * *' for daily.
   workflow_dispatch: # Allows you to run it manually from the Actions tab
     inputs:
       dry_run:
@@ -76,4 +76,4 @@ jobs:
           
           ${{ steps.read_report.outputs.REPORT_CONTENT }}
         to: ${{ vars.SMTP_TO }}
-        from: Chronicle Forge Bot (noreply@noreply.com)
+        from: Chronicle Forge Bot <noreply@noreply.com>
