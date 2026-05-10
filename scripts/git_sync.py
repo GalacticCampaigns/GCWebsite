@@ -160,8 +160,22 @@ def sync_website_registry(repo_path_str, updated_registry_dict, branch="main"):
             print("      ℹ️ [Git] Mono-Repo is already current.")
             return True
 
-        run_git(["commit", "-m", f"chore(forge): automated cycle sync {ts}"], cwd=PROJECT_ROOT)
+        # Ensure user identity is set (critical for GitHub Actions)
+        run_git(["config", "user.name", "Chronicle Forge Bot"], cwd=PROJECT_ROOT)
+        run_git(["config", "user.email", "noreply@noreply.com"], cwd=PROJECT_ROOT)
+
+        commit = run_git(["commit", "-m", f"chore(forge): automated cycle sync {ts}"], cwd=PROJECT_ROOT)
+        if isinstance(commit, str):
+            if DEBUG_MODE:
+                print(f"      [Git Debug] Mono-Repo commit failed: {commit}")
+            return commit
+
         push = run_git(["push", "origin", branch], cwd=PROJECT_ROOT)
+        if DEBUG_MODE:
+            if isinstance(push, str):
+                print(f"      [Git Debug] Mono-Repo push failed: {push}")
+            else:
+                print(f"      [Git Debug] Mono-Repo push successful.\n{push.stdout}")
         return True if not isinstance(push, str) else push
 
     # --- MULTI-REPO (EXTERNAL) LOGIC ---
