@@ -119,13 +119,22 @@ def push_updates(repo_folder, branch="main"):
     if DEBUG_MODE:
         print(f"      [Git Debug] Changes detected:\n{status.stdout}")
 
-    run_git(["commit", "-m", f"chore(forge): deep freeze sync {ts}"], cwd=repo_local_path)
+    # Ensure user identity is set (critical for GitHub Actions)
+    run_git(["config", "user.name", "Chronicle Forge Bot"], cwd=repo_local_path)
+    run_git(["config", "user.email", "noreply@noreply.com"], cwd=repo_local_path)
+
+    commit = run_git(["commit", "-m", f"chore(forge): deep freeze sync {ts}"], cwd=repo_local_path)
+    if isinstance(commit, str):
+        if DEBUG_MODE:
+            print(f"      [Git Debug] Commit failed: {commit}")
+        return commit
+
     push = run_git(["push", "origin", branch], cwd=repo_local_path)
     if DEBUG_MODE:
         if isinstance(push, str):
             print(f"      [Git Debug] Push failed: {push}")
         else:
-            print(f"      [Git Debug] Push successful.")
+            print(f"      [Git Debug] Push successful.\n{push.stdout}")
     return True if not isinstance(push, str) else push
 
 def sync_website_registry(repo_path_str, updated_registry_dict, branch="main"):
