@@ -355,10 +355,10 @@
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
           "isNSFW": false,
-          "last_synced_id": "1507801043860328691",
-          "messageCount": 173,
+          "last_synced_id": "1508364599018389595",
+          "messageCount": 181,
           "order": 5,
-          "lastMessageTimestamp": "2026-05-23T23:49:34.362000+00:00",
+          "lastMessageTimestamp": "2026-05-25T07:02:24.465000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -383,16 +383,16 @@
               "displayName": "Venture • Engineering",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1507886982448025640",
-              "messageCount": 5
+              "last_synced_id": "1508364599018389595",
+              "messageCount": 10
             },
             {
               "threadID": "1507838319885549710",
               "displayName": "Venture • Recreation",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1507893284645769398",
-              "messageCount": 3
+              "last_synced_id": "1508307868124708885",
+              "messageCount": 6
             }
           ],
           "syncStatus": "active",
@@ -554,9 +554,9 @@
           "isActive": true,
           "isNSFW": false,
           "order": 0.5,
-          "last_synced_id": "1445875108940873821",
-          "messageCount": 65,
-          "lastMessageTimestamp": "2025-12-03T20:31:29.032000+00:00",
+          "last_synced_id": "1508251168797757482",
+          "messageCount": 72,
+          "lastMessageTimestamp": "2026-05-24T23:31:40.593000+00:00",
           "threads": [],
           "syncStatus": "active"
         }
@@ -660,9 +660,9 @@
           "isNSFW": false,
           "preview": "",
           "order": 4,
-          "messageCount": 207,
-          "lastMessageTimestamp": "2026-05-17T03:59:28.776000+00:00",
-          "last_synced_id": "1505419460717314219",
+          "messageCount": 212,
+          "lastMessageTimestamp": "2026-05-25T02:21:38.721000+00:00",
+          "last_synced_id": "1508293942846951464",
           "threads": [
             {
               "threadID": "1464634504286175232",
