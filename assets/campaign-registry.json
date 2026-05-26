@@ -29,7 +29,7 @@
         {"title": "Prelude: Ghost in the Relay (Lis)", "channelID": "1458157142421798912", "fileName": "prelude_ghost-in-the-relay-lis-garah.json", "isActive": true, "isNSFW": false, "order": 0, "last_synced_id": "1463661560198201517", "messageCount": 122, "lastMessageTimestamp": "2026-01-21T22:28:29.468000+00:00", "threads": [], "syncStatus": "active"},
         {"title": "Prelude: Silent Ward (Ciara)", "channelID": "1448882053574557797", "fileName": "prelude_silent-ward-ciara.json", "isActive": true, "isNSFW": false, "order": 0, "last_synced_id": "1456801530689622088", "messageCount": 113, "lastMessageTimestamp": "2026-01-03T00:09:10.980000+00:00", "threads": [], "syncStatus": "active"},
         {"title": "A Visit To Keldabe (Iyola)", "channelID": "1408223502917570732", "fileName": "a-visit-to-keldabe-iyola.json", "isActive": true, "isNSFW": false, "order": 0.5, "last_synced_id": "1419038738864013314", "messageCount": 14, "lastMessageTimestamp": "2025-09-20T19:13:19.810000+00:00", "threads": [], "syncStatus": "active"},
-        {"title": "Sundered Coven (Varda)", "channelID": "1401239528605351967", "fileName": "sundered-coven-varda.json", "isActive": true, "isNSFW": false, "order": 0.5, "last_synced_id": "1508251168797757482", "messageCount": 72, "lastMessageTimestamp": "2026-05-24T23:31:40.593000+00:00", "threads": [], "syncStatus": "active"}
+        {"title": "Sundered Coven (Varda)", "channelID": "1401239528605351967", "fileName": "sundered-coven-varda.json", "isActive": true, "isNSFW": false, "order": 0.5, "last_synced_id": "1508437785743327395", "messageCount": 73, "lastMessageTimestamp": "2026-05-25T11:53:13.540000+00:00", "threads": [], "syncStatus": "active"}
       ]
     },
     "swWhispers-Void": {
