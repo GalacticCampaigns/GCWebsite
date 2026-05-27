@@ -355,10 +355,10 @@
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
           "isNSFW": false,
-          "last_synced_id": "1508364599018389595",
-          "messageCount": 181,
+          "last_synced_id": "1508946887741411460",
+          "messageCount": 183,
           "order": 5,
-          "lastMessageTimestamp": "2026-05-25T07:02:24.465000+00:00",
+          "lastMessageTimestamp": "2026-05-26T21:36:12.915000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -383,8 +383,8 @@
               "displayName": "Venture • Engineering",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1508364599018389595",
-              "messageCount": 10
+              "last_synced_id": "1508946887741411460",
+              "messageCount": 12
             },
             {
               "threadID": "1507838319885549710",
@@ -554,9 +554,9 @@
           "isActive": true,
           "isNSFW": false,
           "order": 0.5,
-          "last_synced_id": "1508437785743327395",
-          "messageCount": 73,
-          "lastMessageTimestamp": "2026-05-25T11:53:13.540000+00:00",
+          "last_synced_id": "1508947938997702837",
+          "messageCount": 74,
+          "lastMessageTimestamp": "2026-05-26T21:40:23.554000+00:00",
           "threads": [],
           "syncStatus": "active"
         }
@@ -660,9 +660,9 @@
           "isNSFW": false,
           "preview": "",
           "order": 4,
-          "messageCount": 212,
-          "lastMessageTimestamp": "2026-05-25T02:21:38.721000+00:00",
-          "last_synced_id": "1508293942846951464",
+          "messageCount": 214,
+          "lastMessageTimestamp": "2026-05-26T21:49:40.566000+00:00",
+          "last_synced_id": "1508950275275227179",
           "threads": [
             {
               "threadID": "1464634504286175232",
