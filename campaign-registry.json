@@ -356,10 +356,10 @@
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
           "isNSFW": false,
-          "last_synced_id": "1509764336175022192",
-          "messageCount": 184,
+          "last_synced_id": "1509990634751262883",
+          "messageCount": 185,
           "order": 5,
-          "lastMessageTimestamp": "2026-05-29T03:44:27.809000+00:00",
+          "lastMessageTimestamp": "2026-05-29T18:43:41.594000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -392,8 +392,8 @@
               "displayName": "Venture • Recreation",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1509764336175022192",
-              "messageCount": 7
+              "last_synced_id": "1509990634751262883",
+              "messageCount": 8
             }
           ],
           "syncStatus": "active",
@@ -403,8 +403,7 @@
           "title": "☆READ FIRST☆",
           "channelID": "1400469850408747059",
           "fileName": "read-first.json",
-          "isActive": true,
-          "visible": false,
+          "isActive": false,
           "isNSFW": false,
           "last_synced_id": "1400473778500407408",
           "messageCount": 0,
@@ -556,11 +555,158 @@
           "isActive": true,
           "isNSFW": false,
           "order": 0.5,
-          "last_synced_id": "1508947938997702837",
-          "messageCount": 74,
-          "lastMessageTimestamp": "2026-05-26T21:40:23.554000+00:00",
+          "last_synced_id": "1509937144553275462",
+          "messageCount": 75,
+          "lastMessageTimestamp": "2026-05-29T15:11:08.537000+00:00",
           "threads": [],
           "syncStatus": "active"
+        },
+        {
+          "title": "Fo Ooc",
+          "channelID": "1380214441328509100",
+          "parentID": "1380214185962639402",
+          "fileName": "fo-ooc.json",
+          "order": 0,
+          "isActive": true,
+          "visible": false,
+          "syncStatus": "active",
+          "last_synced_id": "1509881817593942127",
+          "messageCount": 12728,
+          "lastMessageTimestamp": "2026-05-29T14:11:51.760000+00:00",
+          "isNSFW": false,
+          "source_exists": true,
+          "threads": [
+            {
+              "threadID": "1464411586964750366",
+              "displayName": "Syoca Dm (Ciara)",
+              "isActive": true,
+              "syncStatus": "active",
+              "last_synced_id": "1507835757958795334",
+              "messageCount": 112
+            },
+            {
+              "threadID": "1456654999928049857",
+              "displayName": "Devily Dms (Lis Garah)",
+              "isActive": true,
+              "syncStatus": "active",
+              "last_synced_id": "1509868111896117269",
+              "messageCount": 544
+            },
+            {
+              "threadID": "1385671288462245918",
+              "displayName": "Emil Dm (Iyola Kett)",
+              "isActive": true,
+              "syncStatus": "active",
+              "last_synced_id": "1507880196500492341",
+              "messageCount": 937
+            },
+            {
+              "threadID": "1381693822987145266",
+              "displayName": "Death Dm (Varda Nisyren)",
+              "isActive": true,
+              "syncStatus": "active",
+              "last_synced_id": "1508956597001388043",
+              "messageCount": 1298
+            },
+            {
+              "threadID": "1380891748171255818",
+              "displayName": "Dave/Yogi Dm (Wes Del Fin)",
+              "isActive": true,
+              "syncStatus": "active",
+              "last_synced_id": "1509922226349277377",
+              "messageCount": 2587
+            },
+            {
+              "threadID": "1380890355171594292",
+              "displayName": "Sage Playground",
+              "isActive": true,
+              "syncStatus": "active",
+              "last_synced_id": "1508982672196763798",
+              "messageCount": 213
+            },
+            {
+              "threadID": "1448365503549804645",
+              "displayName": "Syoca Dm (Ciara)",
+              "isActive": true,
+              "syncStatus": "stable",
+              "last_synced_id": "1464411281711960218",
+              "messageCount": 686
+            }
+          ]
+        },
+        {
+          "title": "Fo Gm",
+          "channelID": "1380214527815061647",
+          "parentID": "1380214185962639402",
+          "fileName": "fo-gm.json",
+          "order": 0,
+          "isActive": true,
+          "visible": false,
+          "syncStatus": "active",
+          "last_synced_id": "1507520367235825899",
+          "messageCount": 1052,
+          "lastMessageTimestamp": "2026-05-22T23:07:43.923000+00:00",
+          "isNSFW": false,
+          "source_exists": true,
+          "threads": [
+            {
+              "threadID": "1380226480453324962",
+              "displayName": "Fo Gm Sage Setup",
+              "isActive": false,
+              "syncStatus": "active",
+              "last_synced_id": "",
+              "messageCount": 0
+            },
+            {
+              "threadID": "1484567896607686757",
+              "displayName": "Creating Scenerios For Export",
+              "isActive": true,
+              "syncStatus": "stable",
+              "last_synced_id": "1484570098575610036",
+              "messageCount": 7
+            }
+          ]
+        },
+        {
+          "title": "Fo Resources",
+          "channelID": "1380898627131801700",
+          "parentID": "1380214185962639402",
+          "fileName": "fo-resources.json",
+          "order": 0,
+          "isActive": true,
+          "visible": false,
+          "syncStatus": "active",
+          "last_synced_id": "1391448044368560159",
+          "messageCount": 11,
+          "lastMessageTimestamp": "2025-07-08T18:43:29.220000+00:00",
+          "isNSFW": false,
+          "source_exists": true,
+          "threads": [
+            {
+              "threadID": "1391448044368560159",
+              "displayName": "Venture Map",
+              "isActive": true,
+              "syncStatus": "stable",
+              "last_synced_id": "1392214526530945194",
+              "messageCount": 9
+            }
+          ]
+        },
+        {
+          "title": "Session 0",
+          "channelID": "1451255108414476390",
+          "parentID": "1380214185962639402",
+          "fileName": "session-0.json",
+          "order": 0,
+          "isActive": true,
+          "visible": false,
+          "syncStatus": "active",
+          "last_synced_id": "1464803213063487559",
+          "messageCount": 1,
+          "lastMessageTimestamp": "2026-01-25T02:05:00.722000+00:00",
+          "isNSFW": false,
+          "source_exists": true,
+          "threads": []
         }
       ]
     },
@@ -581,9 +727,9 @@
         "wiki": "",
         "mediaRegistry": "media-registry.json"
       },
-      "archive_all": true,
       "forum_ids": [],
       "auto_scan_pattern": "ch|chapter|prelude",
+      "archive_all": true,
       "logs": [
         {
           "title": "PRELUDE: ADVENTURES ON FAKIR",
@@ -679,6 +825,80 @@
           ],
           "syncStatus": "active",
           "parentID": "1347381577721581650"
+        },
+        {
+          "title": "Wv Ooc",
+          "channelID": "1347385945942528031",
+          "parentID": "1347381577721581650",
+          "fileName": "wv-ooc.json",
+          "order": 0,
+          "isActive": true,
+          "visible": false,
+          "syncStatus": "active",
+          "last_synced_id": "1508955853892358204",
+          "messageCount": 4010,
+          "lastMessageTimestamp": "2026-05-26T22:11:50.612000+00:00",
+          "isNSFW": false,
+          "source_exists": true,
+          "threads": [
+            {
+              "threadID": "1452646609060892713",
+              "displayName": "Shadow Combat   Bridge",
+              "isActive": true,
+              "syncStatus": "stable",
+              "last_synced_id": "1455046522201833647",
+              "messageCount": 137
+            },
+            {
+              "threadID": "1347386051915812979",
+              "displayName": "Sage Setup  Dt",
+              "isActive": true,
+              "syncStatus": "stable",
+              "last_synced_id": "1388708807701561425",
+              "messageCount": 68
+            }
+          ]
+        },
+        {
+          "title": "Wv Gm",
+          "channelID": "1347388058814648351",
+          "parentID": "1347381577721581650",
+          "fileName": "wv-gm.json",
+          "order": 0,
+          "isActive": true,
+          "visible": false,
+          "syncStatus": "active",
+          "last_synced_id": "",
+          "messageCount": 0,
+          "lastMessageTimestamp": "",
+          "isNSFW": false,
+          "source_exists": true,
+          "threads": []
+        },
+        {
+          "title": "Wv Resources",
+          "channelID": "1347634398392225802",
+          "parentID": "1347381577721581650",
+          "fileName": "wv-resources.json",
+          "order": 0,
+          "isActive": true,
+          "visible": false,
+          "syncStatus": "active",
+          "last_synced_id": "1449073767392350400",
+          "messageCount": 31,
+          "lastMessageTimestamp": "2025-12-12T16:21:48.635000+00:00",
+          "isNSFW": false,
+          "source_exists": true,
+          "threads": [
+            {
+              "threadID": "1347638526170365972",
+              "displayName": "Dramatis Personae",
+              "isActive": true,
+              "syncStatus": "stable",
+              "last_synced_id": "1380730988824625274",
+              "messageCount": 29
+            }
+          ]
         }
       ]
     },
@@ -699,9 +919,9 @@
         "wiki": "",
         "mediaRegistry": ""
       },
-      "archive_all": true,
       "forum_ids": [],
       "auto_scan_pattern": "ch|chapter|prelude",
+      "archive_all": true,
       "logs": [
         {
           "title": "Chapter 1: Child Of Prophecy",
@@ -800,6 +1020,47 @@
           "threads": [],
           "isNSFW": false,
           "order": 7
+        },
+        {
+          "title": "Wop General",
+          "channelID": "1280870212425744477",
+          "parentID": "1280868071833337856",
+          "fileName": "wop-general.json",
+          "order": 0,
+          "isActive": true,
+          "visible": false,
+          "syncStatus": "active",
+          "last_synced_id": "1383120604286292110",
+          "messageCount": 11215,
+          "lastMessageTimestamp": "2025-06-13T16:27:29.200000+00:00",
+          "isNSFW": true,
+          "source_exists": true,
+          "threads": [
+            {
+              "threadID": "1280877131869454380",
+              "displayName": "Sage Setup",
+              "isActive": true,
+              "syncStatus": "stable",
+              "last_synced_id": "1381772526144716830",
+              "messageCount": 606
+            }
+          ]
+        },
+        {
+          "title": "Wop Gm",
+          "channelID": "1299325861501341747",
+          "parentID": "1280868071833337856",
+          "fileName": "wop-gm.json",
+          "order": 0,
+          "isActive": true,
+          "visible": false,
+          "syncStatus": "active",
+          "last_synced_id": "",
+          "messageCount": 0,
+          "lastMessageTimestamp": "",
+          "isNSFW": true,
+          "source_exists": true,
+          "threads": []
         }
       ]
     }
