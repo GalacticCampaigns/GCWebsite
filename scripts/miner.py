@@ -66,16 +66,29 @@ class Miner:
         """Recursive pagination for high-fidelity extraction."""
         messages = []
         params = {"limit": limit}
-        if last_id and str(last_id).strip():
-            params[direction] = last_id
+        
+        # Auto-switch to "before" if pulling complete history (no last_id)
+        actual_direction = direction
+        if not last_id or not str(last_id).strip():
+            actual_direction = "before"
+        else:
+            params[actual_direction] = last_id
+            
+        page = 0
         while True:
             batch = self._api_get(f"channels/{channel_id}/messages", params)
             if isinstance(batch, dict) and "error" in batch: return batch 
             if not isinstance(batch, list) or not batch: break
             messages.extend(batch)
+            page += 1
+            print(f"      [Miner]   📥 Paginating... Page {page} ({len(messages)} messages fetched)")
+            
             batch_ids = [int(m["id"]) for m in batch]
-            params[direction] = str(max(batch_ids)) if direction == "after" else str(min(batch_ids))
+            params[actual_direction] = str(max(batch_ids)) if actual_direction == "after" else str(min(batch_ids))
             if len(batch) < limit: break
+            
+            # Proactive rate-limiting relief: take a quick 500ms breath between paginated pages
+            time.sleep(0.5)
         return sorted(messages, key=lambda x: x["id"])
 
     def _get_base_path(self, repo_folder, camp_config):
