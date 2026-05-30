@@ -20,8 +20,8 @@ on:
 
 jobs:
   update-logs:
-    runs-on: ubuntu-latest
-    
+    runs-on: ubuntu-latest    
+    timeout-minutes: 60
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
