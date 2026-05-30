@@ -70,20 +70,34 @@ def send_update_email(report_data, is_dry_run=False):
     body += f"Architecture: {'System Agnostic .NET' if FORGE_CONFIG.is_cloud else 'Dockerized DCE'}\n"
 
     # 4. Delivery Phase
-    try:
-        # Attempt Linux 'mail' command
-        process = subprocess.Popen(
-            ['mail', '-s', subject, recipient],
-            stdin=subprocess.PIPE, 
-            text=True,
-            encoding='utf-8'
-        )
-        process.communicate(input=body)
-        print(f"      [Notifier] Report dispatched to {recipient}")
-    except Exception as e:
-        print(f"      [Notifier] Mail command unavailable. Saving to local log.")
-        # Fallback: Save to file for manual review in Codespace/Pi
+    is_gha = os.getenv("GITHUB_ACTIONS") == "true" or os.getenv("CODESPACES") == "true"
+    
+    if is_gha:
+        print("      [Notifier] Running in Cloud Environment. Saving report to local log.")
         log_file = os.path.join(os.getcwd(), "forge_report_latest.log")
         with open(log_file, "w", encoding='utf-8') as f:
             f.write(f"SUBJECT: {subject}\n\n{body}")
         print(f"      [Notifier] Report saved to: {log_file}")
+    else:
+        try:
+            # Attempt Linux 'mail' command with a strict timeout to prevent hangs
+            process = subprocess.Popen(
+                ['mail', '-s', subject, recipient],
+                stdin=subprocess.PIPE, 
+                text=True,
+                encoding='utf-8'
+            )
+            try:
+                process.communicate(input=body, timeout=10)
+                print(f"      [Notifier] Report dispatched to {recipient}")
+            except subprocess.TimeoutExpired:
+                process.kill()
+                process.communicate()
+                raise RuntimeError("Mail command timed out after 10 seconds")
+        except Exception as e:
+            print(f"      [Notifier] Mail command unavailable or timed out ({e}). Saving to local log.")
+            # Fallback: Save to file for manual review in Codespace/Pi
+            log_file = os.path.join(os.getcwd(), "forge_report_latest.log")
+            with open(log_file, "w", encoding='utf-8') as f:
+                f.write(f"SUBJECT: {subject}\n\n{body}")
+            print(f"      [Notifier] Report saved to: {log_file}")
