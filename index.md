@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         }
 
         displayLogs = campaign.logs
-            .filter(l => l.isActive !== false)
+            .filter(l => l.isActive !== false && l.visible !== false)
             .sort((a, b) => new Date(b.lastMessageTimestamp) - new Date(a.lastMessageTimestamp))
             .slice(0, 3)
             .map(l => ({ ...l, campaignSlug: slug, campaignName: campaign.name }));
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         Object.keys(registry.campaigns).forEach(cSlug => {
             const camp = registry.campaigns[cSlug];
             const logsWithMeta = camp.logs
-                .filter(l => l.isActive !== false)
+                .filter(l => l.isActive !== false && l.visible !== false)
                 .map(l => ({ 
                     ...l, 
                     campaignSlug: cSlug, 

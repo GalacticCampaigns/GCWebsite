@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     // 1. FILTER: Only include active logs
     // 2. SORT: Order them by the 'order' key
     const sorted = campaign.logs
-        .filter(log => log.isActive !== false)
+        .filter(log => log.isActive !== false && log.visible !== false)
         .sort((a, b) => {
         // 1. First, sort by Order (Descending)
         if (b.order !== a.order) {

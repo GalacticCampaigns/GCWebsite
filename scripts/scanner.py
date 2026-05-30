@@ -88,16 +88,28 @@ def get_new_discoveries(camp_data, bot_token, nav):
 
     # --- 2. CHAPTER DISCOVERY (Standard & Forums) ---
     existing_logs = {str(log["channelID"]): log for log in camp_data.get("logs", [])}
+    archive_all = camp_data.get("archive_all", False)
     
     for ch_id, ch in discord_map.items():
         # Discover in Category
         if str(ch.get("parent_id")) == category_id and ch_id not in existing_logs:
-            if re.search(pattern, ch.get("name", ""), re.IGNORECASE):
+            is_narrative = bool(re.search(pattern, ch.get("name", ""), re.IGNORECASE))
+            ignored = should_auto_ignore(ch.get("name", ""))
+            
+            if archive_all or is_narrative:
                 entry = build_registry_entry(ch)
-                if should_auto_ignore(ch.get("name", "")):
-                    entry["isActive"] = False
-                    nav.update_report(camp_name, "🚫 AUTO-IGNORED", entry['title'])
+                if ignored or not is_narrative:
+                    if archive_all:
+                        entry["isActive"] = True
+                        entry["visible"] = False
+                        nav.update_report(camp_name, "📥 ARCHIVED ONLY", entry['title'])
+                    else:
+                        entry["isActive"] = False
+                        entry["visible"] = False
+                        nav.update_report(camp_name, "🚫 AUTO-IGNORED", entry['title'])
                 else:
+                    entry["isActive"] = True
+                    entry["visible"] = True
                     nav.update_report(camp_name, "🚨 NEW CHAPTER", entry['title'])
                 camp_data["logs"].append(entry)
                 existing_logs[ch_id] = entry
@@ -172,6 +184,7 @@ def build_registry_entry(discord_obj, parent_id=None):
         "fileName": f"{slug_base}.json",
         "order": 0,
         "isActive": True,
+        "visible": True,
         "syncStatus": "active",
         "last_synced_id": "",
         "messageCount": 0,
