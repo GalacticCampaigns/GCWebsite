@@ -23,6 +23,7 @@
         "1380700164175696062"
       ],
       "auto_scan_pattern": "ch|chapter|prelude",
+      "archive_all": true,
       "logs": [
         {
           "title": "Chapter 1: Awakening",
@@ -402,7 +403,8 @@
           "title": "☆READ FIRST☆",
           "channelID": "1400469850408747059",
           "fileName": "read-first.json",
-          "isActive": false,
+          "isActive": true,
+          "visible": false,
           "isNSFW": false,
           "last_synced_id": "1400473778500407408",
           "messageCount": 0,
@@ -579,6 +581,7 @@
         "wiki": "",
         "mediaRegistry": "media-registry.json"
       },
+      "archive_all": true,
       "forum_ids": [],
       "auto_scan_pattern": "ch|chapter|prelude",
       "logs": [
@@ -696,6 +699,7 @@
         "wiki": "",
         "mediaRegistry": ""
       },
+      "archive_all": true,
       "forum_ids": [],
       "auto_scan_pattern": "ch|chapter|prelude",
       "logs": [
