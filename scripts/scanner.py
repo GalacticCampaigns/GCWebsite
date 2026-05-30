@@ -93,6 +93,8 @@ def get_new_discoveries(camp_data, bot_token, nav):
     for ch_id, ch in discord_map.items():
         # Discover in Category
         if str(ch.get("parent_id")) == category_id and ch_id not in existing_logs:
+            if ch_id in forum_ids:
+                continue
             is_narrative = bool(re.search(pattern, ch.get("name", ""), re.IGNORECASE))
             ignored = should_auto_ignore(ch.get("name", ""))
             
