@@ -356,10 +356,10 @@
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
           "isNSFW": false,
-          "last_synced_id": "1511654401444413471",
-          "messageCount": 214,
+          "last_synced_id": "1511898557932765296",
+          "messageCount": 229,
           "order": 5,
-          "lastMessageTimestamp": "2026-06-03T08:54:54.485000+00:00",
+          "lastMessageTimestamp": "2026-06-04T02:13:03.252000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -400,16 +400,16 @@
               "displayName": "The Corrigendum",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1511545858020343880",
-              "messageCount": 15
+              "last_synced_id": "1511898557932765296",
+              "messageCount": 25
             },
             {
               "threadID": "1511523223408345199",
               "displayName": "Venture • Airlock",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1511523242106421339",
-              "messageCount": 1
+              "last_synced_id": "1511915659468996628",
+              "messageCount": 6
             }
           ],
           "syncStatus": "active",
@@ -586,9 +586,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1511551730696061048",
-          "messageCount": 12856,
-          "lastMessageTimestamp": "2026-06-03T02:06:55.871000+00:00",
+          "last_synced_id": "1511819330734788804",
+          "messageCount": 12910,
+          "lastMessageTimestamp": "2026-06-04T02:45:49.768000+00:00",
           "isNSFW": false,
           "source_exists": true,
           "threads": [
@@ -621,16 +621,16 @@
               "displayName": "Death Dm (Varda Nisyren)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1511504632935878696",
-              "messageCount": 1336
+              "last_synced_id": "1511892449847410842",
+              "messageCount": 1378
             },
             {
               "threadID": "1380891748171255818",
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1511533640088027288",
-              "messageCount": 2595
+              "last_synced_id": "1511923907635183777",
+              "messageCount": 2603
             },
             {
               "threadID": "1380890355171594292",
@@ -825,9 +825,9 @@
           "isNSFW": false,
           "preview": "",
           "order": 4,
-          "messageCount": 237,
-          "lastMessageTimestamp": "2026-06-02T20:26:38.425000+00:00",
-          "last_synced_id": "1511466093720371511",
+          "messageCount": 243,
+          "lastMessageTimestamp": "2026-06-04T01:39:15.303000+00:00",
+          "last_synced_id": "1511907153634525255",
           "threads": [
             {
               "threadID": "1464634504286175232",
