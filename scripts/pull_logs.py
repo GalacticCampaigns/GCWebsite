@@ -128,7 +128,10 @@ def run_orchestrator(nav, token, dry_run=False, force_all=False, debug=False):
                                         
                                         # Calculate added deltas for all tags
                                         added_tags = {}
+                                        log_tags = log.get("tags") or []
                                         for tag_name in FORGE_CONFIG.content_tags:
+                                            if tag_name in log_tags:
+                                                continue
                                             old_tag_count = (old_tag_stats.get(tag_name) or {}).get("count") or 0
                                             new_tag_count = forensics["tag_stats"][tag_name]["grand_count"]
                                             added_tags[tag_name] = max(0, new_tag_count - old_tag_count)
