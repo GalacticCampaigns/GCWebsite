@@ -114,8 +114,9 @@ document.addEventListener("DOMContentLoaded", async function() {
         const dateStr = isNaN(dateObj) ? "" : dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
         // NEW: Check for NSFW flag
-        const nsfwClass = log.isNSFW ? 'nsfw-blur' : '';
-        const nsfwBadge = log.isNSFW ? '<span class="nsfw-badge">NSFW</span>' : '';
+        const isNSFW = log.isNSFW || (log.tags && log.tags.includes('nsfw'));
+        const nsfwClass = isNSFW ? 'nsfw-blur' : '';
+        const nsfwBadge = isNSFW ? '<span class="nsfw-badge">NSFW</span>' : '';
 
         li.innerHTML = `
             <a href="${viewerPath}?c=${log.campaignSlug}#${log.channelID}">

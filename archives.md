@@ -137,8 +137,9 @@ document.addEventListener("DOMContentLoaded", async function() {
         // Removed statusBadge logic (ACTIVE/DROPPED)
 
         // Check for NSFW flag
-        const nsfwClass = log.isNSFW ? 'nsfw-blur' : '';
-        const nsfwBadge = log.isNSFW ? '<span class="nsfw-badge">NSFW</span>' : '';
+        const isNSFW = log.isNSFW || (log.tags && log.tags.includes('nsfw'));
+        const nsfwClass = isNSFW ? 'nsfw-blur' : '';
+        const nsfwBadge = isNSFW ? '<span class="nsfw-badge">NSFW</span>' : '';
 
         item.innerHTML = `
             <div class="archive-header">

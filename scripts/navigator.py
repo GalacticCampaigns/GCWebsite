@@ -134,7 +134,7 @@ class Navigator:
                             else:
                                 for t in log_entry.get("threads", []):
                                     if str(t.get("threadID")) == msg_chan_id:
-                                        chan_title = t.get("title") or ""
+                                        chan_title = t.get("displayName") or ""
                                         break
                             search_texts.append(chan_title.lower())
                                 
@@ -263,7 +263,7 @@ class Navigator:
                     thread_pct = t_tag_count / t_total if t_total > 0 else 0
                     
                     # Force active if tag emoji or keywords are in the thread title
-                    t_title_text = (t.get("title") or "").lower()
+                    t_title_text = (t.get("displayName") or "").lower()
                     emoji_val = tag_info.get("emoji")
                     keywords = tags_keywords.get(tag_name, [])
                     

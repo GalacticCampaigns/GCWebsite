@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         const activeCampaign = window.GC_STATE.currentCampaign;
         const currentLog = activeCampaign?.logs.find(l => window.location.pathname.includes(l.fileName.replace('.md', '')));
         
-        if (currentLog && currentLog.isNSFW) {
+        if (currentLog && (currentLog.isNSFW || (currentLog.tags && currentLog.tags.includes('nsfw')))) {
             markdownContainer.classList.add('nsfw-blur');
         }
     } else {

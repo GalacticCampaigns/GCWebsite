@@ -278,7 +278,15 @@ function renderFeed(filterId) {
  * Enhanced Object Renderer to handle System/Thread messages.
  */
 function renderMessageObject(msg, logEntry) {
-    const isChannelNSFW = logEntry.isNSFW;
+    const isParentNSFW = logEntry.isNSFW || (logEntry.tags && logEntry.tags.includes('nsfw'));
+    let isThreadNSFW = false;
+    if (logEntry.threads && msg.channel_id !== logEntry.channelID) {
+        const thread = logEntry.threads.find(t => t.threadID === msg.channel_id);
+        if (thread) {
+            isThreadNSFW = thread.isNSFW || (thread.tags && thread.tags.includes('nsfw'));
+        }
+    }
+    const isChannelNSFW = isParentNSFW || isThreadNSFW;
     const isPostNSFW = detectNSFW(msg);
     const isCurrentMsgNSFW = isChannelNSFW || isPostNSFW;
     
@@ -423,7 +431,15 @@ function renderAttachments(msg, logRef) {
     if (!msg.attachments || msg.attachments.length === 0 || !logRef) return "";
     const folder = logRef.fileName.replace('.json', '');
     const mediaReg = window.GC_STATE.mediaRegistry || [];
-    const isPostNSFW = detectNSFW(msg);
+    const isParentNSFW = logRef.isNSFW || (logRef.tags && logRef.tags.includes('nsfw'));
+    let isThreadNSFW = false;
+    if (logRef.threads && msg.channel_id !== logRef.channelID) {
+        const thread = logRef.threads.find(t => t.threadID === msg.channel_id);
+        if (thread) {
+            isThreadNSFW = thread.isNSFW || (thread.tags && thread.tags.includes('nsfw'));
+        }
+    }
+    const isPostNSFW = detectNSFW(msg) || isParentNSFW || isThreadNSFW;
     let html = '<div class="msg-attachments">';
     msg.attachments.forEach(att => {
         const registryMatchPath = `${folder}/${att.filename}`;
