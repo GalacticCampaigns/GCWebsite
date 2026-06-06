@@ -9,8 +9,13 @@
     "content_scan_version": 4
   },
   "forensics": {
-    "nsfw_threshold": 0.90,
-    "nsfw_keywords": ["nsfw", "🔞", "underage", "18+"],
+    "tags": {
+      "nsfw": {
+        "keywords": ["nsfw", "🔞", "underage", "18+"],
+        "emoji": "🔞",
+        "threshold": 0.90
+      }
+    },
     "narrative_types": [0, 19, 21]
   },
   "discord": {

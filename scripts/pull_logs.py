@@ -15,6 +15,7 @@ from .utils import (
     TEMP_EXPORT_DIR
 )
 
+from .config import FORGE_CONFIG
 from .navigator import Navigator
 from .miner import Miner
 from . import scanner
@@ -121,24 +122,29 @@ def run_orchestrator(nav, token, dry_run=False, force_all=False, debug=False):
                                         # --- INCREMENTAL DETECTION ---
                                         # 1. Capture the count from memory BEFORE applying forensics
                                         old_count = log.get("messageCount", 0)
-                                        old_nsfw = log.get("nsfwCount", 0)
+                                        old_tag_stats = log.get("tagStats", {})
                                         new_total = forensics["grand_total"]
-                                        new_nsfw = forensics["grand_nsfw"]
                                         added_delta = new_total - old_count
-                                        added_nsfw = max(0, new_nsfw - old_nsfw)
-
+                                        
+                                        # Calculate added deltas for all tags
+                                        added_tags = {}
+                                        for tag_name in FORGE_CONFIG.content_tags:
+                                            old_tag_count = old_tag_stats.get(tag_name, {}).get("count", 0)
+                                            new_tag_count = forensics["tag_stats"][tag_name]["grand_count"]
+                                            added_tags[tag_name] = max(0, new_tag_count - old_tag_count)
+ 
                                         # 2. Update Registry memory with new forensics
                                         nav.apply_forensics_to_registry(
                                             log, forensics, 
                                             api_id_stamp=latest_api_id
                                         )
-
+ 
                                         # 3. Report the Delta (New or Potential)
                                         if added_delta > 0:
                                             nav.update_report(
                                                 camp_name, "Refined", log.get("title"), 
                                                 count=new_total, 
-                                                nsfw_count=added_nsfw,
+                                                nsfw_count=added_tags,
                                                 added=added_delta
                                             )
                                     except json.JSONDecodeError:

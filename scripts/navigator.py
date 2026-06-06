@@ -38,18 +38,29 @@ class Navigator:
         and safety labels.
         """
         parent_id = str(log_entry.get("channelID"))
+        tags_config = FORGE_CONFIG.content_tags
+        
         # Initialize stats tracking for all known sub-threads
-        t_stats = {str(t["threadID"]): {"total": 0, "nsfw": 0, "abs_last_id": ""} 
-                   for t in log_entry.get("threads", [])}
+        t_stats = {}
+        for t in log_entry.get("threads", []):
+            t_stats[str(t["threadID"])] = {
+                "total": 0,
+                "abs_last_id": "",
+                "nsfw": 0,  # Legacy
+                "tag_counts": {tag_name: 0 for tag_name in tags_config}
+            }
         
         forensics = {
             "abs_max_id": 0,      
             "narrative_max_ts": "", 
             "narrative_max_id": 0,
             "parent_total": 0,
-            "parent_nsfw": 0,
+            "parent_nsfw": 0,  # Legacy
             "grand_total": 0,
-            "grand_nsfw": 0,
+            "grand_nsfw": 0,   # Legacy
+            "tag_stats": {
+                tag_name: {"grand_count": 0, "parent_count": 0} for tag_name in tags_config
+            },
             "thread_stats": t_stats
         }
 
@@ -65,29 +76,45 @@ class Navigator:
             # B. Narrative Audit (Counts and Safety)
             if is_narrative:
                 forensics["grand_total"] += 1
-                
-                # NSFW Forensic Detection (Reactions + Content)
-                is_msg_nsfw = False
-                for r in msg.get("reactions", []):
-                    ename = r.get("emoji", {}).get("name", "").lower()
-                    if any(word in ename for word in NSFW_KEYWORDS):
-                        is_msg_nsfw = True
-                        break
-                
-                content = (msg.get("content") or "").lower()
-                if not is_msg_nsfw and any(word in content for word in NSFW_KEYWORDS):
-                    is_msg_nsfw = True
-
-                if is_msg_nsfw:
-                    forensics["grand_nsfw"] += 1
 
                 # Hierarchical Calculation: Parent vs Thread
                 if msg_chan_id == parent_id:
                     forensics["parent_total"] += 1
-                    if is_msg_nsfw: forensics["parent_nsfw"] += 1
                 elif msg_chan_id in forensics["thread_stats"]:
                     forensics["thread_stats"][msg_chan_id]["total"] += 1
-                    if is_msg_nsfw: forensics["thread_stats"][msg_chan_id]["nsfw"] += 1
+                
+                # Dynamic Tags Detection
+                for tag_name, tag_info in tags_config.items():
+                    keywords = tag_info.get("keywords", [])
+                    is_msg_tagged = False
+                    
+                    # Check Reactions
+                    for r in msg.get("reactions", []):
+                        ename = r.get("emoji", {}).get("name", "").lower()
+                        if any(word.lower() in ename for word in keywords):
+                            is_msg_tagged = True
+                            break
+                    
+                    # Check Content
+                    if not is_msg_tagged:
+                        content = (msg.get("content") or "").lower()
+                        if any(word.lower() in content for word in keywords):
+                            is_msg_tagged = True
+                    
+                    if is_msg_tagged:
+                        forensics["tag_stats"][tag_name]["grand_count"] += 1
+                        if msg_chan_id == parent_id:
+                            forensics["tag_stats"][tag_name]["parent_count"] += 1
+                        elif msg_chan_id in forensics["thread_stats"]:
+                            forensics["thread_stats"][msg_chan_id]["tag_counts"][tag_name] += 1
+                        
+                        # Legacy backwards compatibility
+                        if tag_name == "nsfw":
+                            forensics["grand_nsfw"] += 1
+                            if msg_chan_id == parent_id:
+                                forensics["parent_nsfw"] += 1
+                            elif msg_chan_id in forensics["thread_stats"]:
+                                forensics["thread_stats"][msg_chan_id]["nsfw"] += 1
                 
                 # Temporal Tracking: Capture newest post timestamp
                 if msg_id_int > forensics["narrative_max_id"]:
@@ -104,16 +131,41 @@ class Navigator:
 
     def apply_forensics_to_registry(self, log_entry, forensics, api_id_stamp=None):
         """Registry Smash: Finalizes the metadata state for deployment."""
-        # 1. Hierarchical NSFW Logic
-        # Only overwrite False -> True based on 90% density
-        if not log_entry.get("isNSFW", False):
+        tags_config = FORGE_CONFIG.content_tags
+        
+        # Initialize tags list in log entry
+        log_tags = log_entry.setdefault("tags", [])
+        log_tag_stats = log_entry.setdefault("tagStats", {})
+        
+        for tag_name, tag_info in tags_config.items():
+            threshold = tag_info.get("threshold", 0.90)
+            
             p_total = forensics["parent_total"]
-            parent_pct = forensics["parent_nsfw"] / p_total if p_total > 0 else 0
-            if parent_pct >= 0.9:
-                log_entry["isNSFW"] = True
+            p_tag_count = forensics["tag_stats"][tag_name]["parent_count"]
+            parent_pct = p_tag_count / p_total if p_total > 0 else 0
+            
+            is_active = parent_pct >= threshold
+            
+            log_tag_stats[tag_name] = {
+                "count": forensics["tag_stats"][tag_name]["grand_count"],
+                "active": is_active,
+                "emoji": tag_info.get("emoji", "")
+            }
+            
+            if is_active:
+                if tag_name not in log_tags:
+                    log_tags.append(tag_name)
+            else:
+                if tag_name in log_tags:
+                    log_tags.remove(tag_name)
+            
+            # Legacy backwards compatibility updates
+            if tag_name == "nsfw":
+                log_entry["nsfwCount"] = forensics["tag_stats"]["nsfw"]["grand_count"]
+                if is_active:
+                    log_entry["isNSFW"] = True
             
         log_entry["messageCount"] = forensics["grand_total"]
-        log_entry["nsfwCount"] = forensics["grand_nsfw"]
         if forensics["narrative_max_ts"]:
             log_entry["lastMessageTimestamp"] = forensics["narrative_max_ts"]
 
@@ -128,14 +180,35 @@ class Navigator:
             if t_id in forensics["thread_stats"]:
                 stats = forensics["thread_stats"][t_id]
                 t["messageCount"] = stats["total"]
-                t["nsfwCount"] = stats["nsfw"]
+                t_tags = t.setdefault("tags", [])
+                t_tag_stats = t.setdefault("tagStats", {})
                 
-                # Independent Thread NSFW Threshold
-                if not t.get("isNSFW", False):
+                for tag_name, tag_info in tags_config.items():
+                    threshold = tag_info.get("threshold", 0.90)
                     t_total = stats["total"]
-                    thread_pct = stats["nsfw"] / t_total if t_total > 0 else 0
-                    if thread_pct >= 0.9:
-                        t["isNSFW"] = True
+                    t_tag_count = stats["tag_counts"].get(tag_name, 0)
+                    thread_pct = t_tag_count / t_total if t_total > 0 else 0
+                    
+                    is_active = thread_pct >= threshold
+                    
+                    t_tag_stats[tag_name] = {
+                        "count": t_tag_count,
+                        "active": is_active,
+                        "emoji": tag_info.get("emoji", "")
+                    }
+                    
+                    if is_active:
+                        if tag_name not in t_tags:
+                            t_tags.append(tag_name)
+                    else:
+                        if tag_name in t_tags:
+                            t_tags.remove(t_tags)
+                    
+                    # Legacy thread level updates
+                    if tag_name == "nsfw":
+                        t["nsfwCount"] = t_tag_count
+                        if is_active:
+                            t["isNSFW"] = True
                 
                 if stats["abs_last_id"]:
                     t["last_synced_id"] = stats["abs_last_id"]

@@ -33,11 +33,31 @@ def send_update_email(report_data, is_dry_run=False):
     for camp_name, updates in report_data.items():
         # Calculate deltas for this run
         camp_added = sum(u.get('added', 0) for u in updates)
-        camp_nsfw = sum(u.get('nsfw_count', 0) for u in updates)
         
-        nsfw_part = f" (🔞 {camp_nsfw} NSFW)" if camp_nsfw > 0 else ""
+        # Aggregate tag deltas across all updates in this campaign
+        tags_config = FORGE_CONFIG.content_tags
+        camp_tags_deltas = {tag_name: 0 for tag_name in tags_config}
+        
+        for u in updates:
+            u_tags = u.get('nsfw_count')
+            if isinstance(u_tags, dict):
+                for tag_name, val in u_tags.items():
+                    camp_tags_deltas[tag_name] = camp_tags_deltas.get(tag_name, 0) + val
+            elif isinstance(u_tags, (int, float)) and u_tags > 0:
+                camp_tags_deltas["nsfw"] = camp_tags_deltas.get("nsfw", 0) + int(u_tags)
+                
+        # Build active tags string: E.g., " (🔞 1 NSFW, ⚔️ 2 Action)"
+        active_tags_parts = []
+        for tag_name, val in camp_tags_deltas.items():
+            if val > 0:
+                emoji = tags_config.get(tag_name, {}).get("emoji", "")
+                label = tag_name.upper()
+                active_tags_parts.append(f"{emoji} {val} {label}")
+                
+        tags_part = f" ({', '.join(active_tags_parts)})" if active_tags_parts else ""
+        
         body += f"📂 CAMPAIGN: {camp_name}\n"
-        body += f"📊 {stat_label} STATS: {camp_added} Posts{nsfw_part}\n"
+        body += f"📊 {stat_label} STATS: {camp_added} Posts{tags_part}\n"
         body += "----------------------------------------\n"
         
         # Sort: Discoveries/Errors first
@@ -47,8 +67,15 @@ def send_update_email(report_data, is_dry_run=False):
             action = item['action']
             title = item['title']
             count = item.get('count', 0)      # Grand Total (Cumulative)
-            nsfw = item.get('nsfw_count', 0)  # NSFW Delta (new)
+            u_tags = item.get('nsfw_count', 0)  # Tag deltas (new)
             added = item.get('added', 0)      # Delta (Run-specific)
+            
+            # Resolve tag deltas
+            tag_deltas = {}
+            if isinstance(u_tags, dict):
+                tag_deltas = u_tags
+            elif isinstance(u_tags, (int, float)) and u_tags > 0:
+                tag_deltas = {"nsfw": int(u_tags)}
             
             if any(key in action for key in ["DISCOVERY", "MISSING", "LOCK", "WARNING"]):
                 body += f"  {action} {title}\n"
@@ -58,8 +85,15 @@ def send_update_email(report_data, is_dry_run=False):
                 
                 total_label = "Total Posts" if "ooc" in title.lower() else "Total Narrative"
                 if added > 0:
-                    nsfw_str = f" (🔞 {nsfw} NSFW)" if nsfw > 0 else ""
-                    body += f"    ✨ {stat_label}: {added} posts{nsfw_str}\n"
+                    tag_parts = []
+                    for tag_name, val in tag_deltas.items():
+                        if val > 0:
+                            emoji = tags_config.get(tag_name, {}).get("emoji", "")
+                            label = tag_name.upper()
+                            tag_parts.append(f"{emoji} {val} {label}")
+                    tags_str = f" ({', '.join(tag_parts)})" if tag_parts else ""
+                    
+                    body += f"    ✨ {stat_label}: {added} posts{tags_str}\n"
                     body += f"    📚 {total_label}: {count}\n"
                 elif count > 0:
                     # Logic for forced audits with no new posts

@@ -31,6 +31,28 @@ class ConfigManager:
         return self.app_config.get(section, {}).get(key, default)
 
     @property
+    def content_tags(self):
+        """Returns configured content tags from refinery-config.json, with nsfw fallback."""
+        if hasattr(self, '_content_tags_override'):
+            return self._content_tags_override
+        tags = self.get("forensics", "tags")
+        if not tags:
+            nsfw_keywords = self.get("forensics", "nsfw_keywords") or ["nsfw", "🔞", "underage", "18+"]
+            nsfw_threshold = self.get("forensics", "nsfw_threshold") or 0.90
+            tags = {
+                "nsfw": {
+                    "keywords": nsfw_keywords,
+                    "emoji": "🔞",
+                    "threshold": nsfw_threshold
+                }
+            }
+        return tags
+
+    @content_tags.setter
+    def content_tags(self, value):
+        self._content_tags_override = value
+
+    @property
     def is_cloud(self):
         """Environment Detection for Pillar 4 portability."""
         return os.getenv("CODESPACES") == "true"
