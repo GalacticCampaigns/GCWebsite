@@ -11,7 +11,19 @@
   "forensics": {
     "nsfw_threshold": 0.90,
     "nsfw_keywords": ["nsfw", "🔞", "underage", "18+"],
-    "narrative_types": [0, 19, 21]
+    "narrative_types": [0, 19, 21],
+    "tags": {
+      "action": {
+        "keywords": ["action", "battle", "fight", "combat"],
+        "emoji": "⚔️",
+        "threshold": 0.90
+      },
+      "lore": {
+        "keywords": ["lore", "history", "background", "worldbuilding"],
+        "emoji": "📜",
+        "threshold": 0.90
+      }    
+    }
   },
   "discord": {
     "api_version": "v10"
