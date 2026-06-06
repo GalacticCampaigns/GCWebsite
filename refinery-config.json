@@ -22,7 +22,12 @@
         "keywords": ["lore", "history", "background", "worldbuilding"],
         "emoji": "📜",
         "threshold": 0.90
-      }    
+      },
+      "pinned": {
+        "keywords": ["pinned", "important", "reference"],
+        "emoji": "📌",
+        "threshold": 0.90
+      }   
     }
   },
   "discord": {
