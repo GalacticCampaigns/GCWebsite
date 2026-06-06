@@ -180,6 +180,11 @@ class Navigator:
             log_tag_stats = {}
             log_entry["tagStats"] = log_tag_stats
         
+        tags_keywords = {
+            tag_name: [w.lower() for w in (tag_info.get("keywords") or [])]
+            for tag_name, tag_info in tags_config.items()
+        }
+        
         for tag_name, tag_info in tags_config.items():
             threshold = tag_info.get("threshold", 0.90)
             
@@ -187,7 +192,18 @@ class Navigator:
             p_tag_count = forensics["tag_stats"][tag_name]["parent_count"]
             parent_pct = p_tag_count / p_total if p_total > 0 else 0
             
-            is_active = parent_pct >= threshold
+            # Force active if tag emoji or keywords are in the channel title
+            title_text = (log_entry.get("title") or "").lower()
+            emoji_val = tag_info.get("emoji")
+            keywords = tags_keywords.get(tag_name, [])
+            
+            title_has_tag = False
+            if emoji_val and emoji_val.lower() in title_text:
+                title_has_tag = True
+            elif keywords and any(word in title_text for word in keywords):
+                title_has_tag = True
+                
+            is_active = (parent_pct >= threshold) or title_has_tag
             
             log_tag_stats[tag_name] = {
                 "count": forensics["tag_stats"][tag_name]["grand_count"],
@@ -239,7 +255,18 @@ class Navigator:
                     t_tag_count = stats["tag_counts"].get(tag_name, 0)
                     thread_pct = t_tag_count / t_total if t_total > 0 else 0
                     
-                    is_active = thread_pct >= threshold
+                    # Force active if tag emoji or keywords are in the thread title
+                    t_title_text = (t.get("title") or "").lower()
+                    emoji_val = tag_info.get("emoji")
+                    keywords = tags_keywords.get(tag_name, [])
+                    
+                    t_title_has_tag = False
+                    if emoji_val and emoji_val.lower() in t_title_text:
+                        t_title_has_tag = True
+                    elif keywords and any(word in t_title_text for word in keywords):
+                        t_title_has_tag = True
+                        
+                    is_active = (thread_pct >= threshold) or t_title_has_tag
                     
                     t_tag_stats[tag_name] = {
                         "count": t_tag_count,
