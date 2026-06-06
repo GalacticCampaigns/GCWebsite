@@ -30,7 +30,6 @@
           "channelID": "1387901967317209218",
           "fileName": "FO_Ch1_Awakening.json",
           "isActive": true,
-          "isNSFW": false,
           "preview": "",
           "order": 1,
           "messageCount": 305,
@@ -41,93 +40,93 @@
               "threadID": "1387904540778561576",
               "displayName": "Intro: The Cold Shell (Wes)",
               "isActive": true,
-              "isNSFW": false,
               "last_synced_id": "1390408975073411085",
               "messageCount": 6,
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1387912482172964989",
               "displayName": "Intro: Rude Awakening (Dryzan)",
               "isActive": true,
-              "isNSFW": false,
               "last_synced_id": "1390409165322584245",
               "messageCount": 5,
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1387912831697158184",
               "displayName": "Intro: A Cage of Glass (Iyola)",
               "isActive": true,
-              "isNSFW": false,
               "last_synced_id": "1390409052009267353",
               "messageCount": 5,
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1387913268730794056",
               "displayName": "Intro: The Static Within (Vaeros)",
               "isActive": true,
-              "isNSFW": false,
               "last_synced_id": "1390410858848587880",
               "messageCount": 5,
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1387916926667460722",
               "displayName": "Intro: A Cracked Lens (Varda)",
               "isActive": true,
-              "isNSFW": false,
               "last_synced_id": "1390408892172992563",
               "messageCount": 6,
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1397604779227615402",
               "displayName": "Galley ☆ Post Escape",
               "isActive": true,
-              "isNSFW": false,
               "last_synced_id": "1398465748833402922",
               "messageCount": 20,
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1397620423914684427",
               "displayName": "In Medbay ☆ Post Escape",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 5,
               "last_synced_id": "1397736708555935805",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1397997211576438784",
               "displayName": "Bridge ☆ Post Escape",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 15,
               "last_synced_id": "1398998483402227742",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1392631728043982878",
               "displayName": "AIRLOCK BREACH",
               "isActive": false,
-              "isNSFW": false,
               "messageCount": 0,
               "last_synced_id": "1393618696852738170",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             }
           ],
           "syncStatus": "active",
-          "parentID": "1380214185962639402"
+          "parentID": "1380214185962639402",
+          "tags": []
         },
         {
           "title": "Chapter 2: Silent Drift",
           "channelID": "1400816665276711024",
           "fileName": "FO_Ch2_Silent-Drift.json",
           "isActive": true,
-          "isNSFW": false,
           "preview": "",
           "order": 2,
           "messageCount": 673,
@@ -138,93 +137,93 @@
               "threadID": "1402706232732811425",
               "displayName": "Workshop / Recreation",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 77,
               "last_synced_id": "1412162294938341467",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1403550882012074084",
               "displayName": "Medbay",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 89,
               "last_synced_id": "1406951930097307688",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1410311118030901268",
               "displayName": "Exploring the Ghost Ship",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 30,
               "last_synced_id": "1412131005107671174",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1410313405197451405",
               "displayName": "The Echo and the Oracle",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 8,
               "last_synced_id": "1412211754280419369",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1412211178981032037",
               "displayName": "Mess Hall",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 30,
               "last_synced_id": "1414283788489326725",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1418930804574392412",
               "displayName": "Varda's Vision",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 4,
               "last_synced_id": "1419026875925401846",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1423451795291639831",
               "displayName": "Back to the *Venture*",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 38,
               "last_synced_id": "1424933020988604437",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1424361258995417250",
               "displayName": "Atin Oya'ka",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 72,
               "last_synced_id": "1429607396594024509",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1430238393102630953",
               "displayName": "Iyola's Cabin",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 9,
               "last_synced_id": "1430379271955808477",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             }
           ],
           "syncStatus": "active",
-          "parentID": "1380214185962639402"
+          "parentID": "1380214185962639402",
+          "tags": []
         },
         {
           "title": "Chapter 3: Beneath the Glare",
           "channelID": "1435992787584679936",
           "fileName": "FO_Ch3_beneath-the-glare.json",
           "isActive": true,
-          "isNSFW": false,
           "preview": "",
           "order": 3,
           "messageCount": 235,
@@ -235,39 +234,39 @@
               "threadID": "1457878207498817734",
               "displayName": "Echoes of the Past",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 45,
               "last_synced_id": "1459909451594207464",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1458169536749633690",
               "displayName": "Nanite Mysteries",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 23,
               "last_synced_id": "1459595663284375781",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1462985529439031461",
               "displayName": "Epilogue: Iyola",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 15,
               "last_synced_id": "1463318571533992144",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             }
           ],
           "syncStatus": "active",
-          "parentID": "1380214185962639402"
+          "parentID": "1380214185962639402",
+          "tags": []
         },
         {
           "title": "Chapter 4: Resonance Frequency",
           "channelID": "1463269257151254540",
           "fileName": "FO_Ch4-Resonance-Frequency.json",
           "isActive": true,
-          "isNSFW": false,
           "preview": "",
           "order": 4,
           "messageCount": 566,
@@ -278,88 +277,88 @@
               "threadID": "1463304534892871844",
               "displayName": "Awakening: The Wayward Vigil",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 44,
               "last_synced_id": "1469390946549629092",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1463321256370634967",
               "displayName": "Intro: The Static Heart (Lis)",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 5,
               "last_synced_id": "1463831632745205772",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1463328960468357184",
               "displayName": "Intro: The Muted Echo (Ciara)",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 6,
               "last_synced_id": "1463811672581083199",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1463337940141867232",
               "displayName": "Intro: The Hollow Vigil (Cajar)",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 6,
               "last_synced_id": "1463726051329839209",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1466947514015023268",
               "displayName": "Venture - Medbay",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 29,
               "last_synced_id": "1468385722062082111",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1467270244383854787",
               "displayName": "Search for the Wrangler",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 12,
               "last_synced_id": "1468375925262651424",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1472757955500970066",
               "displayName": "Venture - Bridge",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 62,
               "last_synced_id": "1479984225016090746",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             },
             {
               "threadID": "1483596566068596756",
               "displayName": "Venture - Droid Bay",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 15,
               "last_synced_id": "1484522558043848755",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             }
           ],
           "syncStatus": "active",
-          "parentID": "1380214185962639402"
+          "parentID": "1380214185962639402",
+          "tags": []
         },
         {
           "title": "Chapter 5: The Threaded Path",
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "isNSFW": false,
-          "last_synced_id": "1512227068971188334",
-          "messageCount": 233,
+          "last_synced_id": "1512560382848532545",
+          "messageCount": 236,
           "order": 5,
-          "lastMessageTimestamp": "2026-06-04T23:45:57.312000+00:00",
+          "lastMessageTimestamp": "2026-06-06T02:32:20.373000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -368,7 +367,24 @@
               "syncStatus": "stable",
               "last_synced_id": "1488451197026304011",
               "messageCount": 36,
-              "isNSFW": false
+              "tags": [],
+              "tagStats": {
+                "action": {
+                  "count": 4,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 1,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              }
             },
             {
               "threadID": "1484919279555186802",
@@ -377,7 +393,24 @@
               "syncStatus": "active",
               "last_synced_id": "1507801043860328691",
               "messageCount": 119,
-              "isNSFW": false
+              "tags": [],
+              "tagStats": {
+                "action": {
+                  "count": 10,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 9,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 3,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              }
             },
             {
               "threadID": "1507843585813385330",
@@ -385,35 +418,125 @@
               "isActive": true,
               "syncStatus": "active",
               "last_synced_id": "1510657272823414995",
-              "messageCount": 14
+              "messageCount": 14,
+              "tags": [],
+              "tagStats": {
+                "action": {
+                  "count": 1,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 2,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              }
             },
             {
               "threadID": "1507838319885549710",
               "displayName": "Venture • Recreation",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1511654401444413471",
-              "messageCount": 19
+              "last_synced_id": "1512560382848532545",
+              "messageCount": 20,
+              "tags": [],
+              "tagStats": {
+                "action": {
+                  "count": 3,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 2,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 1,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              }
             },
             {
               "threadID": "1510471160867848273",
               "displayName": "The Corrigendum",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1512227068971188334",
-              "messageCount": 28
+              "last_synced_id": "1512481343345397892",
+              "messageCount": 29,
+              "tags": [],
+              "tagStats": {
+                "action": {
+                  "count": 3,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 2,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 2,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              }
             },
             {
               "threadID": "1511523223408345199",
               "displayName": "Venture • Airlock",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1512241028659151050",
-              "messageCount": 7
+              "last_synced_id": "1512645288517566475",
+              "messageCount": 8,
+              "tags": [],
+              "tagStats": {
+                "action": {
+                  "count": 2,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              }
             }
           ],
           "syncStatus": "active",
-          "parentID": "1380214185962639402"
+          "parentID": "1380214185962639402",
+          "tags": [],
+          "tagStats": {
+            "action": {
+              "count": 26,
+              "active": false,
+              "emoji": "⚔️"
+            },
+            "lore": {
+              "count": 14,
+              "active": false,
+              "emoji": "📜"
+            },
+            "pinned": {
+              "count": 8,
+              "active": false,
+              "emoji": "📌"
+            }
+          }
         },
         {
           "title": "☆READ FIRST☆",
@@ -586,10 +709,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1512259188200439868",
-          "messageCount": 12927,
-          "lastMessageTimestamp": "2026-06-05T00:58:06.884000+00:00",
-          "isNSFW": false,
+          "last_synced_id": "1512560615686934539",
+          "messageCount": 12972,
+          "lastMessageTimestamp": "2026-06-05T23:07:33.827000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -597,16 +719,52 @@
               "displayName": "Syoca Dm (Ciara)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1510414610958913536",
-              "messageCount": 115
+              "last_synced_id": "1512528990353625128",
+              "messageCount": 120,
+              "tags": [],
+              "tagStats": {
+                "action": {
+                  "count": 4,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 2,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              }
             },
             {
               "threadID": "1456654999928049857",
               "displayName": "Devily Dms (Lis Garah)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1509868111896117269",
-              "messageCount": 544
+              "last_synced_id": "1512440875119284305",
+              "messageCount": 545,
+              "tags": [],
+              "tagStats": {
+                "action": {
+                  "count": 17,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 14,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 3,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              }
             },
             {
               "threadID": "1385671288462245918",
@@ -614,23 +772,77 @@
               "isActive": true,
               "syncStatus": "active",
               "last_synced_id": "1510291277948653759",
-              "messageCount": 942
+              "messageCount": 942,
+              "tags": [],
+              "tagStats": {
+                "action": {
+                  "count": 5,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 25,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 4,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              }
             },
             {
               "threadID": "1381693822987145266",
               "displayName": "Death Dm (Varda Nisyren)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1512110318665470164",
-              "messageCount": 1381
+              "last_synced_id": "1512498553816350831",
+              "messageCount": 1398,
+              "tags": [],
+              "tagStats": {
+                "action": {
+                  "count": 22,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 18,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 2,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              }
             },
             {
               "threadID": "1380891748171255818",
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1511923907635183777",
-              "messageCount": 2603
+              "last_synced_id": "1512593755008663764",
+              "messageCount": 2613,
+              "tags": [],
+              "tagStats": {
+                "action": {
+                  "count": 21,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 7,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 2,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              }
             },
             {
               "threadID": "1380890355171594292",
@@ -638,7 +850,25 @@
               "isActive": true,
               "syncStatus": "active",
               "last_synced_id": "1511353704622850179",
-              "messageCount": 214
+              "messageCount": 214,
+              "tags": [],
+              "tagStats": {
+                "action": {
+                  "count": 4,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 22,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              }
             },
             {
               "threadID": "1448365503549804645",
@@ -646,9 +876,45 @@
               "isActive": true,
               "syncStatus": "stable",
               "last_synced_id": "1464411281711960218",
-              "messageCount": 686
+              "messageCount": 686,
+              "tags": [],
+              "tagStats": {
+                "action": {
+                  "count": 14,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 19,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 10,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              }
             }
-          ]
+          ],
+          "tags": [],
+          "tagStats": {
+            "action": {
+              "count": 148,
+              "active": false,
+              "emoji": "⚔️"
+            },
+            "lore": {
+              "count": 117,
+              "active": false,
+              "emoji": "📜"
+            },
+            "pinned": {
+              "count": 45,
+              "active": false,
+              "emoji": "📌"
+            }
+          }
         },
         {
           "title": "Fo Gm",
@@ -662,7 +928,6 @@
           "last_synced_id": "1511526495183442132",
           "messageCount": 1057,
           "lastMessageTimestamp": "2026-06-03T00:26:39.256000+00:00",
-          "isNSFW": false,
           "source_exists": true,
           "threads": [
             {
@@ -671,7 +936,8 @@
               "isActive": false,
               "syncStatus": "active",
               "last_synced_id": "",
-              "messageCount": 0
+              "messageCount": 0,
+              "tags": []
             },
             {
               "threadID": "1484567896607686757",
@@ -679,9 +945,11 @@
               "isActive": true,
               "syncStatus": "stable",
               "last_synced_id": "1484570098575610036",
-              "messageCount": 7
+              "messageCount": 7,
+              "tags": []
             }
-          ]
+          ],
+          "tags": []
         },
         {
           "title": "Fo Resources",
@@ -695,7 +963,6 @@
           "last_synced_id": "1391448044368560159",
           "messageCount": 11,
           "lastMessageTimestamp": "2025-07-08T18:43:29.220000+00:00",
-          "isNSFW": false,
           "source_exists": true,
           "threads": [
             {
@@ -704,9 +971,11 @@
               "isActive": true,
               "syncStatus": "stable",
               "last_synced_id": "1392214526530945194",
-              "messageCount": 9
+              "messageCount": 9,
+              "tags": []
             }
-          ]
+          ],
+          "tags": []
         },
         {
           "title": "Session 0",
@@ -720,9 +989,9 @@
           "last_synced_id": "1464803213063487559",
           "messageCount": 1,
           "lastMessageTimestamp": "2026-01-25T02:05:00.722000+00:00",
-          "isNSFW": false,
           "source_exists": true,
-          "threads": []
+          "threads": [],
+          "tags": []
         }
       ]
     },
@@ -752,7 +1021,6 @@
           "channelID": "1200635186119979019",
           "fileName": "bluebook-wes_1.json",
           "isActive": true,
-          "isNSFW": false,
           "preview": "",
           "order": 0,
           "messageCount": 643,
@@ -760,14 +1028,16 @@
           "threads": [],
           "last_synced_id": "1254511957017497600",
           "syncStatus": "active",
-          "parentID": "1183856729432260699"
+          "parentID": "1183856729432260699",
+          "tags": [
+            "nsfw"
+          ]
         },
         {
           "title": "Chapter 1: Descending Into Darkness",
           "channelID": "1347407802980634726",
           "fileName": "ch1_descending-into-darkness.json",
           "isActive": true,
-          "isNSFW": false,
           "preview": "",
           "order": 1,
           "messageCount": 372,
@@ -775,14 +1045,16 @@
           "threads": [],
           "last_synced_id": "1357103544968151131",
           "syncStatus": "stable",
-          "parentID": "1347381577721581650"
+          "parentID": "1347381577721581650",
+          "tags": [
+            "nsfw"
+          ]
         },
         {
           "title": "Chapter 2: Amidst the Ashes",
           "channelID": "1357106240332759070",
           "fileName": "ch2_amidst-the-ashes.json",
           "isActive": true,
-          "isNSFW": false,
           "preview": "",
           "order": 2,
           "messageCount": 466,
@@ -790,14 +1062,16 @@
           "threads": [],
           "last_synced_id": "1375296708405231649",
           "syncStatus": "stable",
-          "parentID": "1347381577721581650"
+          "parentID": "1347381577721581650",
+          "tags": [
+            "nsfw"
+          ]
         },
         {
           "title": "Chapter 3: The Karthon Gamble",
           "channelID": "1375296954300366910",
           "fileName": "wv_ch3_the-karthon-gamble.json",
           "isActive": true,
-          "isNSFW": false,
           "preview": "",
           "order": 3,
           "messageCount": 983,
@@ -807,22 +1081,22 @@
               "threadID": "1377978443060482080",
               "displayName": "Gamma Data Packet",
               "isActive": true,
-              "isNSFW": false,
               "messageCount": 6,
               "last_synced_id": "1377983880694464512",
-              "syncStatus": "stable"
+              "syncStatus": "stable",
+              "tags": []
             }
           ],
           "last_synced_id": "1464071194146766890",
           "syncStatus": "active",
-          "parentID": "1347381577721581650"
+          "parentID": "1347381577721581650",
+          "tags": []
         },
         {
           "title": "Chapter 4: Stillness Between Storms",
           "channelID": "1464072269071651051",
           "fileName": "wv_ch4_stillness-between-storms.json",
           "isActive": true,
-          "isNSFW": false,
           "preview": "",
           "order": 4,
           "messageCount": 246,
@@ -833,14 +1107,19 @@
               "threadID": "1464634504286175232",
               "displayName": "Cabin 🔞",
               "isActive": true,
-              "isNSFW": true,
               "messageCount": 23,
               "last_synced_id": "1466792716502306857",
-              "syncStatus": "active"
+              "syncStatus": "active",
+              "tags": [
+                "nsfw"
+              ]
             }
           ],
           "syncStatus": "active",
-          "parentID": "1347381577721581650"
+          "parentID": "1347381577721581650",
+          "tags": [
+            "nsfw"
+          ]
         },
         {
           "title": "Wv Ooc",
@@ -854,7 +1133,6 @@
           "last_synced_id": "1511466126654181618",
           "messageCount": 4032,
           "lastMessageTimestamp": "2026-06-02T20:26:46.277000+00:00",
-          "isNSFW": false,
           "source_exists": true,
           "threads": [
             {
@@ -863,7 +1141,8 @@
               "isActive": true,
               "syncStatus": "stable",
               "last_synced_id": "1455046522201833647",
-              "messageCount": 137
+              "messageCount": 137,
+              "tags": []
             },
             {
               "threadID": "1347386051915812979",
@@ -871,9 +1150,11 @@
               "isActive": true,
               "syncStatus": "stable",
               "last_synced_id": "1388708807701561425",
-              "messageCount": 68
+              "messageCount": 68,
+              "tags": []
             }
-          ]
+          ],
+          "tags": []
         },
         {
           "title": "Wv Gm",
@@ -887,9 +1168,9 @@
           "last_synced_id": "",
           "messageCount": 0,
           "lastMessageTimestamp": "",
-          "isNSFW": false,
           "source_exists": true,
-          "threads": []
+          "threads": [],
+          "tags": []
         },
         {
           "title": "Wv Resources",
@@ -903,7 +1184,6 @@
           "last_synced_id": "1449073767392350400",
           "messageCount": 31,
           "lastMessageTimestamp": "2025-12-12T16:21:48.635000+00:00",
-          "isNSFW": false,
           "source_exists": true,
           "threads": [
             {
@@ -912,9 +1192,11 @@
               "isActive": true,
               "syncStatus": "stable",
               "last_synced_id": "1380730988824625274",
-              "messageCount": 29
+              "messageCount": 29,
+              "tags": []
             }
-          ]
+          ],
+          "tags": []
         }
       ]
     },
@@ -950,8 +1232,10 @@
           "messageCount": 458,
           "lastMessageTimestamp": "2024-10-08T15:51:46.641000+00:00",
           "threads": [],
-          "isNSFW": false,
-          "order": 1
+          "order": 1,
+          "tags": [
+            "nsfw"
+          ]
         },
         {
           "title": "Chapter 2: Flight Of The Chimaera",
@@ -964,8 +1248,10 @@
           "messageCount": 574,
           "lastMessageTimestamp": "2024-11-09T13:51:07.539000+00:00",
           "threads": [],
-          "isNSFW": false,
-          "order": 2
+          "order": 2,
+          "tags": [
+            "nsfw"
+          ]
         },
         {
           "title": "Chapter 3: A Galaxy Cursed",
@@ -978,8 +1264,10 @@
           "messageCount": 1049,
           "lastMessageTimestamp": "2024-11-14T02:17:17.275000+00:00",
           "threads": [],
-          "isNSFW": false,
-          "order": 3
+          "order": 3,
+          "tags": [
+            "nsfw"
+          ]
         },
         {
           "title": "Chapter 4: Dantooine Legacy",
@@ -992,8 +1280,10 @@
           "messageCount": 1322,
           "lastMessageTimestamp": "2024-12-16T18:48:07.998000+00:00",
           "threads": [],
-          "isNSFW": false,
-          "order": 4
+          "order": 4,
+          "tags": [
+            "nsfw"
+          ]
         },
         {
           "title": "Chapter 5: Mount Tantiss",
@@ -1006,8 +1296,10 @@
           "messageCount": 1771,
           "lastMessageTimestamp": "2025-02-05T20:35:16.888000+00:00",
           "threads": [],
-          "isNSFW": false,
-          "order": 5
+          "order": 5,
+          "tags": [
+            "nsfw"
+          ]
         },
         {
           "title": "Chapter 6: Securing Tantiss",
@@ -1020,8 +1312,10 @@
           "messageCount": 1224,
           "lastMessageTimestamp": "2025-03-08T14:44:08.500000+00:00",
           "threads": [],
-          "isNSFW": false,
-          "order": 6
+          "order": 6,
+          "tags": [
+            "nsfw"
+          ]
         },
         {
           "title": "Chapter 7: Unexpected Inquest",
@@ -1034,8 +1328,10 @@
           "messageCount": 316,
           "lastMessageTimestamp": "2025-03-19T18:00:19.689000+00:00",
           "threads": [],
-          "isNSFW": false,
-          "order": 7
+          "order": 7,
+          "tags": [
+            "nsfw"
+          ]
         },
         {
           "title": "Wop General",
@@ -1049,7 +1345,6 @@
           "last_synced_id": "1383120604286292110",
           "messageCount": 11215,
           "lastMessageTimestamp": "2025-06-13T16:27:29.200000+00:00",
-          "isNSFW": true,
           "source_exists": true,
           "threads": [
             {
@@ -1058,8 +1353,12 @@
               "isActive": true,
               "syncStatus": "stable",
               "last_synced_id": "1381772526144716830",
-              "messageCount": 606
+              "messageCount": 606,
+              "tags": []
             }
+          ],
+          "tags": [
+            "nsfw"
           ]
         },
         {
@@ -1074,9 +1373,11 @@
           "last_synced_id": "",
           "messageCount": 0,
           "lastMessageTimestamp": "",
-          "isNSFW": true,
           "source_exists": true,
-          "threads": []
+          "threads": [],
+          "tags": [
+            "nsfw"
+          ]
         }
       ]
     }
