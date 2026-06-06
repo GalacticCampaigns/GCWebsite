@@ -122,14 +122,14 @@ def run_orchestrator(nav, token, dry_run=False, force_all=False, debug=False):
                                         # --- INCREMENTAL DETECTION ---
                                         # 1. Capture the count from memory BEFORE applying forensics
                                         old_count = log.get("messageCount", 0)
-                                        old_tag_stats = log.get("tagStats", {})
+                                        old_tag_stats = log.get("tagStats") or {}
                                         new_total = forensics["grand_total"]
                                         added_delta = new_total - old_count
                                         
                                         # Calculate added deltas for all tags
                                         added_tags = {}
                                         for tag_name in FORGE_CONFIG.content_tags:
-                                            old_tag_count = old_tag_stats.get(tag_name, {}).get("count", 0)
+                                            old_tag_count = (old_tag_stats.get(tag_name) or {}).get("count") or 0
                                             new_tag_count = forensics["tag_stats"][tag_name]["grand_count"]
                                             added_tags[tag_name] = max(0, new_tag_count - old_tag_count)
  

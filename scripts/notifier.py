@@ -39,7 +39,7 @@ def send_update_email(report_data, is_dry_run=False):
         camp_tags_deltas = {tag_name: 0 for tag_name in tags_config}
         
         for u in updates:
-            u_tags = u.get('nsfw_count')
+            u_tags = u.get('nsfw_count') or 0
             if isinstance(u_tags, dict):
                 for tag_name, val in u_tags.items():
                     camp_tags_deltas[tag_name] = camp_tags_deltas.get(tag_name, 0) + val
@@ -67,7 +67,7 @@ def send_update_email(report_data, is_dry_run=False):
             action = item['action']
             title = item['title']
             count = item.get('count', 0)      # Grand Total (Cumulative)
-            u_tags = item.get('nsfw_count', 0)  # Tag deltas (new)
+            u_tags = item.get('nsfw_count', 0) or 0  # Tag deltas (new)
             added = item.get('added', 0)      # Delta (Run-specific)
             
             # Resolve tag deltas
@@ -83,7 +83,7 @@ def send_update_email(report_data, is_dry_run=False):
                 # Format Chapter Narrative details
                 body += f"  - [{action}] {title}\n"
                 
-                total_label = "Total Posts" if "ooc" in title.lower() else "Total Narrative"
+                total_label = "Total Posts" if title and "ooc" in title.lower() else "Total Narrative"
                 if added > 0:
                     tag_parts = []
                     for tag_name, val in tag_deltas.items():

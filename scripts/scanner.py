@@ -88,7 +88,10 @@ def get_new_discoveries(camp_data, bot_token, nav):
         # Migrate legacy isNSFW/nsfwCount fields to dynamic tags list
         legacy_nsfw = log.pop("isNSFW", None)
         log.pop("nsfwCount", None) # Remove legacy count
-        tags_list = log.setdefault("tags", [])
+        tags_list = log.get("tags")
+        if not isinstance(tags_list, list):
+            tags_list = []
+            log["tags"] = tags_list
         if legacy_nsfw or live_info.get("nsfw", False):
             if "nsfw" not in tags_list:
                 tags_list.append("nsfw")
@@ -97,7 +100,10 @@ def get_new_discoveries(camp_data, bot_token, nav):
         for t in log.get("threads", []):
             t_legacy = t.pop("isNSFW", None)
             t.pop("nsfwCount", None)
-            t_tags = t.setdefault("tags", [])
+            t_tags = t.get("tags")
+            if not isinstance(t_tags, list):
+                t_tags = []
+                t["tags"] = t_tags
             if t_legacy and "nsfw" not in t_tags:
                 t_tags.append("nsfw")
 

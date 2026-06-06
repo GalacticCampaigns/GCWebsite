@@ -39,6 +39,11 @@ class Navigator:
         """
         parent_id = str(log_entry.get("channelID"))
         tags_config = FORGE_CONFIG.content_tags
+        # Pre-lowercase keywords for efficiency
+        tags_keywords = {
+            tag_name: [w.lower() for w in tag_info.get("keywords", [])]
+            for tag_name, tag_info in tags_config.items()
+        }
         
         # Initialize stats tracking for all known sub-threads
         t_stats = {}
@@ -85,20 +90,20 @@ class Navigator:
                 
                 # Dynamic Tags Detection
                 for tag_name, tag_info in tags_config.items():
-                    keywords = tag_info.get("keywords", [])
+                    keywords = tags_keywords[tag_name]
                     is_msg_tagged = False
                     
                     # Check Reactions
-                    for r in msg.get("reactions", []):
-                        ename = r.get("emoji", {}).get("name", "").lower()
-                        if any(word.lower() in ename for word in keywords):
+                    for r in (msg.get("reactions") or []):
+                        ename = (r.get("emoji") or {}).get("name", "").lower()
+                        if any(word in ename for word in keywords):
                             is_msg_tagged = True
                             break
                     
                     # Check Content
                     if not is_msg_tagged:
                         content = (msg.get("content") or "").lower()
-                        if any(word.lower() in content for word in keywords):
+                        if any(word in content for word in keywords):
                             is_msg_tagged = True
                     
                     if is_msg_tagged:
@@ -133,9 +138,16 @@ class Navigator:
         """Registry Smash: Finalizes the metadata state for deployment."""
         tags_config = FORGE_CONFIG.content_tags
         
-        # Initialize tags list in log entry
-        log_tags = log_entry.setdefault("tags", [])
-        log_tag_stats = log_entry.setdefault("tagStats", {})
+        # Initialize tags list in log entry safely
+        log_tags = log_entry.get("tags")
+        if not isinstance(log_tags, list):
+            log_tags = []
+            log_entry["tags"] = log_tags
+            
+        log_tag_stats = log_entry.get("tagStats")
+        if not isinstance(log_tag_stats, dict):
+            log_tag_stats = {}
+            log_entry["tagStats"] = log_tag_stats
         
         for tag_name, tag_info in tags_config.items():
             threshold = tag_info.get("threshold", 0.90)
@@ -180,8 +192,15 @@ class Navigator:
             if t_id in forensics["thread_stats"]:
                 stats = forensics["thread_stats"][t_id]
                 t["messageCount"] = stats["total"]
-                t_tags = t.setdefault("tags", [])
-                t_tag_stats = t.setdefault("tagStats", {})
+                t_tags = t.get("tags")
+                if not isinstance(t_tags, list):
+                    t_tags = []
+                    t["tags"] = t_tags
+                    
+                t_tag_stats = t.get("tagStats")
+                if not isinstance(t_tag_stats, dict):
+                    t_tag_stats = {}
+                    t["tagStats"] = t_tag_stats
                 
                 for tag_name, tag_info in tags_config.items():
                     threshold = tag_info.get("threshold", 0.90)
@@ -202,7 +221,7 @@ class Navigator:
                             t_tags.append(tag_name)
                     else:
                         if tag_name in t_tags:
-                            t_tags.remove(t_tags)
+                            t_tags.remove(tag_name)
                     
                     # Legacy thread level updates
                     if tag_name == "nsfw":
