@@ -13,18 +13,24 @@
     "nsfw_keywords": ["nsfw", "🔞", "underage", "18+"],
     "narrative_types": [0, 19, 21],
     "tags": {
+      "nsfw": {
+        "keywords": ["nsfw", "🔞", "18+"],
+        "emoji": "🔞",
+        "threshold": 0.90,
+        "search_scope": ["title", "reactions"]
+      },
       "action": {
-        "keywords": ["action", "battle", "fight", "combat"],
+        "keywords": [],
         "emoji": "⚔️",
         "threshold": 0.90
       },
       "lore": {
-        "keywords": ["lore", "history", "background", "worldbuilding"],
+        "keywords": [],
         "emoji": "📜",
         "threshold": 0.90
       },
       "pinned": {
-        "keywords": ["pinned", "important", "reference"],
+        "keywords": [],
         "emoji": "📌",
         "threshold": 0.90
       }   

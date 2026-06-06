@@ -92,7 +92,15 @@ class Navigator:
                 for tag_name, tag_info in tags_config.items():
                     keywords = tags_keywords[tag_name]
                     emoji_val = tag_info.get("emoji")
-                    search_scope = tag_info.get("search_scope", "both" if keywords else "reactions").lower()
+                    
+                    raw_scope = tag_info.get("search_scope")
+                    if isinstance(raw_scope, list):
+                        search_scopes = [s.lower() for s in raw_scope]
+                    elif isinstance(raw_scope, str):
+                        search_scopes = [raw_scope.lower()]
+                    else:
+                        search_scopes = ["reactions", "body", "title"] if keywords else ["reactions"]
+                        
                     is_msg_tagged = False
                     
                     # 1. Match by Emoji (if configured)
@@ -109,27 +117,26 @@ class Navigator:
                     if not is_msg_tagged and keywords:
                         # Determine what to search
                         search_texts = []
-                        if search_scope == "reactions":
+                        if "reactions" in search_scopes:
                             # Search reaction names/codes
                             for r in (msg.get("reactions") or []):
                                 emoji_obj = r.get("emoji") or {}
                                 ename = emoji_obj.get("name", "").lower()
                                 ecode = emoji_obj.get("code", "").lower()
                                 search_texts.extend([ename, ecode])
-                        else:
-                            if search_scope in ("body", "both"):
-                                search_texts.append((msg.get("content") or "").lower())
-                            if search_scope in ("title", "both"):
-                                # Find the title for the current message's channel/thread
-                                chan_title = ""
-                                if msg_chan_id == parent_id:
-                                    chan_title = log_entry.get("title") or ""
-                                else:
-                                    for t in log_entry.get("threads", []):
-                                        if str(t.get("threadID")) == msg_chan_id:
-                                            chan_title = t.get("title") or ""
-                                            break
-                                search_texts.append(chan_title.lower())
+                        if "body" in search_scopes:
+                            search_texts.append((msg.get("content") or "").lower())
+                        if "title" in search_scopes:
+                            # Find the title for the current message's channel/thread
+                            chan_title = ""
+                            if msg_chan_id == parent_id:
+                                chan_title = log_entry.get("title") or ""
+                            else:
+                                for t in log_entry.get("threads", []):
+                                    if str(t.get("threadID")) == msg_chan_id:
+                                        chan_title = t.get("title") or ""
+                                        break
+                            search_texts.append(chan_title.lower())
                                 
                         # Run keyword matching
                         for text in search_texts:
