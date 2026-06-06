@@ -85,6 +85,7 @@ def get_new_discoveries(camp_data, bot_token, nav):
         log.setdefault("syncStatus", "active")
         log.setdefault("last_synced_id", "")
         log.setdefault("isNSFW", live_info.get("nsfw", False))
+        log.setdefault("nsfwCount", 0)
 
     # --- 2. CHAPTER DISCOVERY (Standard & Forums) ---
     existing_logs = {str(log["channelID"]): log for log in camp_data.get("logs", [])}
@@ -158,7 +159,8 @@ def get_new_discoveries(camp_data, bot_token, nav):
                 "isActive": not is_ooc,
                 "syncStatus": "stable" if is_archived else "active",
                 "last_synced_id": "",
-                "messageCount": 0
+                "messageCount": 0,
+                "nsfwCount": 0
             }
             parent_log.setdefault("threads", []).append(new_thread)
             if not is_ooc:
@@ -190,6 +192,7 @@ def build_registry_entry(discord_obj, parent_id=None):
         "syncStatus": "active",
         "last_synced_id": "",
         "messageCount": 0,
+        "nsfwCount": 0,
         "lastMessageTimestamp": "",
         "isNSFW": discord_obj.get("nsfw", False),
         "source_exists": True, # Forge tracking

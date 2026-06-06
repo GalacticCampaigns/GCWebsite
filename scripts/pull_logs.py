@@ -121,8 +121,11 @@ def run_orchestrator(nav, token, dry_run=False, force_all=False, debug=False):
                                         # --- INCREMENTAL DETECTION ---
                                         # 1. Capture the count from memory BEFORE applying forensics
                                         old_count = log.get("messageCount", 0)
+                                        old_nsfw = log.get("nsfwCount", 0)
                                         new_total = forensics["grand_total"]
+                                        new_nsfw = forensics["grand_nsfw"]
                                         added_delta = new_total - old_count
+                                        added_nsfw = max(0, new_nsfw - old_nsfw)
 
                                         # 2. Update Registry memory with new forensics
                                         nav.apply_forensics_to_registry(
@@ -135,7 +138,7 @@ def run_orchestrator(nav, token, dry_run=False, force_all=False, debug=False):
                                             nav.update_report(
                                                 camp_name, "Refined", log.get("title"), 
                                                 count=new_total, 
-                                                nsfw_count=forensics["grand_nsfw"],
+                                                nsfw_count=added_nsfw,
                                                 added=added_delta
                                             )
                                     except json.JSONDecodeError:

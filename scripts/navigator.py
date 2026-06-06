@@ -113,6 +113,7 @@ class Navigator:
                 log_entry["isNSFW"] = True
             
         log_entry["messageCount"] = forensics["grand_total"]
+        log_entry["nsfwCount"] = forensics["grand_nsfw"]
         if forensics["narrative_max_ts"]:
             log_entry["lastMessageTimestamp"] = forensics["narrative_max_ts"]
 
@@ -127,6 +128,7 @@ class Navigator:
             if t_id in forensics["thread_stats"]:
                 stats = forensics["thread_stats"][t_id]
                 t["messageCount"] = stats["total"]
+                t["nsfwCount"] = stats["nsfw"]
                 
                 # Independent Thread NSFW Threshold
                 if not t.get("isNSFW", False):

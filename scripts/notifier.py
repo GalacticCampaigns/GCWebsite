@@ -35,8 +35,9 @@ def send_update_email(report_data, is_dry_run=False):
         camp_added = sum(u.get('added', 0) for u in updates)
         camp_nsfw = sum(u.get('nsfw_count', 0) for u in updates)
         
+        nsfw_part = f" (🔞 {camp_nsfw} NSFW)" if camp_nsfw > 0 else ""
         body += f"📂 CAMPAIGN: {camp_name}\n"
-        body += f"📊 {stat_label} STATS: {camp_nsfw} Total NSFW / {camp_added} {stat_label} Posts\n"
+        body += f"📊 {stat_label} STATS: {camp_added} Posts{nsfw_part}\n"
         body += "----------------------------------------\n"
         
         # Sort: Discoveries/Errors first
@@ -46,22 +47,23 @@ def send_update_email(report_data, is_dry_run=False):
             action = item['action']
             title = item['title']
             count = item.get('count', 0)      # Grand Total (Cumulative)
-            nsfw = item.get('nsfw_count', 0)  # NSFW Total
+            nsfw = item.get('nsfw_count', 0)  # NSFW Delta (new)
             added = item.get('added', 0)      # Delta (Run-specific)
             
             if any(key in action for key in ["DISCOVERY", "MISSING", "LOCK", "WARNING"]):
                 body += f"  {action} {title}\n"
             else:
                 # Format Chapter Narrative details
-                nsfw_str = f" (🔞 {nsfw} NSFW)" if nsfw > 0 else ""
-                body += f"  - [{action}] {title}{nsfw_str}\n"
+                body += f"  - [{action}] {title}\n"
                 
+                total_label = "Total Posts" if "ooc" in title.lower() else "Total Narrative"
                 if added > 0:
-                    body += f"    ✨ {stat_label}: {added} posts\n"
-                    body += f"    📚 Total Narrative: {count}\n"
+                    nsfw_str = f" (🔞 {nsfw} NSFW)" if nsfw > 0 else ""
+                    body += f"    ✨ {stat_label}: {added} posts{nsfw_str}\n"
+                    body += f"    📚 {total_label}: {count}\n"
                 elif count > 0:
                     # Logic for forced audits with no new posts
-                    body += f"    📚 Total Narrative: {count}\n"
+                    body += f"    📚 {total_label}: {count}\n"
         
         body += "\n"
 
