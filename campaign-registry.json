@@ -1734,9 +1734,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1513297489346957555",
-          "messageCount": 13006,
-          "lastMessageTimestamp": "2026-06-08T02:00:35.376000+00:00",
+          "last_synced_id": "1513665402746441848",
+          "messageCount": 13023,
+          "lastMessageTimestamp": "2026-06-08T22:05:54.558000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2449,14 +2449,14 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 23,
-              "isNSFW": true
+              }
             }
           ],
           "syncStatus": "active",
           "parentID": "1347381577721581650",
-          "tags": [],
+          "tags": [
+            "nsfw"
+          ],
           "tagStats": {
             "nsfw": {
               "count": 23,
@@ -2478,8 +2478,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 23
+          }
         },
         {
           "title": "Wv Ooc",
