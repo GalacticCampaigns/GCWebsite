@@ -1734,9 +1734,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1513665402746441848",
-          "messageCount": 13023,
-          "lastMessageTimestamp": "2026-06-08T22:05:54.558000+00:00",
+          "last_synced_id": "1514042372223139891",
+          "messageCount": 13042,
+          "lastMessageTimestamp": "2026-06-09T23:03:51.085000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1872,8 +1872,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1513362074112102601",
-              "messageCount": 2631,
+              "last_synced_id": "1513954624019890367",
+              "messageCount": 2640,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1904,8 +1904,8 @@
               "displayName": "Sage Playground",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1511353704622850179",
-              "messageCount": 214,
+              "last_synced_id": "1513890420273319956",
+              "messageCount": 215,
               "tags": [],
               "tagStats": {
                 "action": {
