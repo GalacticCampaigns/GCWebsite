@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1514219887730491413",
-          "messageCount": 239,
+          "last_synced_id": "1515537163226321016",
+          "messageCount": 256,
           "order": 5,
-          "lastMessageTimestamp": "2026-06-10T10:49:14.080000+00:00",
+          "lastMessageTimestamp": "2026-06-14T05:16:27.658000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1115,7 +1115,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1484919279555186802",
@@ -1146,7 +1147,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507843585813385330",
@@ -1177,7 +1179,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507838319885549710",
@@ -1208,15 +1211,16 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1510471160867848273",
               "displayName": "The Corrigendum",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1512481343345397892",
-              "messageCount": 29,
+              "last_synced_id": "1515534583498805320",
+              "messageCount": 31,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1239,7 +1243,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1511523223408345199",
@@ -1270,7 +1275,40 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
+            },
+            {
+              "threadID": "1515498322100748310",
+              "displayName": "Venture • En Route",
+              "isActive": true,
+              "syncStatus": "active",
+              "last_synced_id": "1515585693949235270",
+              "messageCount": 3,
+              "tags": [],
+              "tagStats": {
+                "nsfw": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "🔞"
+                },
+                "action": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "📌"
+                }
+              },
+              "nsfwCount": 0
             }
           ],
           "syncStatus": "active",
@@ -1297,7 +1335,8 @@
               "active": false,
               "emoji": "🔞"
             }
-          }
+          },
+          "nsfwCount": 0
         },
         {
           "title": "☆READ FIRST☆",
@@ -1734,9 +1773,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1515044618977411103",
-          "messageCount": 13082,
-          "lastMessageTimestamp": "2026-06-12T17:26:25.332000+00:00",
+          "last_synced_id": "1515527775380045854",
+          "messageCount": 13112,
+          "lastMessageTimestamp": "2026-06-14T01:26:18.795000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1808,8 +1847,8 @@
               "displayName": "Emil Dm (Iyola Kett)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1512803266499444798",
-              "messageCount": 943,
+              "last_synced_id": "1515339981168578591",
+              "messageCount": 944,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1872,8 +1911,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1514454798345175080",
-              "messageCount": 2647,
+              "last_synced_id": "1515527230795550843",
+              "messageCount": 2671,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2414,9 +2453,9 @@
           "isActive": true,
           "preview": "",
           "order": 4,
-          "messageCount": 249,
-          "lastMessageTimestamp": "2026-06-07T13:50:42.119000+00:00",
-          "last_synced_id": "1513178391879225454",
+          "messageCount": 250,
+          "lastMessageTimestamp": "2026-06-14T02:31:28.886000+00:00",
+          "last_synced_id": "1515544175490371624",
           "threads": [
             {
               "threadID": "1464634504286175232",
@@ -2449,14 +2488,14 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 23,
+              "isNSFW": true
             }
           ],
           "syncStatus": "active",
           "parentID": "1347381577721581650",
-          "tags": [
-            "nsfw"
-          ],
+          "tags": [],
           "tagStats": {
             "nsfw": {
               "count": 23,
@@ -2478,7 +2517,8 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "nsfwCount": 23
         },
         {
           "title": "Wv Ooc",
