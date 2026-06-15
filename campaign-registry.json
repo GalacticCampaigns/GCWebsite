@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1515537163226321016",
-          "messageCount": 256,
+          "last_synced_id": "1515836610376372434",
+          "messageCount": 258,
           "order": 5,
-          "lastMessageTimestamp": "2026-06-14T05:16:27.658000+00:00",
+          "lastMessageTimestamp": "2026-06-14T21:53:30.796000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1283,8 +1283,8 @@
               "displayName": "Venture • En Route",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1515585693949235270",
-              "messageCount": 3,
+              "last_synced_id": "1515836610376372434",
+              "messageCount": 5,
               "tags": [],
               "tagStats": {
                 "nsfw": {
@@ -1773,9 +1773,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1515527775380045854",
-          "messageCount": 13112,
-          "lastMessageTimestamp": "2026-06-14T01:26:18.795000+00:00",
+          "last_synced_id": "1516017133971177502",
+          "messageCount": 13142,
+          "lastMessageTimestamp": "2026-06-15T09:50:50.975000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1911,8 +1911,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1515527230795550843",
-              "messageCount": 2671,
+              "last_synced_id": "1515710971098697848",
+              "messageCount": 2683,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2488,14 +2488,14 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 23,
-              "isNSFW": true
+              }
             }
           ],
           "syncStatus": "active",
           "parentID": "1347381577721581650",
-          "tags": [],
+          "tags": [
+            "nsfw"
+          ],
           "tagStats": {
             "nsfw": {
               "count": 23,
@@ -2517,8 +2517,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 23
+          }
         },
         {
           "title": "Wv Ooc",
