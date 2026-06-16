@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1515836610376372434",
-          "messageCount": 258,
+          "last_synced_id": "1516204442951614595",
+          "messageCount": 261,
           "order": 5,
-          "lastMessageTimestamp": "2026-06-14T21:53:30.796000+00:00",
+          "lastMessageTimestamp": "2026-06-16T01:00:17.933000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1219,8 +1219,8 @@
               "displayName": "The Corrigendum",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1515534583498805320",
-              "messageCount": 31,
+              "last_synced_id": "1516204442951614595",
+              "messageCount": 32,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1283,8 +1283,8 @@
               "displayName": "Venture • En Route",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1515836610376372434",
-              "messageCount": 5,
+              "last_synced_id": "1516246004381388942",
+              "messageCount": 7,
               "tags": [],
               "tagStats": {
                 "nsfw": {
@@ -1773,9 +1773,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1516017133971177502",
-          "messageCount": 13142,
-          "lastMessageTimestamp": "2026-06-15T09:50:50.975000+00:00",
+          "last_synced_id": "1516213820933148722",
+          "messageCount": 13157,
+          "lastMessageTimestamp": "2026-06-15T22:52:24.801000+00:00",
           "source_exists": true,
           "threads": [
             {
