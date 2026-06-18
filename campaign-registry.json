@@ -1765,9 +1765,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1516635186677284935",
-          "messageCount": 13167,
-          "lastMessageTimestamp": "2026-06-17T02:46:46.223000+00:00",
+          "last_synced_id": "1517077611602509824",
+          "messageCount": 13174,
+          "lastMessageTimestamp": "2026-06-18T08:04:48.545000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1871,8 +1871,8 @@
               "displayName": "Death Dm (Varda Nisyren)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1514977595945648128",
-              "messageCount": 1399,
+              "last_synced_id": "1516851148902891690",
+              "messageCount": 1404,
               "tags": [],
               "tagStats": {
                 "action": {
