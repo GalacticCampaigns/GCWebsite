@@ -1115,8 +1115,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1484919279555186802",
@@ -1147,8 +1146,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1507843585813385330",
@@ -1179,8 +1177,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1507838319885549710",
@@ -1211,8 +1208,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1510471160867848273",
@@ -1243,8 +1239,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1511523223408345199",
@@ -1275,8 +1270,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1515498322100748310",
@@ -1307,8 +1301,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             }
           ],
           "syncStatus": "active",
@@ -1335,8 +1328,7 @@
               "active": false,
               "emoji": "🔞"
             }
-          },
-          "nsfwCount": 0
+          }
         },
         {
           "title": "☆READ FIRST☆",
@@ -1773,9 +1765,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1517365610944794696",
-          "messageCount": 13184,
-          "lastMessageTimestamp": "2026-06-19T03:09:12.939000+00:00",
+          "last_synced_id": "1517627543258136667",
+          "messageCount": 13192,
+          "lastMessageTimestamp": "2026-06-20T00:22:41.495000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1783,8 +1775,8 @@
               "displayName": "Syoca Dm (Ciara)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1514977585539579936",
-              "messageCount": 121,
+              "last_synced_id": "1517514301462544507",
+              "messageCount": 122,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1815,8 +1807,8 @@
               "displayName": "Devily Dms (Lis Garah)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1514977589817770175",
-              "messageCount": 546,
+              "last_synced_id": "1517514307217133789",
+              "messageCount": 547,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1911,8 +1903,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1515710971098697848",
-              "messageCount": 2683,
+              "last_synced_id": "1517686091656986624",
+              "messageCount": 2685,
               "tags": [],
               "tagStats": {
                 "action": {
