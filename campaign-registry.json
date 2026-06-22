@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1518159235114860677",
-          "messageCount": 272,
+          "last_synced_id": "1518431444354076864",
+          "messageCount": 273,
           "order": 5,
-          "lastMessageTimestamp": "2026-06-21T07:42:47.686000+00:00",
+          "lastMessageTimestamp": "2026-06-22T01:44:27.426000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1773,9 +1773,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1518055984956833922",
-          "messageCount": 13269,
-          "lastMessageTimestamp": "2026-06-21T01:34:20.889000+00:00",
+          "last_synced_id": "1518382733892517919",
+          "messageCount": 13282,
+          "lastMessageTimestamp": "2026-06-21T22:30:53.947000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2071,8 +2071,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1484567896607686757",
@@ -2103,8 +2102,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 1
+              }
             }
           ],
           "tags": [],
@@ -2129,8 +2127,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 1
+          }
         },
         {
           "title": "Fo Resources",
@@ -2491,14 +2488,14 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 23,
-              "isNSFW": true
+              }
             }
           ],
           "syncStatus": "active",
           "parentID": "1347381577721581650",
-          "tags": [],
+          "tags": [
+            "nsfw"
+          ],
           "tagStats": {
             "nsfw": {
               "count": 23,
@@ -2520,8 +2517,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 23
+          }
         },
         {
           "title": "Wv Ooc",
@@ -2566,8 +2562,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1347386051915812979",
@@ -2598,8 +2593,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             }
           ],
           "tags": [],
@@ -2624,8 +2618,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 0
+          }
         },
         {
           "title": "Wv Gm",
