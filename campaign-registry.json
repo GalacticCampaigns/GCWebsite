@@ -1115,8 +1115,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1484919279555186802",
@@ -1147,8 +1146,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1507843585813385330",
@@ -1179,8 +1177,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1507838319885549710",
@@ -1211,8 +1208,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1510471160867848273",
@@ -1243,8 +1239,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1511523223408345199",
@@ -1275,8 +1270,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1515498322100748310",
@@ -1307,8 +1301,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             }
           ],
           "syncStatus": "active",
@@ -1335,8 +1328,7 @@
               "active": false,
               "emoji": "🔞"
             }
-          },
-          "nsfwCount": 0
+          }
         },
         {
           "title": "☆READ FIRST☆",
@@ -1773,9 +1765,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1520946943709151354",
-          "messageCount": 13413,
-          "lastMessageTimestamp": "2026-06-29T05:42:29.727000+00:00",
+          "last_synced_id": "1521146428896972891",
+          "messageCount": 13428,
+          "lastMessageTimestamp": "2026-06-29T23:38:39.519000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1879,8 +1871,8 @@
               "displayName": "Death Dm (Varda Nisyren)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1521028063725355018",
-              "messageCount": 1455,
+              "last_synced_id": "1521298889062486136",
+              "messageCount": 1456,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2488,14 +2480,14 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 23,
-              "isNSFW": true
+              }
             }
           ],
           "syncStatus": "active",
           "parentID": "1347381577721581650",
-          "tags": [],
+          "tags": [
+            "nsfw"
+          ],
           "tagStats": {
             "nsfw": {
               "count": 23,
@@ -2517,8 +2509,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 23
+          }
         },
         {
           "title": "Wv Ooc",
