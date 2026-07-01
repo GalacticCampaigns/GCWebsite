@@ -1152,7 +1152,7 @@
               "threadID": "1507843585813385330",
               "displayName": "Venture • Engineering",
               "isActive": true,
-              "syncStatus": "active",
+              "syncStatus": "stable",
               "last_synced_id": "1510657272823414995",
               "messageCount": 14,
               "tags": [],
@@ -1765,9 +1765,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1521146428896972891",
-          "messageCount": 13428,
-          "lastMessageTimestamp": "2026-06-29T23:38:39.519000+00:00",
+          "last_synced_id": "1521604726729211985",
+          "messageCount": 13441,
+          "lastMessageTimestamp": "2026-06-30T19:53:56.901000+00:00",
           "source_exists": true,
           "threads": [
             {
