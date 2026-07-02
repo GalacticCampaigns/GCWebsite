@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1520974178512273420",
-          "messageCount": 291,
+          "last_synced_id": "1521964119597776908",
+          "messageCount": 296,
           "order": 5,
-          "lastMessageTimestamp": "2026-06-29T02:08:22.491000+00:00",
+          "lastMessageTimestamp": "2026-07-01T21:35:35.047000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1115,7 +1115,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1484919279555186802",
@@ -1146,7 +1147,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507843585813385330",
@@ -1177,7 +1179,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507838319885549710",
@@ -1208,15 +1211,16 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1510471160867848273",
               "displayName": "The Corrigendum",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1520261043182505985",
-              "messageCount": 37,
+              "last_synced_id": "1521992692073238578",
+              "messageCount": 39,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1239,7 +1243,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1511523223408345199",
@@ -1270,7 +1275,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1515498322100748310",
@@ -1301,7 +1307,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             }
           ],
           "syncStatus": "active",
@@ -1328,7 +1335,8 @@
               "active": false,
               "emoji": "🔞"
             }
-          }
+          },
+          "nsfwCount": 0
         },
         {
           "title": "☆READ FIRST☆",
@@ -1765,9 +1773,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1521604726729211985",
-          "messageCount": 13441,
-          "lastMessageTimestamp": "2026-06-30T19:53:56.901000+00:00",
+          "last_synced_id": "1521866368541134979",
+          "messageCount": 13465,
+          "lastMessageTimestamp": "2026-07-01T21:36:17.062000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1871,8 +1879,8 @@
               "displayName": "Death Dm (Varda Nisyren)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1521298889062486136",
-              "messageCount": 1456,
+              "last_synced_id": "1521992868296659105",
+              "messageCount": 1469,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1903,8 +1911,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1520946780861239416",
-              "messageCount": 2739,
+              "last_synced_id": "1521965199236661349",
+              "messageCount": 2744,
               "tags": [],
               "tagStats": {
                 "action": {
