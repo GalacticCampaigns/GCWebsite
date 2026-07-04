@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1521964119597776908",
-          "messageCount": 296,
+          "last_synced_id": "1522587043681796159",
+          "messageCount": 297,
           "order": 5,
-          "lastMessageTimestamp": "2026-07-01T21:35:35.047000+00:00",
+          "lastMessageTimestamp": "2026-07-03T12:57:19.513000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1115,7 +1115,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1484919279555186802",
@@ -1146,7 +1147,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507843585813385330",
@@ -1177,7 +1179,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507838319885549710",
@@ -1208,7 +1211,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1510471160867848273",
@@ -1239,7 +1243,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1511523223408345199",
@@ -1270,7 +1275,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1515498322100748310",
@@ -1301,7 +1307,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             }
           ],
           "syncStatus": "active",
@@ -1328,7 +1335,8 @@
               "active": false,
               "emoji": "🔞"
             }
-          }
+          },
+          "nsfwCount": 0
         },
         {
           "title": "☆READ FIRST☆",
@@ -1765,9 +1773,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1522364333668171949",
-          "messageCount": 13472,
-          "lastMessageTimestamp": "2026-07-02T22:12:21.308000+00:00",
+          "last_synced_id": "1522764492210176062",
+          "messageCount": 13492,
+          "lastMessageTimestamp": "2026-07-04T00:42:26.539000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1903,8 +1911,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1521965199236661349",
-              "messageCount": 2744,
+              "last_synced_id": "1522746525258748054",
+              "messageCount": 2751,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2445,9 +2453,9 @@
           "isActive": true,
           "preview": "",
           "order": 4,
-          "messageCount": 270,
-          "lastMessageTimestamp": "2026-06-28T21:45:06.942000+00:00",
-          "last_synced_id": "1520907927177920582",
+          "messageCount": 275,
+          "lastMessageTimestamp": "2026-07-03T23:28:39.718000+00:00",
+          "last_synced_id": "1522745924777148429",
           "threads": [
             {
               "threadID": "1464634504286175232",
@@ -2480,14 +2488,14 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 23,
+              "isNSFW": true
             }
           ],
           "syncStatus": "active",
           "parentID": "1347381577721581650",
-          "tags": [
-            "nsfw"
-          ],
+          "tags": [],
           "tagStats": {
             "nsfw": {
               "count": 23,
@@ -2509,7 +2517,8 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "nsfwCount": 23
         },
         {
           "title": "Wv Ooc",
