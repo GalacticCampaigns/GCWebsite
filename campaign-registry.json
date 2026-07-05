@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1522587043681796159",
-          "messageCount": 297,
+          "last_synced_id": "1523068842308403232",
+          "messageCount": 298,
           "order": 5,
-          "lastMessageTimestamp": "2026-07-03T12:57:19.513000+00:00",
+          "lastMessageTimestamp": "2026-07-04T20:51:49.257000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1773,9 +1773,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1522764492210176062",
-          "messageCount": 13492,
-          "lastMessageTimestamp": "2026-07-04T00:42:26.539000+00:00",
+          "last_synced_id": "1523040273821732864",
+          "messageCount": 13500,
+          "lastMessageTimestamp": "2026-07-04T18:58:17.999000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1783,8 +1783,8 @@
               "displayName": "Syoca Dm (Ciara)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1520974227337908314",
-              "messageCount": 125,
+              "last_synced_id": "1522914179084849192",
+              "messageCount": 127,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2488,14 +2488,14 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 23,
-              "isNSFW": true
+              }
             }
           ],
           "syncStatus": "active",
           "parentID": "1347381577721581650",
-          "tags": [],
+          "tags": [
+            "nsfw"
+          ],
           "tagStats": {
             "nsfw": {
               "count": 23,
@@ -2517,8 +2517,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 23
+          }
         },
         {
           "title": "Wv Ooc",
