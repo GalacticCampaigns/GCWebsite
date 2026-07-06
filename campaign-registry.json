@@ -1115,8 +1115,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1484919279555186802",
@@ -1147,8 +1146,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1507843585813385330",
@@ -1179,14 +1177,13 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1507838319885549710",
               "displayName": "Venture • Recreation",
               "isActive": true,
-              "syncStatus": "active",
+              "syncStatus": "stable",
               "last_synced_id": "1512560382848532545",
               "messageCount": 20,
               "tags": [],
@@ -1211,8 +1208,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1510471160867848273",
@@ -1243,8 +1239,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1511523223408345199",
@@ -1275,8 +1270,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1515498322100748310",
@@ -1307,8 +1301,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             }
           ],
           "syncStatus": "active",
@@ -1335,8 +1328,7 @@
               "active": false,
               "emoji": "🔞"
             }
-          },
-          "nsfwCount": 0
+          }
         },
         {
           "title": "☆READ FIRST☆",
@@ -1773,9 +1765,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1523040273821732864",
-          "messageCount": 13500,
-          "lastMessageTimestamp": "2026-07-04T18:58:17.999000+00:00",
+          "last_synced_id": "1523521077270155425",
+          "messageCount": 13513,
+          "lastMessageTimestamp": "2026-07-06T02:48:50.474000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1783,8 +1775,8 @@
               "displayName": "Syoca Dm (Ciara)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1522914179084849192",
-              "messageCount": 127,
+              "last_synced_id": "1523433586676600865",
+              "messageCount": 129,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2453,9 +2445,9 @@
           "isActive": true,
           "preview": "",
           "order": 4,
-          "messageCount": 275,
-          "lastMessageTimestamp": "2026-07-03T23:28:39.718000+00:00",
-          "last_synced_id": "1522745924777148429",
+          "messageCount": 281,
+          "lastMessageTimestamp": "2026-07-05T20:17:40.128000+00:00",
+          "last_synced_id": "1523422635503915060",
           "threads": [
             {
               "threadID": "1464634504286175232",
@@ -2488,14 +2480,14 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 23,
+              "isNSFW": true
             }
           ],
           "syncStatus": "active",
           "parentID": "1347381577721581650",
-          "tags": [
-            "nsfw"
-          ],
+          "tags": [],
           "tagStats": {
             "nsfw": {
               "count": 23,
@@ -2517,7 +2509,8 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "nsfwCount": 23
         },
         {
           "title": "Wv Ooc",
