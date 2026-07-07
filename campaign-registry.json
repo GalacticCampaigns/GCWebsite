@@ -1245,7 +1245,7 @@
               "threadID": "1511523223408345199",
               "displayName": "Venture • Airlock",
               "isActive": true,
-              "syncStatus": "active",
+              "syncStatus": "stable",
               "last_synced_id": "1512856775982846063",
               "messageCount": 10,
               "tags": [],
@@ -1765,9 +1765,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1523521077270155425",
-          "messageCount": 13513,
-          "lastMessageTimestamp": "2026-07-06T02:48:50.474000+00:00",
+          "last_synced_id": "1523825860614951114",
+          "messageCount": 13520,
+          "lastMessageTimestamp": "2026-07-06T22:59:56.486000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2480,14 +2480,14 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 23,
-              "isNSFW": true
+              }
             }
           ],
           "syncStatus": "active",
           "parentID": "1347381577721581650",
-          "tags": [],
+          "tags": [
+            "nsfw"
+          ],
           "tagStats": {
             "nsfw": {
               "count": 23,
@@ -2509,8 +2509,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 23
+          }
         },
         {
           "title": "Wv Ooc",
