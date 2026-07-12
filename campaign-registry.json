@@ -1765,9 +1765,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1525183850672558211",
-          "messageCount": 13549,
-          "lastMessageTimestamp": "2026-07-10T16:56:06.546000+00:00",
+          "last_synced_id": "1525638621212840157",
+          "messageCount": 13556,
+          "lastMessageTimestamp": "2026-07-11T23:03:12.292000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2445,9 +2445,9 @@
           "isActive": true,
           "preview": "",
           "order": 4,
-          "messageCount": 281,
-          "lastMessageTimestamp": "2026-07-05T20:17:40.128000+00:00",
-          "last_synced_id": "1523422635503915060",
+          "messageCount": 282,
+          "lastMessageTimestamp": "2026-07-11T19:11:19.128000+00:00",
+          "last_synced_id": "1525580265173422213",
           "threads": [
             {
               "threadID": "1464634504286175232",
@@ -2480,14 +2480,14 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 23,
+              "isNSFW": true
             }
           ],
           "syncStatus": "active",
           "parentID": "1347381577721581650",
-          "tags": [
-            "nsfw"
-          ],
+          "tags": [],
           "tagStats": {
             "nsfw": {
               "count": 23,
@@ -2509,7 +2509,8 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "nsfwCount": 23
         },
         {
           "title": "Wv Ooc",
