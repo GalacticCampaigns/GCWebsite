@@ -1765,9 +1765,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1525638621212840157",
-          "messageCount": 13556,
-          "lastMessageTimestamp": "2026-07-11T23:03:12.292000+00:00",
+          "last_synced_id": "1525902056576122901",
+          "messageCount": 13587,
+          "lastMessageTimestamp": "2026-07-13T00:58:37.010000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1903,8 +1903,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1524228628554973214",
-              "messageCount": 2756,
+              "last_synced_id": "1526030053450973275",
+              "messageCount": 2779,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2480,14 +2480,14 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 23,
-              "isNSFW": true
+              }
             }
           ],
           "syncStatus": "active",
           "parentID": "1347381577721581650",
-          "tags": [],
+          "tags": [
+            "nsfw"
+          ],
           "tagStats": {
             "nsfw": {
               "count": 23,
@@ -2509,8 +2509,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 23
+          }
         },
         {
           "title": "Wv Ooc",
