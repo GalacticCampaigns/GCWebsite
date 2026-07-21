@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1528551092135137492",
-          "messageCount": 320,
+          "last_synced_id": "1528669333545418874",
+          "messageCount": 321,
           "order": 5,
-          "lastMessageTimestamp": "2026-07-19T23:56:19.471000+00:00",
+          "lastMessageTimestamp": "2026-07-20T07:46:10.420000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1773,9 +1773,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1528550693793824849",
-          "messageCount": 13698,
-          "lastMessageTimestamp": "2026-07-19T23:54:44.499000+00:00",
+          "last_synced_id": "1528969146757546135",
+          "messageCount": 13707,
+          "lastMessageTimestamp": "2026-07-21T03:37:31.460000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2562,8 +2562,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1347386051915812979",
@@ -2594,8 +2593,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             }
           ],
           "tags": [],
@@ -2620,8 +2618,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 0
+          }
         },
         {
           "title": "Wv Gm",
