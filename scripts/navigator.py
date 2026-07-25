@@ -230,6 +230,8 @@ class Navigator:
                 log_entry["nsfwCount"] = forensics["tag_stats"]["nsfw"]["grand_count"]
                 if is_active:
                     log_entry["isNSFW"] = True
+                else:
+                    log_entry.pop("isNSFW", None)
             
         log_entry["messageCount"] = forensics["grand_total"]
         if forensics["narrative_max_ts"]:
@@ -293,6 +295,8 @@ class Navigator:
                         t["nsfwCount"] = t_tag_count
                         if is_active:
                             t["isNSFW"] = True
+                        else:
+                            t.pop("isNSFW", None)
                 
                 if stats["abs_last_id"]:
                     t["last_synced_id"] = stats["abs_last_id"]

@@ -64,48 +64,45 @@ def get_new_discoveries(camp_data, bot_token, nav):
         c_id = str(log["channelID"])
         
         # Sentinel: Check for Orphaned/Deleted channels
-        if c_id not in discord_map:
+        live_info = discord_map.get(c_id)
+        if not live_info:
             # If it's already legacy, keep quiet
             if log.get("syncStatus") == "legacy":
                 continue
                 
-            # Perform a direct probe to confirm 404 vs 403
+            # Perform a direct probe to confirm existence
             probe = discord_api_get(f"channels/{c_id}", bot_token)
-            if isinstance(probe, dict) and "error_code" in probe:
+            if isinstance(probe, dict) and ("error" in probe or "error_code" in probe):
                 log["syncStatus"] = "legacy"
                 log["isActive"] = False
                 log["source_exists"] = False
                 nav.update_report(camp_name, "🚫 LEGACY LOCK", f"{log['title']} (Source Deleted/Inaccessible)")
-            continue
+                continue
+            else:
+                live_info = probe
 
         # Self-Heal: Ensure Parent ID is correct and schema is current
-        live_info = discord_map[c_id]
         log["parentID"] = str(live_info.get("parent_id") or "")
         log.setdefault("isActive", True)
         log.setdefault("syncStatus", "active")
         log.setdefault("last_synced_id", "")
         
         # Migrate legacy isNSFW/nsfwCount fields to dynamic tags list
-        legacy_nsfw = log.pop("isNSFW", None)
+        log.pop("isNSFW", None)
         log.pop("nsfwCount", None) # Remove legacy count
         tags_list = log.get("tags")
         if not isinstance(tags_list, list):
             tags_list = []
             log["tags"] = tags_list
-        if legacy_nsfw or live_info.get("nsfw", False):
-            if "nsfw" not in tags_list:
-                tags_list.append("nsfw")
 
         # Migrate thread legacy isNSFW fields
         for t in log.get("threads", []):
-            t_legacy = t.pop("isNSFW", None)
+            t.pop("isNSFW", None)
             t.pop("nsfwCount", None)
             t_tags = t.get("tags")
             if not isinstance(t_tags, list):
                 t_tags = []
                 t["tags"] = t_tags
-            if t_legacy and "nsfw" not in t_tags:
-                t_tags.append("nsfw")
 
     # --- 2. CHAPTER DISCOVERY (Standard & Forums) ---
     existing_logs = {str(log["channelID"]): log for log in camp_data.get("logs", [])}
@@ -201,10 +198,6 @@ def build_registry_entry(discord_obj, parent_id=None):
     raw_name = discord_obj.get("name", "unknown")
     slug_base = slugify_filename(raw_name).replace(".json", "")
         
-    tags = []
-    if discord_obj.get("nsfw", False):
-        tags.append("nsfw")
-        
     return {
         "title": format_pretty_title(raw_name),
         "channelID": str(discord_obj["id"]),
@@ -216,7 +209,7 @@ def build_registry_entry(discord_obj, parent_id=None):
         "syncStatus": "active",
         "last_synced_id": "",
         "messageCount": 0,
-        "tags": tags,
+        "tags": [],
         "lastMessageTimestamp": "",
         "source_exists": True, # Forge tracking
         "threads": []

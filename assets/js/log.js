@@ -31,7 +31,7 @@ async function init() {
         const listTarget = document.getElementById('chapter-list-dropdown');
         if (listTarget) {
             listTarget.innerHTML = "";
-            activeCampaign.logs.forEach(item => {
+            activeCampaign.logs.filter(l => l.visible !== false).forEach(item => {
                 const div = document.createElement('div');
                 div.className = "chapter-option";
                 div.textContent = item.title;
@@ -84,8 +84,9 @@ async function init() {
             }
         }
 
-        if (activeCampaign.logs.length > 0) {
-            await loadChapter(activeCampaign.logs[0].channelID);
+        const visibleLogs = activeCampaign.logs.filter(l => l.visible !== false);
+        if (visibleLogs.length > 0) {
+            await loadChapter(visibleLogs[0].channelID);
         } else {
             throw new Error("This campaign contains no log entries.");
         }
