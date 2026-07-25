@@ -1115,8 +1115,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1484919279555186802",
@@ -1147,8 +1146,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1507843585813385330",
@@ -1179,8 +1177,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1507838319885549710",
@@ -1211,8 +1208,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1510471160867848273",
@@ -1243,8 +1239,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1511523223408345199",
@@ -1275,8 +1270,7 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1515498322100748310",
@@ -1307,8 +1301,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             }
           ],
           "syncStatus": "active",
@@ -1335,8 +1328,7 @@
               "active": false,
               "emoji": "🔞"
             }
-          },
-          "nsfwCount": 0
+          }
         },
         {
           "title": "☆READ FIRST☆",
@@ -1773,9 +1765,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1530036505018372116",
-          "messageCount": 13751,
-          "lastMessageTimestamp": "2026-07-24T02:18:49.500000+00:00",
+          "last_synced_id": "1530171388013449297",
+          "messageCount": 13769,
+          "lastMessageTimestamp": "2026-07-25T01:21:13.219000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1911,8 +1903,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1529979201275297904",
-              "messageCount": 2802,
+              "last_synced_id": "1530384396191010987",
+              "messageCount": 2814,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1942,7 +1934,7 @@
               "threadID": "1380890355171594292",
               "displayName": "Sage Playground",
               "isActive": true,
-              "syncStatus": "stable",
+              "syncStatus": "active",
               "last_synced_id": "1518963848949006387",
               "messageCount": 217,
               "tags": [],
@@ -2493,12 +2485,9 @@
           ],
           "syncStatus": "active",
           "parentID": "1347381577721581650",
-          "tags": [
-            "nsfw"
-          ],
           "tagStats": {
             "nsfw": {
-              "count": 23,
+              "count": 0,
               "active": false,
               "emoji": "🔞"
             },
@@ -2517,7 +2506,10 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "tags": [
+            "nsfw"
+          ]
         },
         {
           "title": "Wv Ooc",
@@ -2528,9 +2520,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1528517490609623170",
-          "messageCount": 4038,
-          "lastMessageTimestamp": "2026-07-19T21:42:48.243000+00:00",
+          "last_synced_id": "1530360073119862885",
+          "messageCount": 4049,
+          "lastMessageTimestamp": "2026-07-24T23:44:34.147000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2562,7 +2554,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1347386051915812979",
@@ -2593,7 +2586,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             }
           ],
           "tags": [],
@@ -2618,7 +2612,8 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "nsfwCount": 0
         },
         {
           "title": "Wv Gm",
@@ -2705,6 +2700,45 @@
               "emoji": "📌"
             }
           }
+        },
+        {
+          "title": "Wv Ch5 Resonance Of The Lost",
+          "channelID": "1530315571894161558",
+          "parentID": "1347381577721581650",
+          "fileName": "wv-ch5-resonance-of-the-lost.json",
+          "order": 0,
+          "isActive": true,
+          "visible": true,
+          "syncStatus": "active",
+          "last_synced_id": "1530327168465502300",
+          "messageCount": 3,
+          "tags": [],
+          "lastMessageTimestamp": "2026-07-24T21:33:49.066000+00:00",
+          "source_exists": true,
+          "threads": [],
+          "tagStats": {
+            "nsfw": {
+              "count": 0,
+              "active": false,
+              "emoji": "🔞"
+            },
+            "action": {
+              "count": 0,
+              "active": false,
+              "emoji": "⚔️"
+            },
+            "lore": {
+              "count": 0,
+              "active": false,
+              "emoji": "📜"
+            },
+            "pinned": {
+              "count": 0,
+              "active": false,
+              "emoji": "📌"
+            }
+          },
+          "nsfwCount": 0
         }
       ]
     },
