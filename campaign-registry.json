@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1533785035268685844",
-          "messageCount": 13931,
-          "lastMessageTimestamp": "2026-08-03T19:13:33.992000+00:00",
+          "last_synced_id": "1534342953806467142",
+          "messageCount": 13937,
+          "lastMessageTimestamp": "2026-08-04T23:31:06.901000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2536,8 +2536,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1347386051915812979",
@@ -2568,8 +2567,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             }
           ],
           "tags": [],
@@ -2594,8 +2592,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 0
+          }
         },
         {
           "title": "Wv Gm",
@@ -2719,8 +2716,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 0
+          }
         }
       ]
     },
