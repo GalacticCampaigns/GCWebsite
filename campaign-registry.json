@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1534342953806467142",
-          "messageCount": 13937,
-          "lastMessageTimestamp": "2026-08-04T23:31:06.901000+00:00",
+          "last_synced_id": "1534593805364367545",
+          "messageCount": 13940,
+          "lastMessageTimestamp": "2026-08-05T16:07:54.573000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1765,8 +1765,8 @@
               "displayName": "Syoca Dm (Ciara)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1529385003115479133",
-              "messageCount": 132,
+              "last_synced_id": "1534546527098245311",
+              "messageCount": 133,
               "tags": [],
               "tagStats": {
                 "action": {
