@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1535109648670138490",
-          "messageCount": 13958,
-          "lastMessageTimestamp": "2026-08-07T02:17:41.201000+00:00",
+          "last_synced_id": "1535339877166751815",
+          "messageCount": 13970,
+          "lastMessageTimestamp": "2026-08-07T17:32:31.952000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2716,8 +2716,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 0
+          }
         }
       ]
     },
