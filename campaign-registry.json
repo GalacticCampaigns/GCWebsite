@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1535819038771384330",
-          "messageCount": 13978,
-          "lastMessageTimestamp": "2026-08-09T01:16:32.981000+00:00",
+          "last_synced_id": "1536147761207050340",
+          "messageCount": 13983,
+          "lastMessageTimestamp": "2026-08-09T23:02:46.517000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1797,8 +1797,8 @@
               "displayName": "Devily Dms (Lis Garah)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1530560269846315039",
-              "messageCount": 549,
+              "last_synced_id": "1535996084789313618",
+              "messageCount": 550,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1829,8 +1829,8 @@
               "displayName": "Emil Dm (Iyola Kett)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1530560273516200069",
-              "messageCount": 947,
+              "last_synced_id": "1535996091131101235",
+              "messageCount": 948,
               "tags": [],
               "tagStats": {
                 "action": {
