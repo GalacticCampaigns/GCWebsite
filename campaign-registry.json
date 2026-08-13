@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1536790793249890325",
-          "messageCount": 14010,
-          "lastMessageTimestamp": "2026-08-11T17:37:57.303000+00:00",
+          "last_synced_id": "1537303230726279228",
+          "messageCount": 14021,
+          "lastMessageTimestamp": "2026-08-13T03:34:11.918000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1861,8 +1861,8 @@
               "displayName": "Death Dm (Varda Nisyren)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1533877482955079923",
-              "messageCount": 1475,
+              "last_synced_id": "1537247104966074368",
+              "messageCount": 1476,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1893,8 +1893,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1535751829760254053",
-              "messageCount": 2845,
+              "last_synced_id": "1537243017772269598",
+              "messageCount": 2851,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2028,7 +2028,7 @@
               "threadID": "1380226480453324962",
               "displayName": "Fo Gm Sage Setup",
               "isActive": false,
-              "syncStatus": "active",
+              "syncStatus": "stable",
               "last_synced_id": "",
               "messageCount": 0,
               "tags": [],
