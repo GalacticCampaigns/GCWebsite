@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1537591797721726996",
-          "messageCount": 14028,
-          "lastMessageTimestamp": "2026-08-13T22:40:51.651000+00:00",
+          "last_synced_id": "1537792250678091846",
+          "messageCount": 14037,
+          "lastMessageTimestamp": "2026-08-15T00:06:09.729000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1893,8 +1893,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1537578596183310407",
-              "messageCount": 2853,
+              "last_synced_id": "1537975652362223619",
+              "messageCount": 2855,
               "tags": [],
               "tagStats": {
                 "action": {
