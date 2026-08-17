@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1538258714958766142",
-          "messageCount": 340,
+          "last_synced_id": "1538697022498930850",
+          "messageCount": 341,
           "order": 5,
-          "lastMessageTimestamp": "2026-08-15T18:50:57.111000+00:00",
+          "lastMessageTimestamp": "2026-08-16T23:52:37.772000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1763,9 +1763,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1538254694852591708",
-          "messageCount": 14043,
-          "lastMessageTimestamp": "2026-08-15T18:34:58.643000+00:00",
+          "last_synced_id": "1538689937996652574",
+          "messageCount": 14059,
+          "lastMessageTimestamp": "2026-08-17T02:12:28.186000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1773,8 +1773,8 @@
               "displayName": "Syoca Dm (Ciara)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1534546527098245311",
-              "messageCount": 133,
+              "last_synced_id": "1538732214445936640",
+              "messageCount": 135,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2544,8 +2544,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1347386051915812979",
@@ -2576,8 +2575,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             }
           ],
           "tags": [],
@@ -2602,8 +2600,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 0
+          }
         },
         {
           "title": "Wv Gm",
@@ -2727,8 +2724,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 0
+          }
         }
       ]
     },
