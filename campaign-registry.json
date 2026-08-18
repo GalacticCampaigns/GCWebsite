@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1538697022498930850",
-          "messageCount": 341,
+          "last_synced_id": "1539072561822961764",
+          "messageCount": 343,
           "order": 5,
-          "lastMessageTimestamp": "2026-08-16T23:52:37.772000+00:00",
+          "lastMessageTimestamp": "2026-08-18T00:44:53.324000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1763,9 +1763,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1538689937996652574",
-          "messageCount": 14059,
-          "lastMessageTimestamp": "2026-08-17T02:12:28.186000+00:00",
+          "last_synced_id": "1538988970615250984",
+          "messageCount": 14072,
+          "lastMessageTimestamp": "2026-08-18T02:02:17.259000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1901,8 +1901,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1538254566426939472",
-              "messageCount": 2857,
+              "last_synced_id": "1539092039898234900",
+              "messageCount": 2869,
               "tags": [],
               "tagStats": {
                 "action": {
