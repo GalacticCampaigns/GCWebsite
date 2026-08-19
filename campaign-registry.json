@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1539072561822961764",
-          "messageCount": 343,
+          "last_synced_id": "1539391845203845212",
+          "messageCount": 344,
           "order": 5,
-          "lastMessageTimestamp": "2026-08-18T00:44:53.324000+00:00",
+          "lastMessageTimestamp": "2026-08-18T21:53:36.414000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1763,9 +1763,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1538988970615250984",
-          "messageCount": 14072,
-          "lastMessageTimestamp": "2026-08-18T02:02:17.259000+00:00",
+          "last_synced_id": "1539460041873162300",
+          "messageCount": 14079,
+          "lastMessageTimestamp": "2026-08-19T02:24:35.767000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1773,8 +1773,8 @@
               "displayName": "Syoca Dm (Ciara)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1538732214445936640",
-              "messageCount": 135,
+              "last_synced_id": "1539460041873162300",
+              "messageCount": 138,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1901,8 +1901,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1539092039898234900",
-              "messageCount": 2869,
+              "last_synced_id": "1539426437243732068",
+              "messageCount": 2873,
               "tags": [],
               "tagStats": {
                 "action": {
