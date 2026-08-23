@@ -1214,7 +1214,7 @@
               "threadID": "1510471160867848273",
               "displayName": "The Corrigendum",
               "isActive": true,
-              "syncStatus": "active",
+              "syncStatus": "stable",
               "last_synced_id": "1529975357271314564",
               "messageCount": 43,
               "tags": [],
@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1540545058808533115",
-          "messageCount": 14124,
-          "lastMessageTimestamp": "2026-08-22T02:16:03.963000+00:00",
+          "last_synced_id": "1540929078394101762",
+          "messageCount": 14146,
+          "lastMessageTimestamp": "2026-08-23T03:42:01.367000+00:00",
           "source_exists": true,
           "threads": [
             {
