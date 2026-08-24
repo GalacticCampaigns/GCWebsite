@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1540929078394101762",
-          "messageCount": 14146,
-          "lastMessageTimestamp": "2026-08-23T03:42:01.367000+00:00",
+          "last_synced_id": "1541109535744458854",
+          "messageCount": 14161,
+          "lastMessageTimestamp": "2026-08-23T23:09:35.592000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1797,8 +1797,8 @@
               "displayName": "Devily Dms (Lis Garah)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1535996084789313618",
-              "messageCount": 550,
+              "last_synced_id": "1541069518900559882",
+              "messageCount": 551,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1829,8 +1829,8 @@
               "displayName": "Emil Dm (Iyola Kett)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1535996091131101235",
-              "messageCount": 948,
+              "last_synced_id": "1541069525255192606",
+              "messageCount": 949,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1925,8 +1925,8 @@
               "displayName": "Sage Playground",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1530560261516165173",
-              "messageCount": 218,
+              "last_synced_id": "1541069510411558973",
+              "messageCount": 219,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1980,6 +1980,38 @@
                   "count": 0,
                   "active": false,
                   "emoji": "🔞"
+                }
+              },
+              "nsfwCount": 0
+            },
+            {
+              "threadID": "1540877186477592616",
+              "displayName": "Adso",
+              "isActive": true,
+              "syncStatus": "active",
+              "last_synced_id": "1541222907110359050",
+              "messageCount": 8,
+              "tags": [],
+              "tagStats": {
+                "nsfw": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "🔞"
+                },
+                "action": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "⚔️"
+                },
+                "lore": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "📜"
+                },
+                "pinned": {
+                  "count": 0,
+                  "active": false,
+                  "emoji": "📌"
                 }
               },
               "nsfwCount": 0
@@ -2689,10 +2721,10 @@
           "isActive": true,
           "visible": true,
           "syncStatus": "active",
-          "last_synced_id": "1538257501701668995",
-          "messageCount": 13,
+          "last_synced_id": "1541076326725980190",
+          "messageCount": 14,
           "tags": [],
-          "lastMessageTimestamp": "2026-08-15T18:46:07.848000+00:00",
+          "lastMessageTimestamp": "2026-08-23T13:27:08.105000+00:00",
           "source_exists": true,
           "threads": [],
           "tagStats": {
@@ -2716,7 +2748,8 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "nsfwCount": 0
         }
       ]
     },
