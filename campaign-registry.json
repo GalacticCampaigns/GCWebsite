@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1541608319397929070",
-          "messageCount": 14177,
-          "lastMessageTimestamp": "2026-08-25T00:41:05.042000+00:00",
+          "last_synced_id": "1541805827709731027",
+          "messageCount": 14185,
+          "lastMessageTimestamp": "2026-08-25T22:15:26.032000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1989,8 +1989,8 @@
               "displayName": "Adso",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1541511225593176074",
-              "messageCount": 10,
+              "last_synced_id": "1541934053199192185",
+              "messageCount": 16,
               "tags": [],
               "tagStats": {
                 "nsfw": {
