@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1544912010355941396",
-          "messageCount": 14239,
-          "lastMessageTimestamp": "2026-09-03T03:28:46.346000+00:00",
+          "last_synced_id": "1545224890645348372",
+          "messageCount": 14253,
+          "lastMessageTimestamp": "2026-09-04T00:12:02.820000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1765,8 +1765,8 @@
               "displayName": "Syoca Dm (Ciara)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1539669843022848171",
-              "messageCount": 139,
+              "last_synced_id": "1545195233351049228",
+              "messageCount": 144,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1861,8 +1861,8 @@
               "displayName": "Death Dm (Varda Nisyren)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1542519070585257986",
-              "messageCount": 1477,
+              "last_synced_id": "1545138780669743185",
+              "messageCount": 1478,
               "tags": [],
               "tagStats": {
                 "action": {
