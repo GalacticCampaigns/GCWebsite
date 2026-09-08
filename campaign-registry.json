@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1546328965872885821",
-          "messageCount": 14279,
-          "lastMessageTimestamp": "2026-09-07T01:19:14.867000+00:00",
+          "last_synced_id": "1546571379648897125",
+          "messageCount": 14282,
+          "lastMessageTimestamp": "2026-09-07T17:22:30.815000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1797,8 +1797,8 @@
               "displayName": "Devily Dms (Lis Garah)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1541069518900559882",
-              "messageCount": 551,
+              "last_synced_id": "1546505332010786848",
+              "messageCount": 552,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1829,8 +1829,8 @@
               "displayName": "Emil Dm (Iyola Kett)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1541069525255192606",
-              "messageCount": 949,
+              "last_synced_id": "1546505336582574141",
+              "messageCount": 950,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2568,8 +2568,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1347386051915812979",
@@ -2600,8 +2599,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             }
           ],
           "tags": [],
@@ -2626,8 +2624,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 0
+          }
         },
         {
           "title": "Wv Gm",
