@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1547964533749063812",
-          "messageCount": 14376,
-          "lastMessageTimestamp": "2026-09-11T15:39:07.122000+00:00",
+          "last_synced_id": "1548509916656967731",
+          "messageCount": 14396,
+          "lastMessageTimestamp": "2026-09-13T01:45:34.054000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1893,8 +1893,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1547695203664531577",
-              "messageCount": 2911,
+              "last_synced_id": "1548509916656967731",
+              "messageCount": 2931,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2534,9 +2534,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1547016810618945617",
-          "messageCount": 4061,
-          "lastMessageTimestamp": "2026-09-08T22:52:29.834000+00:00",
+          "last_synced_id": "1548484337606066261",
+          "messageCount": 4064,
+          "lastMessageTimestamp": "2026-09-13T00:03:55.533000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2568,7 +2568,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1347386051915812979",
@@ -2599,7 +2600,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             }
           ],
           "tags": [],
@@ -2624,7 +2626,8 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "nsfwCount": 0
         },
         {
           "title": "Wv Gm",
@@ -2721,10 +2724,10 @@
           "isActive": true,
           "visible": true,
           "syncStatus": "active",
-          "last_synced_id": "1547001501376061489",
-          "messageCount": 17,
+          "last_synced_id": "1548462974799183954",
+          "messageCount": 21,
           "tags": [],
-          "lastMessageTimestamp": "2026-09-08T21:51:39.826000+00:00",
+          "lastMessageTimestamp": "2026-09-12T22:39:02.243000+00:00",
           "source_exists": true,
           "threads": [],
           "tagStats": {
@@ -2748,7 +2751,8 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "nsfwCount": 0
         }
       ]
     },
