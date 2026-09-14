@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1548509916656967731",
-          "messageCount": 14396,
-          "lastMessageTimestamp": "2026-09-13T01:45:34.054000+00:00",
+          "last_synced_id": "1548812920031289488",
+          "messageCount": 14422,
+          "lastMessageTimestamp": "2026-09-13T21:49:35.688000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1893,8 +1893,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1548509916656967731",
-              "messageCount": 2931,
+              "last_synced_id": "1548741921781063813",
+              "messageCount": 2941,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1989,8 +1989,8 @@
               "displayName": "Adso",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1547994910936924301",
-              "messageCount": 49,
+              "last_synced_id": "1548754712449261630",
+              "messageCount": 52,
               "tags": [],
               "tagStats": {
                 "nsfw": {
@@ -2568,8 +2568,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1347386051915812979",
@@ -2600,8 +2599,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             }
           ],
           "tags": [],
@@ -2626,8 +2624,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 0
+          }
         },
         {
           "title": "Wv Gm",
@@ -2724,10 +2721,10 @@
           "isActive": true,
           "visible": true,
           "syncStatus": "active",
-          "last_synced_id": "1548462974799183954",
-          "messageCount": 21,
+          "last_synced_id": "1548848219700859003",
+          "messageCount": 27,
           "tags": [],
-          "lastMessageTimestamp": "2026-09-12T22:39:02.243000+00:00",
+          "lastMessageTimestamp": "2026-09-14T00:09:51.785000+00:00",
           "source_exists": true,
           "threads": [],
           "tagStats": {
