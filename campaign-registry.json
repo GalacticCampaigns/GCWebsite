@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1550091974155968634",
-          "messageCount": 14465,
-          "lastMessageTimestamp": "2026-09-17T18:57:28.088000+00:00",
+          "last_synced_id": "1550589252377772073",
+          "messageCount": 14478,
+          "lastMessageTimestamp": "2026-09-19T02:18:23.533000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1765,8 +1765,8 @@
               "displayName": "Syoca Dm (Ciara)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1545195233351049228",
-              "messageCount": 144,
+              "last_synced_id": "1550491598008361091",
+              "messageCount": 145,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1861,8 +1861,8 @@
               "displayName": "Death Dm (Varda Nisyren)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1545138780669743185",
-              "messageCount": 1478,
+              "last_synced_id": "1550491610733744159",
+              "messageCount": 1479,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1893,8 +1893,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1550219154399957065",
-              "messageCount": 2946,
+              "last_synced_id": "1550692504444215388",
+              "messageCount": 2948,
               "tags": [],
               "tagStats": {
                 "action": {
