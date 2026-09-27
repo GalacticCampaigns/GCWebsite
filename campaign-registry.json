@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1552484156414365717",
-          "messageCount": 367,
+          "last_synced_id": "1553569132572713032",
+          "messageCount": 372,
           "order": 5,
-          "lastMessageTimestamp": "2026-09-24T00:57:46.650000+00:00",
+          "lastMessageTimestamp": "2026-09-27T00:49:05.124000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1115,7 +1115,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1484919279555186802",
@@ -1146,7 +1147,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507843585813385330",
@@ -1177,7 +1179,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507838319885549710",
@@ -1208,7 +1211,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1510471160867848273",
@@ -1239,7 +1243,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1511523223408345199",
@@ -1270,7 +1275,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1515498322100748310",
@@ -1301,7 +1307,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             }
           ],
           "syncStatus": "active",
@@ -1328,7 +1335,8 @@
               "active": false,
               "emoji": "🔞"
             }
-          }
+          },
+          "nsfwCount": 0
         },
         {
           "title": "☆READ FIRST☆",
@@ -1755,9 +1763,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1553156609692278825",
-          "messageCount": 14529,
-          "lastMessageTimestamp": "2026-09-25T21:29:52.005000+00:00",
+          "last_synced_id": "1553451999012593815",
+          "messageCount": 14536,
+          "lastMessageTimestamp": "2026-09-26T17:03:38.307000+00:00",
           "source_exists": true,
           "threads": [
             {
