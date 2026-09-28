@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1553569132572713032",
-          "messageCount": 372,
+          "last_synced_id": "1553897596622344313",
+          "messageCount": 374,
           "order": 5,
-          "lastMessageTimestamp": "2026-09-27T00:49:05.124000+00:00",
+          "lastMessageTimestamp": "2026-09-27T22:34:17.056000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1763,9 +1763,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1553451999012593815",
-          "messageCount": 14536,
-          "lastMessageTimestamp": "2026-09-26T17:03:38.307000+00:00",
+          "last_synced_id": "1553967843937222717",
+          "messageCount": 14547,
+          "lastMessageTimestamp": "2026-09-28T03:13:25.321000+00:00",
           "source_exists": true,
           "threads": [
             {
