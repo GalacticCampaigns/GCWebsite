@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1555328274584965201",
-          "messageCount": 382,
+          "last_synced_id": "1555755121462485044",
+          "messageCount": 383,
           "order": 5,
-          "lastMessageTimestamp": "2026-10-01T21:19:17.263000+00:00",
+          "lastMessageTimestamp": "2026-10-03T01:35:25.489000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1763,9 +1763,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1555320944615100518",
-          "messageCount": 14591,
-          "lastMessageTimestamp": "2026-10-01T20:50:09.662000+00:00",
+          "last_synced_id": "1555547003151327284",
+          "messageCount": 14616,
+          "lastMessageTimestamp": "2026-10-03T01:37:08.513000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1773,8 +1773,8 @@
               "displayName": "Syoca Dm (Ciara)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1550491598008361091",
-              "messageCount": 145,
+              "last_synced_id": "1555755553576329329",
+              "messageCount": 148,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1805,8 +1805,8 @@
               "displayName": "Devily Dms (Lis Garah)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1551578772208353284",
-              "messageCount": 553,
+              "last_synced_id": "1555644415224316035",
+              "messageCount": 564,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1901,8 +1901,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1555000218142113856",
-              "messageCount": 2963,
+              "last_synced_id": "1555665034405875806",
+              "messageCount": 2968,
               "tags": [],
               "tagStats": {
                 "action": {
