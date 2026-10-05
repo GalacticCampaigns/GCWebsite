@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1555977990439960608",
-          "messageCount": 14623,
-          "lastMessageTimestamp": "2026-10-03T21:04:41.890000+00:00",
+          "last_synced_id": "1556451729967554571",
+          "messageCount": 14638,
+          "lastMessageTimestamp": "2026-10-04T23:43:29.899000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2721,10 +2721,10 @@
           "isActive": true,
           "visible": true,
           "syncStatus": "active",
-          "last_synced_id": "1554295096072085565",
-          "messageCount": 32,
+          "last_synced_id": "1556309474753384510",
+          "messageCount": 33,
           "tags": [],
-          "lastMessageTimestamp": "2026-09-29T00:53:48.310000+00:00",
+          "lastMessageTimestamp": "2026-10-04T14:18:13.613000+00:00",
           "source_exists": true,
           "threads": [],
           "tagStats": {
@@ -2748,7 +2748,8 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "nsfwCount": 0
         }
       ]
     },
