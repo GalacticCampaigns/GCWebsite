@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1555755121462485044",
-          "messageCount": 383,
+          "last_synced_id": "1556757934912839704",
+          "messageCount": 387,
           "order": 5,
-          "lastMessageTimestamp": "2026-10-03T01:35:25.489000+00:00",
+          "lastMessageTimestamp": "2026-10-05T20:00:14.847000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1115,7 +1115,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1484919279555186802",
@@ -1146,7 +1147,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507843585813385330",
@@ -1177,7 +1179,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507838319885549710",
@@ -1208,7 +1211,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1510471160867848273",
@@ -1239,7 +1243,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1511523223408345199",
@@ -1270,7 +1275,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1515498322100748310",
@@ -1301,7 +1307,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             }
           ],
           "syncStatus": "active",
@@ -1328,7 +1335,8 @@
               "active": false,
               "emoji": "🔞"
             }
-          }
+          },
+          "nsfwCount": 0
         },
         {
           "title": "☆READ FIRST☆",
@@ -1755,9 +1763,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1556451729967554571",
-          "messageCount": 14638,
-          "lastMessageTimestamp": "2026-10-04T23:43:29.899000+00:00",
+          "last_synced_id": "1556841673357795359",
+          "messageCount": 14662,
+          "lastMessageTimestamp": "2026-10-06T01:32:59.648000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1797,8 +1805,8 @@
               "displayName": "Devily Dms (Lis Garah)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1555644415224316035",
-              "messageCount": 564,
+              "last_synced_id": "1556759497421095007",
+              "messageCount": 573,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2051,9 +2059,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1529653816776069210",
-          "messageCount": 1061,
-          "lastMessageTimestamp": "2026-07-23T00:58:09.513000+00:00",
+          "last_synced_id": "1556755465809960961",
+          "messageCount": 1062,
+          "lastMessageTimestamp": "2026-10-05T19:50:26.167000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2085,7 +2093,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1484567896607686757",
@@ -2116,7 +2125,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 1
             }
           ],
           "tags": [],
@@ -2141,7 +2151,8 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "nsfwCount": 1
         },
         {
           "title": "Fo Resources",
@@ -2748,8 +2759,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 0
+          }
         }
       ]
     },
