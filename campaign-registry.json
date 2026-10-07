@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1556757934912839704",
-          "messageCount": 387,
+          "last_synced_id": "1557103791428337699",
+          "messageCount": 389,
           "order": 5,
-          "lastMessageTimestamp": "2026-10-05T20:00:14.847000+00:00",
+          "lastMessageTimestamp": "2026-10-06T18:54:33.466000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1763,9 +1763,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1556841673357795359",
-          "messageCount": 14662,
-          "lastMessageTimestamp": "2026-10-06T01:32:59.648000+00:00",
+          "last_synced_id": "1557107944787677197",
+          "messageCount": 14675,
+          "lastMessageTimestamp": "2026-10-07T01:58:06.301000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1837,8 +1837,8 @@
               "displayName": "Emil Dm (Iyola Kett)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1551578778155753523",
-              "messageCount": 951,
+              "last_synced_id": "1557014590167064607",
+              "messageCount": 952,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1901,8 +1901,8 @@
               "displayName": "Dave/Yogi Dm (Wes Del Fin)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1555665034405875806",
-              "messageCount": 2968,
+              "last_synced_id": "1557210380584095866",
+              "messageCount": 2978,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2093,8 +2093,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1484567896607686757",
@@ -2125,8 +2124,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 1
+              }
             }
           ],
           "tags": [],
@@ -2151,8 +2149,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 1
+          }
         },
         {
           "title": "Fo Resources",
