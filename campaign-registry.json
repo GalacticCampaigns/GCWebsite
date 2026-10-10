@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1557730458777690204",
-          "messageCount": 14681,
-          "lastMessageTimestamp": "2026-10-08T12:24:42.605000+00:00",
+          "last_synced_id": "1558197815577149454",
+          "messageCount": 14682,
+          "lastMessageTimestamp": "2026-10-09T19:21:49.149000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2060,7 +2060,7 @@
               "threadID": "1380226480453324962",
               "displayName": "Fo Gm Sage Setup",
               "isActive": false,
-              "syncStatus": "active",
+              "syncStatus": "stable",
               "last_synced_id": "",
               "messageCount": 0,
               "tags": [],
