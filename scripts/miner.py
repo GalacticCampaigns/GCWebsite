@@ -19,7 +19,7 @@ class Miner:
     def __init__(self, token, dry_run=False):
         self.dry_run = dry_run
         # Standardize token format for System Agnostic API calls
-        clean_token = token.replace("Bot ", "").strip()
+        clean_token = token.replace("Bot ", "").strip() if token else ""
         self.headers = {
             "Authorization": f"Bot {clean_token}",
             "Content-Type": "application/json"

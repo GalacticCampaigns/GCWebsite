@@ -83,7 +83,8 @@ def send_update_email(report_data, is_dry_run=False):
                 # Format Chapter Narrative details
                 body += f"  - [{action}] {title}\n"
                 
-                total_label = "Total Posts" if title and "ooc" in title.lower() else "Total Narrative"
+                title_str = str(title) if title is not None else ""
+                total_label = "Total Posts" if "ooc" in title_str.lower() else "Total Narrative"
                 if added > 0:
                     tag_parts = []
                     for tag_name, val in tag_deltas.items():

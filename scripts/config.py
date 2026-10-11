@@ -64,5 +64,15 @@ class ConfigManager:
         aliases = self.app_config.get("git_aliases", {})
         return aliases.get(repo_owner, "github.com")
 
+    @property
+    def bot_name(self):
+        """Returns the bot name for Git commits."""
+        return self.get("git", "bot_name", "Chronicle Forge Bot")
+
+    @property
+    def bot_email(self):
+        """Returns the bot email for Git commits."""
+        return self.get("git", "bot_email", "noreply@noreply.com")
+
 # Global singleton for easy access across scripts
 FORGE_CONFIG = ConfigManager()

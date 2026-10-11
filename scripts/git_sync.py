@@ -120,10 +120,10 @@ def push_updates(repo_folder, branch="main"):
         print(f"      [Git Debug] Changes detected:\n{status.stdout}")
 
     # Ensure user identity is set (critical for GitHub Actions)
-    run_git(["config", "user.name", "Chronicle Forge Bot"], cwd=repo_local_path)
-    run_git(["config", "user.email", "noreply@noreply.com"], cwd=repo_local_path)
+    run_git(["config", "user.name", FORGE_CONFIG.bot_name], cwd=repo_local_path)
+    run_git(["config", "user.email", FORGE_CONFIG.bot_email], cwd=repo_local_path)
 
-    commit = run_git(["commit", "-m", f"chore(forge): deep freeze sync {ts}"], cwd=repo_local_path)
+    commit = run_git(["commit", "-m", f"chore(forge): deep freeze sync by {FORGE_CONFIG.bot_name} {ts}"], cwd=repo_local_path)
     if isinstance(commit, str):
         if DEBUG_MODE:
             print(f"      [Git Debug] Commit failed: {commit}")
@@ -161,10 +161,10 @@ def sync_website_registry(repo_path_str, updated_registry_dict, branch="main"):
             return True
 
         # Ensure user identity is set (critical for GitHub Actions)
-        run_git(["config", "user.name", "Chronicle Forge Bot"], cwd=PROJECT_ROOT)
-        run_git(["config", "user.email", "noreply@noreply.com"], cwd=PROJECT_ROOT)
+        run_git(["config", "user.name", FORGE_CONFIG.bot_name], cwd=PROJECT_ROOT)
+        run_git(["config", "user.email", FORGE_CONFIG.bot_email], cwd=PROJECT_ROOT)
 
-        commit = run_git(["commit", "-m", f"chore(forge): automated cycle sync {ts}"], cwd=PROJECT_ROOT)
+        commit = run_git(["commit", "-m", f"chore(forge): automated cycle sync by {FORGE_CONFIG.bot_name} {ts}"], cwd=PROJECT_ROOT)
         if isinstance(commit, str):
             if DEBUG_MODE:
                 print(f"      [Git Debug] Mono-Repo commit failed: {commit}")
@@ -201,8 +201,32 @@ def sync_website_registry(repo_path_str, updated_registry_dict, branch="main"):
     with open(target_file, 'w', encoding='utf-8') as f:
         json.dump(updated_registry_dict, f, indent=2, ensure_ascii=False)
 
+    # Ensure user identity is set (critical for GitHub Actions)
+    run_git(["config", "user.name", FORGE_CONFIG.bot_name], cwd=repo_local_path)
+    run_git(["config", "user.email", FORGE_CONFIG.bot_email], cwd=repo_local_path)
+
     run_git(["add", "."], cwd=repo_local_path)
-    run_git(["commit", "-m", "chore(brain): automated registry update"], cwd=repo_local_path)
+
+    # Porcelain check: Avoid error-raising empty commits if registry is already up to date
+    status = run_git(["status", "--porcelain"], cwd=repo_local_path)
+    if isinstance(status, str):
+        shutil.rmtree(repo_local_path, ignore_errors=True)
+        return status
+    if not status.stdout.strip():
+        if DEBUG_MODE:
+            print("      [Git Debug] External registry is already current. Skipping commit/push.")
+        else:
+            print("      ℹ️ [Git] External registry is already current.")
+        shutil.rmtree(repo_local_path, ignore_errors=True)
+        return True
+
+    commit = run_git(["commit", "-m", f"chore(brain): automated registry update by {FORGE_CONFIG.bot_name}"], cwd=repo_local_path)
+    if isinstance(commit, str):
+        if DEBUG_MODE:
+            print(f"      [Git Debug] Commit failed: {commit}")
+        shutil.rmtree(repo_local_path, ignore_errors=True)
+        return commit
+
     push = run_git(["push", "origin", branch], cwd=repo_local_path)
     
     shutil.rmtree(repo_local_path, ignore_errors=True)

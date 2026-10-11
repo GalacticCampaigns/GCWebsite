@@ -39,8 +39,8 @@ def fix_permissions(target_path):
     Reclaims file ownership from Docker/Root processes. 
     Automatically skips in Cloud environments where root-conflicts don't exist.
     """
-    if get_env_type() == "CLOUD":
-        return # Pillar 4: Skip in Codespaces
+    if get_env_type() == "CLOUD" or os.name == 'nt':
+        return # Skip in Codespaces or Windows hosts
     
     try:
         import getpass

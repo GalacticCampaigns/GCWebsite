@@ -54,8 +54,9 @@ def get_new_discoveries(camp_data, bot_token, nav):
     # --- 1. THE LEGACY SENTINEL PASS ---
     # Ping Discord to see what actually still exists
     all_channels = discord_api_get(f"guilds/{guild_id}/channels", bot_token)
-    if isinstance(all_channels, dict) and "error" in all_channels:
-        nav.update_report(camp_name, "⚠️ SCANNER FAILURE", all_channels["error"])
+    if not isinstance(all_channels, list):
+        error_msg = all_channels.get("error") or all_channels.get("error_code") if isinstance(all_channels, dict) else str(all_channels)
+        nav.update_report(camp_name, "⚠️ SCANNER FAILURE", error_msg)
         return False
     
     discord_map = {str(c["id"]): c for c in all_channels}
