@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1561852530613293057",
-          "messageCount": 14772,
-          "lastMessageTimestamp": "2026-10-20T01:36:15.918000+00:00",
+          "last_synced_id": "1562088015373803752",
+          "messageCount": 14774,
+          "lastMessageTimestamp": "2026-10-20T13:00:05.057000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1797,8 +1797,8 @@
               "displayName": "Devily Dms (Lis Garah)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1556759497421095007",
-              "messageCount": 573,
+              "last_synced_id": "1562088015373803752",
+              "messageCount": 574,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -1925,8 +1925,8 @@
               "displayName": "Sage Playground",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1551578763043672194",
-              "messageCount": 220,
+              "last_synced_id": "1562088006817677383",
+              "messageCount": 221,
               "tags": [],
               "tagStats": {
                 "action": {
