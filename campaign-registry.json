@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1562088015373803752",
-          "messageCount": 14774,
-          "lastMessageTimestamp": "2026-10-20T13:00:05.057000+00:00",
+          "last_synced_id": "1562631723114569764",
+          "messageCount": 14778,
+          "lastMessageTimestamp": "2026-10-22T01:00:35.084000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1829,8 +1829,8 @@
               "displayName": "Emil Dm (Iyola Kett)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1557014590167064607",
-              "messageCount": 952,
+              "last_synced_id": "1562450420268277863",
+              "messageCount": 953,
               "tags": [],
               "tagStats": {
                 "action": {
