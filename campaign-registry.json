@@ -1755,9 +1755,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1562844651503747183",
-          "messageCount": 14781,
-          "lastMessageTimestamp": "2026-10-22T15:06:41.168000+00:00",
+          "last_synced_id": "1563688275204640809",
+          "messageCount": 14787,
+          "lastMessageTimestamp": "2026-10-24T22:58:56.732000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1789,7 +1789,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1456654999928049857",
@@ -1820,7 +1821,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1385671288462245918",
@@ -1851,7 +1853,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1381693822987145266",
@@ -1882,7 +1885,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1380891748171255818",
@@ -1913,7 +1917,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1380890355171594292",
@@ -1944,7 +1949,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1448365503549804645",
@@ -1975,7 +1981,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1540877186477592616",
@@ -2006,7 +2013,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             }
           ],
           "tags": [],
@@ -2031,7 +2039,8 @@
               "active": false,
               "emoji": "🔞"
             }
-          }
+          },
+          "nsfwCount": 0
         },
         {
           "title": "Fo Gm",
