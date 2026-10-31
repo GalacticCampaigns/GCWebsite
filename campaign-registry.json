@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1565676257994088580",
-          "messageCount": 402,
+          "last_synced_id": "1565872378817548319",
+          "messageCount": 404,
           "order": 5,
-          "lastMessageTimestamp": "2026-10-30T10:38:28.764000+00:00",
+          "lastMessageTimestamp": "2026-10-30T23:37:47.612000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1763,9 +1763,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1565676857163255861",
-          "messageCount": 14837,
-          "lastMessageTimestamp": "2026-10-30T10:40:51.617000+00:00",
+          "last_synced_id": "1565880206957220022",
+          "messageCount": 14845,
+          "lastMessageTimestamp": "2026-10-31T00:08:53.986000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1773,8 +1773,8 @@
               "displayName": "Syoca Dm (Ciara)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1564082546742919240",
-              "messageCount": 167,
+              "last_synced_id": "1565862162100920441",
+              "messageCount": 173,
               "tags": [],
               "tagStats": {
                 "action": {
