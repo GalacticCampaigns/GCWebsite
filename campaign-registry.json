@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1565872378817548319",
-          "messageCount": 404,
+          "last_synced_id": "1566072669609398374",
+          "messageCount": 405,
           "order": 5,
-          "lastMessageTimestamp": "2026-10-30T23:37:47.612000+00:00",
+          "lastMessageTimestamp": "2026-10-31T12:53:40.658000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1763,9 +1763,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1565880206957220022",
-          "messageCount": 14845,
-          "lastMessageTimestamp": "2026-10-31T00:08:53.986000+00:00",
+          "last_synced_id": "1566303692209127455",
+          "messageCount": 14848,
+          "lastMessageTimestamp": "2026-11-01T04:11:40.738000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2542,9 +2542,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1554270338047807569",
-          "messageCount": 4074,
-          "lastMessageTimestamp": "2026-09-28T23:15:25.537000+00:00",
+          "last_synced_id": "1566110911293431911",
+          "messageCount": 4076,
+          "lastMessageTimestamp": "2026-10-31T15:25:38.186000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2576,7 +2576,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1347386051915812979",
@@ -2607,7 +2608,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             }
           ],
           "tags": [],
@@ -2632,7 +2634,8 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "nsfwCount": 0
         },
         {
           "title": "Wv Gm",
