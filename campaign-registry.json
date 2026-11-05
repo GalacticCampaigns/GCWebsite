@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1566072669609398374",
-          "messageCount": 405,
+          "last_synced_id": "1567717723444617270",
+          "messageCount": 418,
           "order": 5,
-          "lastMessageTimestamp": "2026-10-31T12:53:40.658000+00:00",
+          "lastMessageTimestamp": "2026-11-05T01:50:32.056000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1115,7 +1115,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1484919279555186802",
@@ -1146,7 +1147,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507843585813385330",
@@ -1177,7 +1179,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507838319885549710",
@@ -1208,7 +1211,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1510471160867848273",
@@ -1239,7 +1243,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1511523223408345199",
@@ -1270,7 +1275,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1515498322100748310",
@@ -1301,7 +1307,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             }
           ],
           "syncStatus": "active",
@@ -1328,7 +1335,8 @@
               "active": false,
               "emoji": "🔞"
             }
-          }
+          },
+          "nsfwCount": 0
         },
         {
           "title": "☆READ FIRST☆",
@@ -1755,9 +1763,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1567313558050578576",
-          "messageCount": 14866,
-          "lastMessageTimestamp": "2026-11-03T23:04:31.517000+00:00",
+          "last_synced_id": "1567572327686865071",
+          "messageCount": 14875,
+          "lastMessageTimestamp": "2026-11-04T16:12:47.006000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1829,8 +1837,8 @@
               "displayName": "Emil Dm (Iyola Kett)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1562450420268277863",
-              "messageCount": 953,
+              "last_synced_id": "1567538934542635022",
+              "messageCount": 954,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2534,9 +2542,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1566110911293431911",
-          "messageCount": 4076,
-          "lastMessageTimestamp": "2026-10-31T15:25:38.186000+00:00",
+          "last_synced_id": "1567866531298152470",
+          "messageCount": 4079,
+          "lastMessageTimestamp": "2026-11-05T11:41:50.613000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -2568,7 +2576,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1347386051915812979",
@@ -2599,7 +2608,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             }
           ],
           "tags": [],
@@ -2624,7 +2634,8 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "nsfwCount": 0
         },
         {
           "title": "Wv Gm",
@@ -2721,10 +2732,10 @@
           "isActive": true,
           "visible": true,
           "syncStatus": "active",
-          "last_synced_id": "1558821512994234419",
-          "messageCount": 34,
+          "last_synced_id": "1567866416626139211",
+          "messageCount": 35,
           "tags": [],
-          "lastMessageTimestamp": "2026-10-11T12:40:10.201000+00:00",
+          "lastMessageTimestamp": "2026-11-05T11:41:23.273000+00:00",
           "source_exists": true,
           "threads": [],
           "tagStats": {
@@ -2748,7 +2759,8 @@
               "active": false,
               "emoji": "📌"
             }
-          }
+          },
+          "nsfwCount": 0
         }
       ]
     },
