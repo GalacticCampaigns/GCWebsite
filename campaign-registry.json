@@ -1081,10 +1081,10 @@
           "channelID": "1482882973266083984",
           "fileName": "fo_ch5-the-threaded-path.json",
           "isActive": true,
-          "last_synced_id": "1571189206997278781",
-          "messageCount": 427,
+          "last_synced_id": "1572040917962194996",
+          "messageCount": 432,
           "order": 5,
-          "lastMessageTimestamp": "2026-11-14T15:44:58.232000+00:00",
+          "lastMessageTimestamp": "2026-11-17T00:09:21.950000+00:00",
           "threads": [
             {
               "threadID": "1484919932688011507",
@@ -1115,7 +1115,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1484919279555186802",
@@ -1146,7 +1147,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507843585813385330",
@@ -1177,7 +1179,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1507838319885549710",
@@ -1208,7 +1211,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1510471160867848273",
@@ -1239,7 +1243,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1511523223408345199",
@@ -1270,7 +1275,8 @@
                   "active": false,
                   "emoji": "🔞"
                 }
-              }
+              },
+              "nsfwCount": 0
             },
             {
               "threadID": "1515498322100748310",
@@ -1301,7 +1307,8 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              }
+              },
+              "nsfwCount": 0
             }
           ],
           "syncStatus": "active",
@@ -1328,7 +1335,8 @@
               "active": false,
               "emoji": "🔞"
             }
-          }
+          },
+          "nsfwCount": 0
         },
         {
           "title": "☆READ FIRST☆",
@@ -1755,9 +1763,9 @@
           "isActive": true,
           "visible": false,
           "syncStatus": "active",
-          "last_synced_id": "1571717154976432210",
-          "messageCount": 15035,
-          "lastMessageTimestamp": "2026-11-16T02:42:50.839000+00:00",
+          "last_synced_id": "1572035285456523295",
+          "messageCount": 15043,
+          "lastMessageTimestamp": "2026-11-16T23:46:59.056000+00:00",
           "source_exists": true,
           "threads": [
             {
@@ -1861,8 +1869,8 @@
               "displayName": "Death Dm (Varda Nisyren)",
               "isActive": true,
               "syncStatus": "active",
-              "last_synced_id": "1566451770417225890",
-              "messageCount": 1482,
+              "last_synced_id": "1571887591148748853",
+              "messageCount": 1483,
               "tags": [],
               "tagStats": {
                 "action": {
@@ -2568,8 +2576,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             },
             {
               "threadID": "1347386051915812979",
@@ -2600,8 +2607,7 @@
                   "active": false,
                   "emoji": "📌"
                 }
-              },
-              "nsfwCount": 0
+              }
             }
           ],
           "tags": [],
@@ -2626,8 +2632,7 @@
               "active": false,
               "emoji": "📌"
             }
-          },
-          "nsfwCount": 0
+          }
         },
         {
           "title": "Wv Gm",
@@ -2635,13 +2640,13 @@
           "parentID": "1347381577721581650",
           "fileName": "wv-gm.json",
           "order": 0,
-          "isActive": true,
+          "isActive": false,
           "visible": false,
-          "syncStatus": "active",
+          "syncStatus": "legacy",
           "last_synced_id": "",
           "messageCount": 0,
           "lastMessageTimestamp": "",
-          "source_exists": true,
+          "source_exists": false,
           "threads": [],
           "tags": []
         },
@@ -3104,13 +3109,13 @@
           "parentID": "1280868071833337856",
           "fileName": "wop-gm.json",
           "order": 0,
-          "isActive": true,
+          "isActive": false,
           "visible": false,
-          "syncStatus": "active",
+          "syncStatus": "legacy",
           "last_synced_id": "",
           "messageCount": 0,
           "lastMessageTimestamp": "",
-          "source_exists": true,
+          "source_exists": false,
           "threads": [],
           "tags": [
             "nsfw"
